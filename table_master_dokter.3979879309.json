@@ -1,0 +1,4198 @@
+{
+	"sql": "SELECT\r\n\tdokter_id,\r\n\tdokter,\r\n\tnip,\r\n\tlp,\r\n\tagama,\r\n\ttmlahir,\r\n\ttglahir,\r\n\talamat,\r\n\tkota,\r\n\ttelp,\r\n\thp,\r\n\tmaried,\r\n\tnama_suami_istri,\r\n\taktif,\r\n\tvisite,\r\n\tkonsul,\r\n\tmtbs,\r\n\tjabatan,\r\n\tphoto,\r\n\tcpns_gol,\r\n\tcpns_tmt,\r\n\tpangkat_gol,\r\n\tpangkat_tmt,\r\n\tpend,\r\n\tketpend,\r\n\tthn_lulus,\r\n\tstt,\r\n\tjbt_fung,\r\n\tmts_tgl,\r\n\tmts_alasan,\r\n\tmts,\r\n\tmts_ket,\r\n\tfungsional,\r\n\ttmtfungsional,\r\n\tmulaikerja,\r\n\tpuskesmas,\r\n\tpassword,\r\n\tgrup_pengguna,\r\n\temail,\r\n\tkode_aktivasi,\r\n\tpcare_dokter,\r\n\tnik_dokter,\r\n\tihr\r\nFROM\r\n\t\"public\".master_dokter",
+	"connId": "conn",
+	"originalTable": "public.master_dokter",
+	"name": "public.master_dokter",
+	"shortTableName": "master_dokter",
+	"dbType": 4,
+	"keyFields": [
+		"dokter_id"
+	],
+	"detailsBadgeColor": "cd5c5c",
+	"fields": [
+		{
+			"name": "dokter_id",
+			"sqlExpression": "dokter_id",
+			"index": 1,
+			"strField": "dokter_id",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Dokter Id"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "dokter",
+			"sqlExpression": "dokter",
+			"index": 2,
+			"strField": "dokter",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Dokter"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "nip",
+			"sqlExpression": "nip",
+			"index": 3,
+			"strField": "nip",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Nip"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "lp",
+			"sqlExpression": "lp",
+			"index": 4,
+			"strField": "lp",
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Lp"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "agama",
+			"sqlExpression": "agama",
+			"index": 5,
+			"strField": "agama",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Agama"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "tmlahir",
+			"sqlExpression": "tmlahir",
+			"index": 6,
+			"strField": "tmlahir",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Tmlahir"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "tglahir",
+			"sqlExpression": "tglahir",
+			"index": 7,
+			"strField": "tglahir",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"English": "Tglahir"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "alamat",
+			"sqlExpression": "alamat",
+			"index": 8,
+			"strField": "alamat",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Alamat"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "kota",
+			"sqlExpression": "kota",
+			"index": 9,
+			"strField": "kota",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Kota"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "telp",
+			"sqlExpression": "telp",
+			"index": 10,
+			"strField": "telp",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Telp"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "hp",
+			"sqlExpression": "hp",
+			"index": 11,
+			"strField": "hp",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Hp"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "maried",
+			"sqlExpression": "maried",
+			"index": 12,
+			"strField": "maried",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Maried"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "nama_suami_istri",
+			"sqlExpression": "nama_suami_istri",
+			"index": 13,
+			"strField": "nama_suami_istri",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Nama Suami Istri"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "aktif",
+			"sqlExpression": "aktif",
+			"index": 14,
+			"strField": "aktif",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Aktif"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "visite",
+			"sqlExpression": "visite",
+			"index": 15,
+			"strField": "visite",
+			"type": 5,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Visite"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "konsul",
+			"sqlExpression": "konsul",
+			"index": 16,
+			"strField": "konsul",
+			"type": 5,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Konsul"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "mtbs",
+			"sqlExpression": "mtbs",
+			"index": 17,
+			"strField": "mtbs",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"English": "Mtbs"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "jabatan",
+			"sqlExpression": "jabatan",
+			"index": 18,
+			"strField": "jabatan",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Jabatan"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "photo",
+			"sqlExpression": "photo",
+			"index": 19,
+			"strField": "photo",
+			"googleLikeSearch": false,
+			"type": 128,
+			"viewFormats": [
+				{
+					"format": "Database Image"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Database image"
+				}
+			],
+			"label": {
+				"English": "Photo"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "cpns_gol",
+			"sqlExpression": "cpns_gol",
+			"index": 20,
+			"strField": "cpns_gol",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Cpns Gol"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "cpns_tmt",
+			"sqlExpression": "cpns_tmt",
+			"index": 21,
+			"strField": "cpns_tmt",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"English": "Cpns Tmt"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "pangkat_gol",
+			"sqlExpression": "pangkat_gol",
+			"index": 22,
+			"strField": "pangkat_gol",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Pangkat Gol"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "pangkat_tmt",
+			"sqlExpression": "pangkat_tmt",
+			"index": 23,
+			"strField": "pangkat_tmt",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"English": "Pangkat Tmt"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "pend",
+			"sqlExpression": "pend",
+			"index": 24,
+			"strField": "pend",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Pend"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "ketpend",
+			"sqlExpression": "ketpend",
+			"index": 25,
+			"strField": "ketpend",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Ketpend"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "thn_lulus",
+			"sqlExpression": "thn_lulus",
+			"index": 26,
+			"strField": "thn_lulus",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Thn Lulus"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "stt",
+			"sqlExpression": "stt",
+			"index": 27,
+			"strField": "stt",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Stt"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "jbt_fung",
+			"sqlExpression": "jbt_fung",
+			"index": 28,
+			"strField": "jbt_fung",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Jbt Fung"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "mts_tgl",
+			"sqlExpression": "mts_tgl",
+			"index": 29,
+			"strField": "mts_tgl",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"English": "Mts Tgl"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "mts_alasan",
+			"sqlExpression": "mts_alasan",
+			"index": 30,
+			"strField": "mts_alasan",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Mts Alasan"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "mts",
+			"sqlExpression": "mts",
+			"index": 31,
+			"strField": "mts",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Mts"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "mts_ket",
+			"sqlExpression": "mts_ket",
+			"index": 32,
+			"strField": "mts_ket",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Mts Ket"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "fungsional",
+			"sqlExpression": "fungsional",
+			"index": 33,
+			"strField": "fungsional",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Fungsional"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "tmtfungsional",
+			"sqlExpression": "tmtfungsional",
+			"index": 34,
+			"strField": "tmtfungsional",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"English": "Tmtfungsional"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "mulaikerja",
+			"sqlExpression": "mulaikerja",
+			"index": 35,
+			"strField": "mulaikerja",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"English": "Mulaikerja"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "puskesmas",
+			"sqlExpression": "puskesmas",
+			"index": 36,
+			"strField": "puskesmas",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Puskesmas"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "password",
+			"sqlExpression": "password",
+			"index": 37,
+			"strField": "password",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Password"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "grup_pengguna",
+			"sqlExpression": "grup_pengguna",
+			"index": 38,
+			"strField": "grup_pengguna",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Grup Pengguna"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "email",
+			"sqlExpression": "email",
+			"index": 39,
+			"strField": "email",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Email"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "kode_aktivasi",
+			"sqlExpression": "kode_aktivasi",
+			"index": 40,
+			"strField": "kode_aktivasi",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Kode Aktivasi"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "pcare_dokter",
+			"sqlExpression": "pcare_dokter",
+			"index": 41,
+			"strField": "pcare_dokter",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Pcare Dokter"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "nik_dokter",
+			"sqlExpression": "nik_dokter",
+			"index": 42,
+			"strField": "nik_dokter",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Nik Dokter"
+			},
+			"tableName": "public.master_dokter"
+		},
+		{
+			"name": "ihr",
+			"sqlExpression": "ihr",
+			"index": 43,
+			"strField": "ihr",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Ihr"
+			},
+			"tableName": "public.master_dokter"
+		}
+	],
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "dokter_id",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "'0'::smallint",
+				"defaultValue": "'0'::smallint",
+				"nullable": false
+			},
+			{
+				"name": "dokter",
+				"typeName": "character varying",
+				"size": 30,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "nip",
+				"typeName": "character varying",
+				"size": 30,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "lp",
+				"typeName": "character",
+				"size": 1,
+				"scale": null,
+				"type": 13,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "agama",
+				"typeName": "character varying",
+				"size": 30,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "tmlahir",
+				"typeName": "character varying",
+				"size": 30,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "tglahir",
+				"typeName": "date",
+				"size": null,
+				"scale": null,
+				"type": 7,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "alamat",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "kota",
+				"typeName": "character varying",
+				"size": 30,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "telp",
+				"typeName": "character varying",
+				"size": 30,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "hp",
+				"typeName": "character varying",
+				"size": 30,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "maried",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "'0'::smallint",
+				"defaultValue": "'0'::smallint",
+				"nullable": true
+			},
+			{
+				"name": "nama_suami_istri",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "aktif",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "'1'::smallint",
+				"defaultValue": "'1'::smallint",
+				"nullable": true
+			},
+			{
+				"name": "visite",
+				"typeName": "double precision",
+				"size": 53,
+				"scale": null,
+				"type": 5,
+				"autoinc": false,
+				"defaultValueSQL": "'0'::double precision",
+				"defaultValue": "'0'::double precision",
+				"nullable": true
+			},
+			{
+				"name": "konsul",
+				"typeName": "double precision",
+				"size": 53,
+				"scale": null,
+				"type": 5,
+				"autoinc": false,
+				"defaultValueSQL": "'0'::double precision",
+				"defaultValue": "'0'::double precision",
+				"nullable": true
+			},
+			{
+				"name": "mtbs",
+				"typeName": "date",
+				"size": null,
+				"scale": null,
+				"type": 7,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "jabatan",
+				"typeName": "character varying",
+				"size": 20,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "photo",
+				"typeName": "bytea",
+				"size": null,
+				"scale": null,
+				"type": 128,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "cpns_gol",
+				"typeName": "character varying",
+				"size": 30,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "cpns_tmt",
+				"typeName": "date",
+				"size": null,
+				"scale": null,
+				"type": 7,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "pangkat_gol",
+				"typeName": "character varying",
+				"size": 30,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "pangkat_tmt",
+				"typeName": "date",
+				"size": null,
+				"scale": null,
+				"type": 7,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "pend",
+				"typeName": "character varying",
+				"size": 30,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "ketpend",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "thn_lulus",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "stt",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "jbt_fung",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "mts_tgl",
+				"typeName": "date",
+				"size": null,
+				"scale": null,
+				"type": 7,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "mts_alasan",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "mts",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "mts_ket",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "fungsional",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "tmtfungsional",
+				"typeName": "date",
+				"size": null,
+				"scale": null,
+				"type": 7,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "mulaikerja",
+				"typeName": "date",
+				"size": null,
+				"scale": null,
+				"type": 7,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "puskesmas",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "password",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "grup_pengguna",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "email",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "kode_aktivasi",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "pcare_dokter",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "nik_dokter",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "ihr",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			}
+		],
+		"primaryKeys": [
+			"dokter_id"
+		],
+		"uniqueFields": [],
+		"name": "master_dokter",
+		"schema": "public"
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7",
+								"integrated_edit_field8",
+								"integrated_edit_field9",
+								"integrated_edit_field10",
+								"integrated_edit_field11",
+								"integrated_edit_field12",
+								"integrated_edit_field13",
+								"integrated_edit_field14",
+								"integrated_edit_field15",
+								"integrated_edit_field16",
+								"integrated_edit_field17",
+								"integrated_edit_field18",
+								"integrated_edit_field19",
+								"integrated_edit_field20",
+								"integrated_edit_field21",
+								"integrated_edit_field22",
+								"integrated_edit_field23",
+								"integrated_edit_field24",
+								"integrated_edit_field25",
+								"integrated_edit_field26",
+								"integrated_edit_field27",
+								"integrated_edit_field28",
+								"integrated_edit_field29",
+								"integrated_edit_field30",
+								"integrated_edit_field31",
+								"integrated_edit_field32",
+								"integrated_edit_field33",
+								"integrated_edit_field34",
+								"integrated_edit_field35",
+								"integrated_edit_field36",
+								"integrated_edit_field37",
+								"integrated_edit_field38",
+								"integrated_edit_field39",
+								"integrated_edit_field40",
+								"integrated_edit_field41"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field": {
+					"field": "dokter",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "nip",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "lp",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "agama",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "tmlahir",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "tglahir",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "alamat",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "kota",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field8": {
+					"field": "telp",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "hp",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "maried",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "nama_suami_istri",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field12": {
+					"field": "aktif",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field13": {
+					"field": "visite",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field14": {
+					"field": "konsul",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field15": {
+					"field": "mtbs",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "jabatan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "photo",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field18": {
+					"field": "cpns_gol",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field19": {
+					"field": "cpns_tmt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field20": {
+					"field": "pangkat_gol",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field21": {
+					"field": "pangkat_tmt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field22": {
+					"field": "pend",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field23": {
+					"field": "ketpend",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field24": {
+					"field": "thn_lulus",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field25": {
+					"field": "stt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field26": {
+					"field": "jbt_fung",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field27": {
+					"field": "mts_tgl",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field28": {
+					"field": "mts_alasan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field29": {
+					"field": "mts",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field30": {
+					"field": "mts_ket",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field31": {
+					"field": "fungsional",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field32": {
+					"field": "tmtfungsional",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field33": {
+					"field": "mulaikerja",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field34": {
+					"field": "puskesmas",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field35": {
+					"field": "password",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field36": {
+					"field": "grup_pengguna",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field37": {
+					"field": "email",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field38": {
+					"field": "kode_aktivasi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field39": {
+					"field": "pcare_dokter",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field40": {
+					"field": "nik_dokter",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field41": {
+					"field": "ihr",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field1",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6",
+								"export_field7",
+								"export_field8",
+								"export_field9",
+								"export_field10",
+								"export_field11",
+								"export_field12",
+								"export_field13",
+								"export_field14",
+								"export_field15",
+								"export_field16",
+								"export_field17",
+								"export_field18",
+								"export_field19",
+								"export_field20",
+								"export_field21",
+								"export_field22",
+								"export_field23",
+								"export_field24",
+								"export_field25",
+								"export_field26",
+								"export_field27",
+								"export_field28",
+								"export_field29",
+								"export_field30",
+								"export_field31",
+								"export_field32",
+								"export_field33",
+								"export_field34",
+								"export_field35",
+								"export_field36",
+								"export_field37",
+								"export_field38",
+								"export_field39",
+								"export_field40",
+								"export_field41"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "dokter_id",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "dokter",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "nip",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "lp",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "agama",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "tmlahir",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "tglahir",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "alamat",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "kota",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "telp",
+					"type": "export_field"
+				},
+				"export_field10": {
+					"field": "hp",
+					"type": "export_field"
+				},
+				"export_field11": {
+					"field": "maried",
+					"type": "export_field"
+				},
+				"export_field12": {
+					"field": "nama_suami_istri",
+					"type": "export_field"
+				},
+				"export_field13": {
+					"field": "aktif",
+					"type": "export_field"
+				},
+				"export_field14": {
+					"field": "visite",
+					"type": "export_field"
+				},
+				"export_field15": {
+					"field": "konsul",
+					"type": "export_field"
+				},
+				"export_field16": {
+					"field": "mtbs",
+					"type": "export_field"
+				},
+				"export_field17": {
+					"field": "jabatan",
+					"type": "export_field"
+				},
+				"export_field18": {
+					"field": "cpns_gol",
+					"type": "export_field"
+				},
+				"export_field19": {
+					"field": "cpns_tmt",
+					"type": "export_field"
+				},
+				"export_field20": {
+					"field": "pangkat_gol",
+					"type": "export_field"
+				},
+				"export_field21": {
+					"field": "pangkat_tmt",
+					"type": "export_field"
+				},
+				"export_field22": {
+					"field": "pend",
+					"type": "export_field"
+				},
+				"export_field23": {
+					"field": "ketpend",
+					"type": "export_field"
+				},
+				"export_field24": {
+					"field": "thn_lulus",
+					"type": "export_field"
+				},
+				"export_field25": {
+					"field": "stt",
+					"type": "export_field"
+				},
+				"export_field26": {
+					"field": "jbt_fung",
+					"type": "export_field"
+				},
+				"export_field27": {
+					"field": "mts_tgl",
+					"type": "export_field"
+				},
+				"export_field28": {
+					"field": "mts_alasan",
+					"type": "export_field"
+				},
+				"export_field29": {
+					"field": "mts",
+					"type": "export_field"
+				},
+				"export_field30": {
+					"field": "mts_ket",
+					"type": "export_field"
+				},
+				"export_field31": {
+					"field": "fungsional",
+					"type": "export_field"
+				},
+				"export_field32": {
+					"field": "tmtfungsional",
+					"type": "export_field"
+				},
+				"export_field33": {
+					"field": "mulaikerja",
+					"type": "export_field"
+				},
+				"export_field34": {
+					"field": "puskesmas",
+					"type": "export_field"
+				},
+				"export_field35": {
+					"field": "password",
+					"type": "export_field"
+				},
+				"export_field36": {
+					"field": "grup_pengguna",
+					"type": "export_field"
+				},
+				"export_field37": {
+					"field": "email",
+					"type": "export_field"
+				},
+				"export_field38": {
+					"field": "kode_aktivasi",
+					"type": "export_field"
+				},
+				"export_field39": {
+					"field": "pcare_dokter",
+					"type": "export_field"
+				},
+				"export_field40": {
+					"field": "nik_dokter",
+					"type": "export_field"
+				},
+				"export_field41": {
+					"field": "ihr",
+					"type": "export_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field1",
+								"import_field2",
+								"import_field3",
+								"import_field4",
+								"import_field5",
+								"import_field6",
+								"import_field7",
+								"import_field8",
+								"import_field9",
+								"import_field10",
+								"import_field11",
+								"import_field12",
+								"import_field13",
+								"import_field14",
+								"import_field15",
+								"import_field16",
+								"import_field17",
+								"import_field18",
+								"import_field19",
+								"import_field20",
+								"import_field21",
+								"import_field22",
+								"import_field23",
+								"import_field24",
+								"import_field25",
+								"import_field26",
+								"import_field27",
+								"import_field28",
+								"import_field29",
+								"import_field30",
+								"import_field31",
+								"import_field32",
+								"import_field33",
+								"import_field34",
+								"import_field35",
+								"import_field36",
+								"import_field37",
+								"import_field38",
+								"import_field39",
+								"import_field40",
+								"import_field41"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "dokter_id",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "dokter",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "nip",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "lp",
+					"type": "import_field"
+				},
+				"import_field4": {
+					"field": "agama",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "tmlahir",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "tglahir",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "alamat",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "kota",
+					"type": "import_field"
+				},
+				"import_field9": {
+					"field": "telp",
+					"type": "import_field"
+				},
+				"import_field10": {
+					"field": "hp",
+					"type": "import_field"
+				},
+				"import_field11": {
+					"field": "maried",
+					"type": "import_field"
+				},
+				"import_field12": {
+					"field": "nama_suami_istri",
+					"type": "import_field"
+				},
+				"import_field13": {
+					"field": "aktif",
+					"type": "import_field"
+				},
+				"import_field14": {
+					"field": "visite",
+					"type": "import_field"
+				},
+				"import_field15": {
+					"field": "konsul",
+					"type": "import_field"
+				},
+				"import_field16": {
+					"field": "mtbs",
+					"type": "import_field"
+				},
+				"import_field17": {
+					"field": "jabatan",
+					"type": "import_field"
+				},
+				"import_field18": {
+					"field": "cpns_gol",
+					"type": "import_field"
+				},
+				"import_field19": {
+					"field": "cpns_tmt",
+					"type": "import_field"
+				},
+				"import_field20": {
+					"field": "pangkat_gol",
+					"type": "import_field"
+				},
+				"import_field21": {
+					"field": "pangkat_tmt",
+					"type": "import_field"
+				},
+				"import_field22": {
+					"field": "pend",
+					"type": "import_field"
+				},
+				"import_field23": {
+					"field": "ketpend",
+					"type": "import_field"
+				},
+				"import_field24": {
+					"field": "thn_lulus",
+					"type": "import_field"
+				},
+				"import_field25": {
+					"field": "stt",
+					"type": "import_field"
+				},
+				"import_field26": {
+					"field": "jbt_fung",
+					"type": "import_field"
+				},
+				"import_field27": {
+					"field": "mts_tgl",
+					"type": "import_field"
+				},
+				"import_field28": {
+					"field": "mts_alasan",
+					"type": "import_field"
+				},
+				"import_field29": {
+					"field": "mts",
+					"type": "import_field"
+				},
+				"import_field30": {
+					"field": "mts_ket",
+					"type": "import_field"
+				},
+				"import_field31": {
+					"field": "fungsional",
+					"type": "import_field"
+				},
+				"import_field32": {
+					"field": "tmtfungsional",
+					"type": "import_field"
+				},
+				"import_field33": {
+					"field": "mulaikerja",
+					"type": "import_field"
+				},
+				"import_field34": {
+					"field": "puskesmas",
+					"type": "import_field"
+				},
+				"import_field35": {
+					"field": "password",
+					"type": "import_field"
+				},
+				"import_field36": {
+					"field": "grup_pengguna",
+					"type": "import_field"
+				},
+				"import_field37": {
+					"field": "email",
+					"type": "import_field"
+				},
+				"import_field38": {
+					"field": "kode_aktivasi",
+					"type": "import_field"
+				},
+				"import_field39": {
+					"field": "pcare_dokter",
+					"type": "import_field"
+				},
+				"import_field40": {
+					"field": "nik_dokter",
+					"type": "import_field"
+				},
+				"import_field41": {
+					"field": "ihr",
+					"type": "import_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7",
+								"integrated_edit_field8",
+								"integrated_edit_field9",
+								"integrated_edit_field10",
+								"integrated_edit_field11",
+								"integrated_edit_field12",
+								"integrated_edit_field13",
+								"integrated_edit_field14",
+								"integrated_edit_field15",
+								"integrated_edit_field16",
+								"integrated_edit_field17",
+								"integrated_edit_field18",
+								"integrated_edit_field19",
+								"integrated_edit_field20",
+								"integrated_edit_field21",
+								"integrated_edit_field22",
+								"integrated_edit_field23",
+								"integrated_edit_field24",
+								"integrated_edit_field25",
+								"integrated_edit_field26",
+								"integrated_edit_field27",
+								"integrated_edit_field28",
+								"integrated_edit_field29",
+								"integrated_edit_field30",
+								"integrated_edit_field31",
+								"integrated_edit_field32",
+								"integrated_edit_field33",
+								"integrated_edit_field34",
+								"integrated_edit_field35",
+								"integrated_edit_field36",
+								"integrated_edit_field37",
+								"integrated_edit_field38",
+								"integrated_edit_field39",
+								"integrated_edit_field40",
+								"integrated_edit_field41"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset",
+						"edit_view"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save": {
+					"type": "edit_save"
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"integrated_edit_field": {
+					"field": "dokter",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "nip",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "lp",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "agama",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "tmlahir",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "tglahir",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "alamat",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "kota",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field8": {
+					"field": "telp",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "hp",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "maried",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "nama_suami_istri",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field12": {
+					"field": "aktif",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field13": {
+					"field": "visite",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field14": {
+					"field": "konsul",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field15": {
+					"field": "mtbs",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "jabatan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "photo",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field18": {
+					"field": "cpns_gol",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field19": {
+					"field": "cpns_tmt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field20": {
+					"field": "pangkat_gol",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field21": {
+					"field": "pangkat_tmt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field22": {
+					"field": "pend",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field23": {
+					"field": "ketpend",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field24": {
+					"field": "thn_lulus",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field25": {
+					"field": "stt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field26": {
+					"field": "jbt_fung",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field27": {
+					"field": "mts_tgl",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field28": {
+					"field": "mts_alasan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field29": {
+					"field": "mts",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field30": {
+					"field": "mts_ket",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field31": {
+					"field": "fungsional",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field32": {
+					"field": "tmtfungsional",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field33": {
+					"field": "mulaikerja",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field34": {
+					"field": "puskesmas",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field35": {
+					"field": "password",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field36": {
+					"field": "grup_pengguna",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field37": {
+					"field": "email",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field38": {
+					"field": "kode_aktivasi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field39": {
+					"field": "pcare_dokter",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field40": {
+					"field": "nik_dokter",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field41": {
+					"field": "ihr",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"edit_view": {
+					"type": "edit_view"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "view",
+			"type": "view",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "view-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "view-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_back_list",
+								"view_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "view-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7",
+								"integrated_edit_field8",
+								"integrated_edit_field9",
+								"integrated_edit_field10",
+								"integrated_edit_field11",
+								"integrated_edit_field12",
+								"integrated_edit_field13",
+								"integrated_edit_field14",
+								"integrated_edit_field15",
+								"integrated_edit_field16",
+								"integrated_edit_field17",
+								"integrated_edit_field18",
+								"integrated_edit_field19",
+								"integrated_edit_field20",
+								"integrated_edit_field21",
+								"integrated_edit_field22",
+								"integrated_edit_field23",
+								"integrated_edit_field24",
+								"integrated_edit_field25",
+								"integrated_edit_field26",
+								"integrated_edit_field27",
+								"integrated_edit_field28",
+								"integrated_edit_field29",
+								"integrated_edit_field30",
+								"integrated_edit_field31",
+								"integrated_edit_field32",
+								"integrated_edit_field33",
+								"integrated_edit_field34",
+								"integrated_edit_field35",
+								"integrated_edit_field36",
+								"integrated_edit_field37",
+								"integrated_edit_field38",
+								"integrated_edit_field39",
+								"integrated_edit_field40",
+								"integrated_edit_field41",
+								"integrated_edit_field42"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"view_header": {
+					"type": "view_header"
+				},
+				"view_back_list": {
+					"type": "view_back_list"
+				},
+				"view_close": {
+					"type": "view_close"
+				},
+				"integrated_edit_field": {
+					"field": "dokter_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "dokter",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "nip",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "lp",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "agama",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "tmlahir",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "tglahir",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "alamat",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field8": {
+					"field": "kota",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "telp",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "hp",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "maried",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field12": {
+					"field": "nama_suami_istri",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field13": {
+					"field": "aktif",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field14": {
+					"field": "visite",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field15": {
+					"field": "konsul",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "mtbs",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "jabatan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field18": {
+					"field": "photo",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field19": {
+					"field": "cpns_gol",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field20": {
+					"field": "cpns_tmt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field21": {
+					"field": "pangkat_gol",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field22": {
+					"field": "pangkat_tmt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field23": {
+					"field": "pend",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field24": {
+					"field": "ketpend",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field25": {
+					"field": "thn_lulus",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field26": {
+					"field": "stt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field27": {
+					"field": "jbt_fung",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field28": {
+					"field": "mts_tgl",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field29": {
+					"field": "mts_alasan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field30": {
+					"field": "mts",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field31": {
+					"field": "mts_ket",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field32": {
+					"field": "fungsional",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field33": {
+					"field": "tmtfungsional",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field34": {
+					"field": "mulaikerja",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field35": {
+					"field": "puskesmas",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field36": {
+					"field": "password",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field37": {
+					"field": "grup_pengguna",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field38": {
+					"field": "email",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field39": {
+					"field": "kode_aktivasi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field40": {
+					"field": "pcare_dokter",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field41": {
+					"field": "nik_dokter",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field42": {
+					"field": "ihr",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"view_edit"
+					]
+				},
+				"view_edit": {
+					"type": "view_edit"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "leftbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add",
+								"delete"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size",
+								"print_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu",
+								"search_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12",
+								"simple_grid_field13",
+								"simple_grid_field14",
+								"simple_grid_field15",
+								"simple_grid_field16",
+								"simple_grid_field17",
+								"simple_grid_field18",
+								"simple_grid_field19",
+								"simple_grid_field20",
+								"simple_grid_field21",
+								"simple_grid_field22",
+								"simple_grid_field23",
+								"simple_grid_field24",
+								"simple_grid_field25",
+								"simple_grid_field26",
+								"simple_grid_field27",
+								"simple_grid_field28",
+								"simple_grid_field29",
+								"simple_grid_field30",
+								"simple_grid_field31",
+								"simple_grid_field32",
+								"simple_grid_field33",
+								"simple_grid_field34",
+								"simple_grid_field35",
+								"simple_grid_field36",
+								"simple_grid_field37",
+								"simple_grid_field38",
+								"simple_grid_field39",
+								"simple_grid_field40",
+								"simple_grid_field41",
+								"simple_grid_field42"
+							]
+						}
+					},
+					"deferredItems": [
+						"grid_checkbox",
+						"grid_checkbox_head",
+						"grid_edit",
+						"grid_view"
+					],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-sidebar-top",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"simple_grid_field": {
+					"field": "dokter_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "dokter",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "nip",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "lp",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "agama",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "tmlahir",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "tglahir",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "alamat",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "kota",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "telp",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "hp",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "maried",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "nama_suami_istri",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "aktif",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field14": {
+					"field": "visite",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "konsul",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field16": {
+					"field": "mtbs",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field17": {
+					"field": "jabatan",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field18": {
+					"field": "photo",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field19": {
+					"field": "cpns_gol",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field20": {
+					"field": "cpns_tmt",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field21": {
+					"field": "pangkat_gol",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field22": {
+					"field": "pangkat_tmt",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field23": {
+					"field": "pend",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field24": {
+					"field": "ketpend",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field25": {
+					"field": "thn_lulus",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field26": {
+					"field": "stt",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field27": {
+					"field": "jbt_fung",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field28": {
+					"field": "mts_tgl",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field29": {
+					"field": "mts_alasan",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field30": {
+					"field": "mts",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field31": {
+					"field": "mts_ket",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field32": {
+					"field": "fungsional",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field33": {
+					"field": "tmtfungsional",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field34": {
+					"field": "mulaikerja",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field35": {
+					"field": "puskesmas",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field36": {
+					"field": "password",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field37": {
+					"field": "grup_pengguna",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field38": {
+					"field": "email",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field39": {
+					"field": "kode_aktivasi",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field40": {
+					"field": "pcare_dokter",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field41": {
+					"field": "nik_dokter",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field42": {
+					"field": "ihr",
+					"type": "simple_grid_field"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field",
+						"search_panel_field41",
+						"search_panel_field40",
+						"search_panel_field39",
+						"search_panel_field38",
+						"search_panel_field37",
+						"search_panel_field36",
+						"search_panel_field35",
+						"search_panel_field34",
+						"search_panel_field33",
+						"search_panel_field32",
+						"search_panel_field31",
+						"search_panel_field30",
+						"search_panel_field29",
+						"search_panel_field28",
+						"search_panel_field27",
+						"search_panel_field26",
+						"search_panel_field25",
+						"search_panel_field24",
+						"search_panel_field23",
+						"search_panel_field22",
+						"search_panel_field21",
+						"search_panel_field20",
+						"search_panel_field19",
+						"search_panel_field18",
+						"search_panel_field17",
+						"search_panel_field16",
+						"search_panel_field15",
+						"search_panel_field14",
+						"search_panel_field13",
+						"search_panel_field12",
+						"search_panel_field11",
+						"search_panel_field10",
+						"search_panel_field9",
+						"search_panel_field8",
+						"search_panel_field7",
+						"search_panel_field6",
+						"search_panel_field5",
+						"search_panel_field4",
+						"search_panel_field3",
+						"search_panel_field2",
+						"search_panel_field1"
+					],
+					"_flexiblePanel": true
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"export_selected",
+						"delete_selected",
+						"-1",
+						"show_search_panel",
+						"hide_search_panel",
+						"-",
+						"export",
+						"-2",
+						"import"
+					]
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"search_panel_field": {
+					"field": "dokter_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field1": {
+					"field": "dokter",
+					"type": "search_panel_field"
+				},
+				"search_panel_field2": {
+					"field": "nip",
+					"type": "search_panel_field"
+				},
+				"search_panel_field3": {
+					"field": "lp",
+					"type": "search_panel_field"
+				},
+				"search_panel_field4": {
+					"field": "agama",
+					"type": "search_panel_field"
+				},
+				"search_panel_field5": {
+					"field": "tmlahir",
+					"type": "search_panel_field"
+				},
+				"search_panel_field6": {
+					"field": "tglahir",
+					"type": "search_panel_field"
+				},
+				"search_panel_field7": {
+					"field": "alamat",
+					"type": "search_panel_field"
+				},
+				"search_panel_field8": {
+					"field": "kota",
+					"type": "search_panel_field"
+				},
+				"search_panel_field9": {
+					"field": "telp",
+					"type": "search_panel_field"
+				},
+				"search_panel_field10": {
+					"field": "hp",
+					"type": "search_panel_field"
+				},
+				"search_panel_field11": {
+					"field": "maried",
+					"type": "search_panel_field"
+				},
+				"search_panel_field12": {
+					"field": "nama_suami_istri",
+					"type": "search_panel_field"
+				},
+				"search_panel_field13": {
+					"field": "aktif",
+					"type": "search_panel_field"
+				},
+				"search_panel_field14": {
+					"field": "visite",
+					"type": "search_panel_field"
+				},
+				"search_panel_field15": {
+					"field": "konsul",
+					"type": "search_panel_field"
+				},
+				"search_panel_field16": {
+					"field": "mtbs",
+					"type": "search_panel_field"
+				},
+				"search_panel_field17": {
+					"field": "jabatan",
+					"type": "search_panel_field"
+				},
+				"search_panel_field18": {
+					"field": "cpns_gol",
+					"type": "search_panel_field"
+				},
+				"search_panel_field19": {
+					"field": "cpns_tmt",
+					"type": "search_panel_field"
+				},
+				"search_panel_field20": {
+					"field": "pangkat_gol",
+					"type": "search_panel_field"
+				},
+				"search_panel_field21": {
+					"field": "pangkat_tmt",
+					"type": "search_panel_field"
+				},
+				"search_panel_field22": {
+					"field": "pend",
+					"type": "search_panel_field"
+				},
+				"search_panel_field23": {
+					"field": "ketpend",
+					"type": "search_panel_field"
+				},
+				"search_panel_field24": {
+					"field": "thn_lulus",
+					"type": "search_panel_field"
+				},
+				"search_panel_field25": {
+					"field": "stt",
+					"type": "search_panel_field"
+				},
+				"search_panel_field26": {
+					"field": "jbt_fung",
+					"type": "search_panel_field"
+				},
+				"search_panel_field27": {
+					"field": "mts_tgl",
+					"type": "search_panel_field"
+				},
+				"search_panel_field28": {
+					"field": "mts_alasan",
+					"type": "search_panel_field"
+				},
+				"search_panel_field29": {
+					"field": "mts",
+					"type": "search_panel_field"
+				},
+				"search_panel_field30": {
+					"field": "mts_ket",
+					"type": "search_panel_field"
+				},
+				"search_panel_field31": {
+					"field": "fungsional",
+					"type": "search_panel_field"
+				},
+				"search_panel_field32": {
+					"field": "tmtfungsional",
+					"type": "search_panel_field"
+				},
+				"search_panel_field33": {
+					"field": "mulaikerja",
+					"type": "search_panel_field"
+				},
+				"search_panel_field34": {
+					"field": "puskesmas",
+					"type": "search_panel_field"
+				},
+				"search_panel_field35": {
+					"field": "password",
+					"type": "search_panel_field"
+				},
+				"search_panel_field36": {
+					"field": "grup_pengguna",
+					"type": "search_panel_field"
+				},
+				"search_panel_field37": {
+					"field": "email",
+					"type": "search_panel_field"
+				},
+				"search_panel_field38": {
+					"field": "kode_aktivasi",
+					"type": "search_panel_field"
+				},
+				"search_panel_field39": {
+					"field": "pcare_dokter",
+					"type": "search_panel_field"
+				},
+				"search_panel_field40": {
+					"field": "nik_dokter",
+					"type": "search_panel_field"
+				},
+				"search_panel_field41": {
+					"field": "ihr",
+					"type": "search_panel_field"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"add": {
+					"type": "add"
+				},
+				"export": {
+					"type": "export"
+				},
+				"-": {
+					"type": "-"
+				},
+				"export_selected": {
+					"type": "export_selected"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"import": {
+					"type": "import"
+				},
+				"-2": {
+					"type": "-"
+				},
+				"grid_edit": {
+					"type": "grid_edit"
+				},
+				"grid_view": {
+					"type": "grid_view"
+				},
+				"print_panel": {
+					"type": "print_panel",
+					"items": [
+						"print_scope",
+						"print_records",
+						"print_button"
+					]
+				},
+				"print_scope": {
+					"type": "print_scope"
+				},
+				"print_button": {
+					"type": "print_button"
+				},
+				"print_records": {
+					"type": "print_records"
+				},
+				"delete": {
+					"type": "delete"
+				},
+				"delete_selected": {
+					"type": "delete_selected"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": true
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12",
+								"simple_grid_field13",
+								"simple_grid_field14",
+								"simple_grid_field15",
+								"simple_grid_field16",
+								"simple_grid_field17",
+								"simple_grid_field18",
+								"simple_grid_field19",
+								"simple_grid_field20",
+								"simple_grid_field21",
+								"simple_grid_field22",
+								"simple_grid_field23",
+								"simple_grid_field24",
+								"simple_grid_field25",
+								"simple_grid_field26",
+								"simple_grid_field27",
+								"simple_grid_field28",
+								"simple_grid_field29",
+								"simple_grid_field30",
+								"simple_grid_field31",
+								"simple_grid_field32",
+								"simple_grid_field33",
+								"simple_grid_field34",
+								"simple_grid_field35",
+								"simple_grid_field36",
+								"simple_grid_field37",
+								"simple_grid_field38",
+								"simple_grid_field39",
+								"simple_grid_field40",
+								"simple_grid_field41",
+								"simple_grid_field42"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "dokter_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "dokter",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "nip",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "lp",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "agama",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "tmlahir",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "tglahir",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "alamat",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "kota",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "telp",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "hp",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "maried",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "nama_suami_istri",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "aktif",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field14": {
+					"field": "visite",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "konsul",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field16": {
+					"field": "mtbs",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field17": {
+					"field": "jabatan",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field18": {
+					"field": "photo",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field19": {
+					"field": "cpns_gol",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field20": {
+					"field": "cpns_tmt",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field21": {
+					"field": "pangkat_gol",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field22": {
+					"field": "pangkat_tmt",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field23": {
+					"field": "pend",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field24": {
+					"field": "ketpend",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field25": {
+					"field": "thn_lulus",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field26": {
+					"field": "stt",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field27": {
+					"field": "jbt_fung",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field28": {
+					"field": "mts_tgl",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field29": {
+					"field": "mts_alasan",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field30": {
+					"field": "mts",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field31": {
+					"field": "mts_ket",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field32": {
+					"field": "fungsional",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field33": {
+					"field": "tmtfungsional",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field34": {
+					"field": "mulaikerja",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field35": {
+					"field": "puskesmas",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field36": {
+					"field": "password",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field37": {
+					"field": "grup_pengguna",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field38": {
+					"field": "email",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field39": {
+					"field": "kode_aktivasi",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field40": {
+					"field": "pcare_dokter",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field41": {
+					"field": "nik_dokter",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field42": {
+					"field": "ihr",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"English": "Master Dokter"
+	}
+}

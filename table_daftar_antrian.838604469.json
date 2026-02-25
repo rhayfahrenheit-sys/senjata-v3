@@ -1,0 +1,1254 @@
+{
+	"type": 6,
+	"connId": "conn",
+	"name": "daftar_antrian",
+	"shortTableName": "daftar_antrian",
+	"detailsBadgeColor": "cd853f",
+	"fields": [
+		{
+			"name": "no_urut_proses",
+			"strField": "no_urut_proses",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "No Urut Proses"
+			},
+			"tableName": "daftar_antrian"
+		},
+		{
+			"name": "puskesmas",
+			"strField": "puskesmas",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Puskesmas"
+			},
+			"tableName": "daftar_antrian"
+		},
+		{
+			"name": "pustu",
+			"strField": "pustu",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Pustu"
+			},
+			"tableName": "daftar_antrian"
+		},
+		{
+			"name": "sift",
+			"strField": "sift",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"lookupTable": "public.pendaftaran",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "sift",
+					"lookupDisplayField": "sift",
+					"lookupUnique": true,
+					"lookupControlType": 4,
+					"lookupHorizontal": true
+				}
+			],
+			"label": {
+				"Indonesian": "Sift"
+			},
+			"tableName": "daftar_antrian"
+		},
+		{
+			"name": "dokter",
+			"strField": "dokter",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Dokter"
+			},
+			"tableName": "daftar_antrian"
+		},
+		{
+			"name": "unit",
+			"strField": "unit",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"lookupMultiselect": true,
+					"lookupType": 2,
+					"lookupTable": "public.master_unit",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "unit_id",
+					"lookupDisplayField": "unit",
+					"lookupOrderBy": "unit",
+					"lookupUnique": true
+				}
+			],
+			"label": {
+				"Indonesian": "Unit"
+			},
+			"tableName": "daftar_antrian"
+		}
+	],
+	"dataSourceOperations": [
+		{
+			"type": "selectList",
+			"subtype": "sql",
+			"enabled": true,
+			"sql": "\r\nSELECT\r\n    MIN(a.no_urut) AS no_urut_proses,\r\n    d.unit,\r\n    a.puskesmas,\r\n    a.pustu,\r\n    a.sift,\r\n\t\tc.dokter\r\nFROM\r\n    pendaftaran AS a\r\n    INNER JOIN pustu AS b ON CAST(b.pustu_id AS INTEGER) = CAST(a.pustu AS INTEGER)\r\n\t\tINNER JOIN master_dokter as c on CAST(a.dokter as integer) = cast(c.dokter_id as integer)\r\n\t\tinner join master_unit d on cast(a.tujuan_poli as integer) = cast(d.unit_id as integer)\r\nWHERE\r\n    a.is_selesai = 0 \r\n    AND a.tgl >= CURRENT_DATE \r\n    AND a.tgl < CURRENT_DATE + INTERVAL '1 day' \r\n    AND CAST(b.kode_pustu AS INTEGER) = 1\r\nGROUP BY\r\n    d.unit,\r\n    a.puskesmas,\r\n    a.pustu,\r\n    a.sift,\r\n\t\tc.dokter\r\n",
+			"payload": [],
+			"payloadFormat": 4
+		}
+	],
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": true,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": true,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "no_urut_proses",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "puskesmas",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "pustu",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "sift",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "dokter",
+					"type": "export_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": true,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "leftbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu",
+								"search_panel",
+								"filter_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-sidebar-top",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "cards-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "cell_field1"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_field2"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_field3"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_field"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_field4"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_dpreview"
+								}
+							],
+							"section": "foot"
+						}
+					],
+					"cells": {
+						"cell_dpreview": {
+							"model": "cell_dpreview",
+							"items": [],
+							"align": "center"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"grid_field"
+							],
+							"field": "sift",
+							"align": "center"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"grid_field1"
+							],
+							"field": "dokter",
+							"align": "center"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"grid_field2"
+							],
+							"field": "no_dilayani",
+							"align": "center"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"text",
+								"grid_field3"
+							],
+							"align": "center"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [],
+							"field": "no_urut_proses"
+						}
+					},
+					"deferredItems": [
+						"simple_grid_field12",
+						"simple_grid_field13",
+						"grid_checkbox_head",
+						"grid_checkbox",
+						"grid_field_label",
+						"grid_field_label1"
+					],
+					"recsPerRow": 1,
+					"cardWidth": "320px",
+					"cardHeight": "300px",
+					"cardGap": "15px"
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field",
+						"search_panel_field2",
+						"search_panel_field1"
+					],
+					"_flexiblePanel": true
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"advsearch_link",
+						"show_search_panel",
+						"hide_search_panel"
+					],
+					"icon": {
+						"glyph": "cog",
+						"style": 0
+					}
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": true
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"-": {
+					"type": "-"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"simple_grid_field12": {
+					"type": "grid_field_label",
+					"field": "sift"
+				},
+				"simple_grid_field13": {
+					"type": "grid_field_label",
+					"field": "dokter"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"search_panel_field1": {
+					"field": "sift",
+					"type": "search_panel_field",
+					"alwaysOnPanel": false,
+					"required": false
+				},
+				"grid_field1": {
+					"field": "sift",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false,
+					"cardStyle": 0,
+					"font-size": "25px"
+				},
+				"search_panel_field2": {
+					"field": "dokter",
+					"type": "search_panel_field",
+					"alwaysOnPanel": false,
+					"required": false
+				},
+				"grid_field2": {
+					"field": "dokter",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false,
+					"cardStyle": 0,
+					"font-size": "25px"
+				},
+				"grid_field": {
+					"field": "unit",
+					"type": "grid_field",
+					"bold": true,
+					"font-size": "33px",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "unit"
+				},
+				"search_panel_field": {
+					"field": "unit",
+					"type": "search_panel_field",
+					"alwaysOnPanel": false,
+					"required": false
+				},
+				"filter_panel": {
+					"type": "filter_panel",
+					"items": []
+				},
+				"advsearch_link": {
+					"type": "advsearch_link",
+					"icon": {
+						"glyph": "search",
+						"style": 0
+					},
+					"label": {
+						"type": 0,
+						"text": " Cari"
+					},
+					"buttonStyle": "primary",
+					"buttonSize": "normal",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  color: red;\n}\n\ndiv.modal-dialog.ui-draggable, div.modal-body, div.modal-content.ui-resizable {\nwidth: 100% !important;\n}"
+				},
+				"grid_field3": {
+					"field": "no_urut_proses",
+					"type": "grid_field",
+					"font-size": "25px"
+				},
+				"grid_field_label1": {
+					"type": "grid_field_label",
+					"field": "no_urut_proses"
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "No urut dilayani",
+						"type": 0
+					},
+					"editedByRte": false,
+					"font-size": "25px"
+				}
+			},
+			"version": 13,
+			"pageWidth": "full",
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {
+				"bsStyle": "default",
+				"panelType": 5,
+				"showHeader": false,
+				"borderColor": "",
+				"bodyBg": "",
+				"bodyColor": "",
+				"cardStyle": "default",
+				"headerBg": "",
+				"headerColor": null,
+				"panelBorder": "0",
+				"borderRadius": null
+			}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": true,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "no_urut_proses",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "puskesmas",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "pustu",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "sift",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "dokter",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "search",
+			"type": "search",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "search-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "search-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_search",
+								"search_reset",
+								"search_back_list",
+								"search_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "search-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-search",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_search_field"
+							],
+							"align": "right"
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"integrated_search_field1"
+							],
+							"align": "left"
+						}
+					},
+					"deferredItems": [],
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"search_header": {
+					"type": "search_header",
+					"title": {
+						"page": "search",
+						"table": "daftar_antrian",
+						"type": 7
+					}
+				},
+				"search_reset": {
+					"type": "search_reset"
+				},
+				"search_back_list": {
+					"type": "search_back_list"
+				},
+				"search_search": {
+					"type": "search_search"
+				},
+				"search_cancel": {
+					"type": "search_cancel"
+				},
+				"integrated_search_field": {
+					"field": "sift",
+					"type": "integrated_search_field",
+					"orientation": 0
+				},
+				"integrated_search_field1": {
+					"field": "unit",
+					"type": "integrated_search_field",
+					"orientation": 0
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {
+				"Indonesian": "Filter"
+			},
+			"cardStyle": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"Indonesian": "daftar_antrian"
+	}
+}

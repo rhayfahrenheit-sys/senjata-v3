@@ -1,0 +1,2042 @@
+{
+	"sql": "SELECT\r\n\tlower(nama) as nama,\r\n\tsat,\r\n\tharga,\r\n\tidne,\r\n\tis_obat,\r\n\tis_vaksin,\r\n\tjenis,\r\n\tis_rko,\r\n\tis_fornas,\r\n\tkd_kfa,\r\n\tnama_kfa,\r\n\tsat_normalisasi,\r\n\tis_aktif\r\nFROM\r\n\t\"public\".obat",
+	"connId": "conn",
+	"originalTable": "public.obat",
+	"name": "public.obat",
+	"shortTableName": "obat",
+	"dbType": 4,
+	"keyFields": [
+		"idne"
+	],
+	"detailsBadgeColor": "4169e1",
+	"fields": [
+		{
+			"name": "nama",
+			"sqlExpression": "lower(nama)",
+			"index": 1,
+			"strField": "nama",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Nama"
+			},
+			"tableName": ""
+		},
+		{
+			"name": "sat",
+			"sqlExpression": "sat",
+			"index": 2,
+			"strField": "sat",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Sat"
+			},
+			"tableName": "public.obat"
+		},
+		{
+			"name": "harga",
+			"sqlExpression": "harga",
+			"index": 3,
+			"strField": "harga",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Harga"
+			},
+			"tableName": "public.obat"
+		},
+		{
+			"name": "idne",
+			"sqlExpression": "idne",
+			"index": 4,
+			"strField": "idne",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Idne"
+			},
+			"tableName": "public.obat"
+		},
+		{
+			"name": "is_obat",
+			"sqlExpression": "is_obat",
+			"index": 5,
+			"strField": "is_obat",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Obat"
+			},
+			"tableName": "public.obat"
+		},
+		{
+			"name": "is_vaksin",
+			"sqlExpression": "is_vaksin",
+			"index": 6,
+			"strField": "is_vaksin",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Vaksin"
+			},
+			"tableName": "public.obat"
+		},
+		{
+			"name": "jenis",
+			"sqlExpression": "jenis",
+			"index": 7,
+			"strField": "jenis",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Jenis"
+			},
+			"tableName": "public.obat"
+		},
+		{
+			"name": "is_rko",
+			"sqlExpression": "is_rko",
+			"index": 8,
+			"strField": "is_rko",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Rko"
+			},
+			"tableName": "public.obat"
+		},
+		{
+			"name": "is_fornas",
+			"sqlExpression": "is_fornas",
+			"index": 9,
+			"strField": "is_fornas",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Fornas"
+			},
+			"tableName": "public.obat"
+		},
+		{
+			"name": "kd_kfa",
+			"sqlExpression": "kd_kfa",
+			"index": 10,
+			"strField": "kd_kfa",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Kd Kfa"
+			},
+			"tableName": "public.obat"
+		},
+		{
+			"name": "nama_kfa",
+			"sqlExpression": "nama_kfa",
+			"index": 11,
+			"strField": "nama_kfa",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Nama Kfa"
+			},
+			"tableName": "public.obat"
+		},
+		{
+			"name": "sat_normalisasi",
+			"sqlExpression": "sat_normalisasi",
+			"index": 12,
+			"strField": "sat_normalisasi",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Sat Normalisasi"
+			},
+			"tableName": "public.obat"
+		},
+		{
+			"name": "is_aktif",
+			"sqlExpression": "is_aktif",
+			"index": 13,
+			"strField": "is_aktif",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Aktif"
+			},
+			"tableName": "public.obat"
+		}
+	],
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "nama",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "sat",
+				"typeName": "character varying",
+				"size": 200,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "harga",
+				"typeName": "numeric",
+				"size": 255,
+				"scale": 0,
+				"type": 14,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "idne",
+				"typeName": "bigint",
+				"size": 64,
+				"scale": 0,
+				"type": 20,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "is_obat",
+				"typeName": "character varying",
+				"size": 10,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_vaksin",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "jenis",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_rko",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "is_fornas",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "kd_kfa",
+				"typeName": "character varying",
+				"size": 20,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "nama_kfa",
+				"typeName": "character varying",
+				"size": 200,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "sat_normalisasi",
+				"typeName": "character varying",
+				"size": 150,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_aktif",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			}
+		],
+		"primaryKeys": [
+			"idne"
+		],
+		"uniqueFields": [],
+		"name": "obat",
+		"schema": "public"
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7",
+								"integrated_edit_field8",
+								"integrated_edit_field9",
+								"integrated_edit_field10",
+								"integrated_edit_field11"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field": {
+					"field": "nama",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "sat",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "harga",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "is_obat",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "is_vaksin",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "jenis",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "is_rko",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "is_fornas",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field8": {
+					"field": "kd_kfa",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "nama_kfa",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "sat_normalisasi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "is_aktif",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field1",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6",
+								"export_field7",
+								"export_field8",
+								"export_field9",
+								"export_field10",
+								"export_field11",
+								"export_field12"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "nama",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "sat",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "harga",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "idne",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "is_obat",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "is_vaksin",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "jenis",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "is_rko",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "is_fornas",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "kd_kfa",
+					"type": "export_field"
+				},
+				"export_field10": {
+					"field": "nama_kfa",
+					"type": "export_field"
+				},
+				"export_field11": {
+					"field": "sat_normalisasi",
+					"type": "export_field"
+				},
+				"export_field12": {
+					"field": "is_aktif",
+					"type": "export_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field1",
+								"import_field2",
+								"import_field3",
+								"import_field4",
+								"import_field5",
+								"import_field6",
+								"import_field7",
+								"import_field8",
+								"import_field9",
+								"import_field10",
+								"import_field11",
+								"import_field12"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "nama",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "sat",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "harga",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "idne",
+					"type": "import_field"
+				},
+				"import_field4": {
+					"field": "is_obat",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "is_vaksin",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "jenis",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "is_rko",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "is_fornas",
+					"type": "import_field"
+				},
+				"import_field9": {
+					"field": "kd_kfa",
+					"type": "import_field"
+				},
+				"import_field10": {
+					"field": "nama_kfa",
+					"type": "import_field"
+				},
+				"import_field11": {
+					"field": "sat_normalisasi",
+					"type": "import_field"
+				},
+				"import_field12": {
+					"field": "is_aktif",
+					"type": "import_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7",
+								"integrated_edit_field8",
+								"integrated_edit_field9",
+								"integrated_edit_field10",
+								"integrated_edit_field11"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset",
+						"edit_view"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save": {
+					"type": "edit_save"
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"integrated_edit_field": {
+					"field": "nama",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "sat",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "harga",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "is_obat",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "is_vaksin",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "jenis",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "is_rko",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "is_fornas",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field8": {
+					"field": "kd_kfa",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "nama_kfa",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "sat_normalisasi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "is_aktif",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"edit_view": {
+					"type": "edit_view"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "view",
+			"type": "view",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "view-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "view-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_back_list",
+								"view_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "view-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7",
+								"integrated_edit_field8",
+								"integrated_edit_field9",
+								"integrated_edit_field10",
+								"integrated_edit_field11",
+								"integrated_edit_field12"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"view_header": {
+					"type": "view_header"
+				},
+				"view_back_list": {
+					"type": "view_back_list"
+				},
+				"view_close": {
+					"type": "view_close"
+				},
+				"integrated_edit_field": {
+					"field": "nama",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "sat",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "harga",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "idne",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "is_obat",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "is_vaksin",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "jenis",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "is_rko",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field8": {
+					"field": "is_fornas",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "kd_kfa",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "nama_kfa",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "sat_normalisasi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field12": {
+					"field": "is_aktif",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"view_edit"
+					]
+				},
+				"view_edit": {
+					"type": "view_edit"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "leftbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add",
+								"delete"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size",
+								"print_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu",
+								"search_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12"
+							]
+						}
+					},
+					"deferredItems": [
+						"grid_checkbox",
+						"grid_checkbox_head",
+						"grid_edit",
+						"grid_view"
+					],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-sidebar-top",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"simple_grid_field": {
+					"field": "nama",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "sat",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "harga",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "idne",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "is_obat",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "is_vaksin",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "jenis",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "is_rko",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "is_fornas",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "kd_kfa",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "nama_kfa",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "sat_normalisasi",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "is_aktif",
+					"type": "simple_grid_field"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field",
+						"search_panel_field12",
+						"search_panel_field11",
+						"search_panel_field10",
+						"search_panel_field9",
+						"search_panel_field8",
+						"search_panel_field7",
+						"search_panel_field6",
+						"search_panel_field5",
+						"search_panel_field4",
+						"search_panel_field3",
+						"search_panel_field2",
+						"search_panel_field1"
+					],
+					"_flexiblePanel": true
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"export_selected",
+						"delete_selected",
+						"-1",
+						"show_search_panel",
+						"hide_search_panel",
+						"-",
+						"export",
+						"-2",
+						"import"
+					]
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"search_panel_field": {
+					"field": "nama",
+					"type": "search_panel_field"
+				},
+				"search_panel_field1": {
+					"field": "sat",
+					"type": "search_panel_field"
+				},
+				"search_panel_field2": {
+					"field": "harga",
+					"type": "search_panel_field"
+				},
+				"search_panel_field3": {
+					"field": "idne",
+					"type": "search_panel_field"
+				},
+				"search_panel_field4": {
+					"field": "is_obat",
+					"type": "search_panel_field"
+				},
+				"search_panel_field5": {
+					"field": "is_vaksin",
+					"type": "search_panel_field"
+				},
+				"search_panel_field6": {
+					"field": "jenis",
+					"type": "search_panel_field"
+				},
+				"search_panel_field7": {
+					"field": "is_rko",
+					"type": "search_panel_field"
+				},
+				"search_panel_field8": {
+					"field": "is_fornas",
+					"type": "search_panel_field"
+				},
+				"search_panel_field9": {
+					"field": "kd_kfa",
+					"type": "search_panel_field"
+				},
+				"search_panel_field10": {
+					"field": "nama_kfa",
+					"type": "search_panel_field"
+				},
+				"search_panel_field11": {
+					"field": "sat_normalisasi",
+					"type": "search_panel_field"
+				},
+				"search_panel_field12": {
+					"field": "is_aktif",
+					"type": "search_panel_field"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"add": {
+					"type": "add"
+				},
+				"export": {
+					"type": "export"
+				},
+				"-": {
+					"type": "-"
+				},
+				"export_selected": {
+					"type": "export_selected"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"import": {
+					"type": "import"
+				},
+				"-2": {
+					"type": "-"
+				},
+				"grid_edit": {
+					"type": "grid_edit"
+				},
+				"grid_view": {
+					"type": "grid_view"
+				},
+				"print_panel": {
+					"type": "print_panel",
+					"items": [
+						"print_scope",
+						"print_records",
+						"print_button"
+					]
+				},
+				"print_scope": {
+					"type": "print_scope"
+				},
+				"print_button": {
+					"type": "print_button"
+				},
+				"print_records": {
+					"type": "print_records"
+				},
+				"delete": {
+					"type": "delete"
+				},
+				"delete_selected": {
+					"type": "delete_selected"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": true
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "nama",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "sat",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "harga",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "idne",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "is_obat",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "is_vaksin",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "jenis",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "is_rko",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "is_fornas",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "kd_kfa",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "nama_kfa",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "sat_normalisasi",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "is_aktif",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"Indonesian": "Obat"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Button1",
+	"serverCode": "// Put your code here.\n\n$result[\"txt\"] = $params[\"txt\"].\" world!\";\n",
+	"beforeJsCode": "// pageObj.toggleItem(\"integrated_edit_field24\", true );\n// pageObj.toggleItem(\"integrated_edit_field25\", true );\n// pageObj.toggleItem(\"integrated_edit_field26\", true );\n// pageObj.toggleItem(\"custom_button2\", true );\n// pageObj.toggleItem(\"custom_button1\", true );\n\n// return false;",
+	"afterJsCode": "// Put your code here.\n\nvar message = result[\"txt\"] + \" !!!\";\najax.setMessage(message);\n"
+}

@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Buka",
+	"serverCode": "// Put your code here.\n\n$result[\"txt\"] = $params[\"txt\"].\" world!\";\n",
+	"beforeJsCode": "// params[\"txt\"] = row.getFieldValue(\"pelayanan_id\");\n// ajax.setMessage(params[\"txt\"]);\n// return false;\n\n\n//params[\"pelayanan_id\"] = row.getFieldValue(\"pelayanan_id\");\n//var pelayananid = row.getFieldValue(\"pelayanan_id\");\nparams[\"loket_id\"] = row.getFieldValue(\"loket_id\");\nparams[\"pelayanan_id\"] = row.getFieldValue(\"pelayanan_id\");\nparams[\"hp\"] = row.getFieldValue(\"hp\");\nparams[\"nama\"] = row.getFieldValue(\"nama_mark\");\n\n  var popup = Runner.displayPopup({\n  url: \"pemeriksaan_edit.php?page=editlayanan_obat&editid1=\" + row.getFieldValue(\"pelayanan_id\"),\n  width: \"100%\",\n  height: \"100%\",\n  header: 'Isi Pemeriksaan Pasien'\n});\n\nreturn false;\n\n\n",
+	"afterJsCode": "// Put your code here.\n\nvar message = result[\"txt\"] + \" !!!\";\najax.setMessage(message);\n"
+}

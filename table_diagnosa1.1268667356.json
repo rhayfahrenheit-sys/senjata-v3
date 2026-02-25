@@ -1,0 +1,2511 @@
+{
+	"sql": "SELECT\r\n\tpenyakit_id,\r\n\tbl,\r\n\tpelayanan_id,\r\n\tdiagnosa_id,\r\n\tkirim_wa,\r\n\tstatus_centerview,\r\n\trespon,\r\n\tencounter_id,\r\n\tcondition_id,\r\n\tcek_encounter,\r\n\tis_cek,\r\n\tinput_oleh,\r\n\tupdate_oleh,\r\n\twkt_input,\r\n\twkt_update,\r\n\tdx_pcare,\r\n\tdx_primer,\r\n\tis_deleted,\r\n\tdeleted_at,\r\n\tdeleted_by,\r\n\tcreated_by,\r\n\tupdated_by,\r\n\tloket_id\r\nFROM\r\n\t\"public\".diagnosa",
+	"type": 1,
+	"connId": "conn",
+	"originalTable": "public.diagnosa",
+	"name": "diagnosa view",
+	"shortTableName": "diagnosa1",
+	"dbType": 4,
+	"keyFields": [
+		"penyakit_id"
+	],
+	"detailsBadgeColor": "8fbc8b",
+	"fields": [
+		{
+			"name": "penyakit_id",
+			"sqlExpression": "penyakit_id",
+			"index": 1,
+			"strField": "penyakit_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Penyakit Id"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "bl",
+			"sqlExpression": "bl",
+			"index": 2,
+			"strField": "bl",
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"lookupType": 0,
+					"lookupValues": [
+						"B",
+						"L"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true
+				}
+			],
+			"label": {
+				"Indonesian": "Bl"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "diagnosa_id",
+			"sqlExpression": "diagnosa_id",
+			"index": 4,
+			"strField": "diagnosa_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"lookupType": 2,
+					"lookupTable": "public.ref_diagnosa",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "kd_diagnosa",
+					"lookupDisplayField": "penyakit",
+					"lookupOrderBy": "nm_diagnosa",
+					"lookupControlType": 1
+				}
+			],
+			"label": {
+				"Indonesian": "Diagnosa"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "kirim_wa",
+			"sqlExpression": "kirim_wa",
+			"index": 5,
+			"strField": "kirim_wa",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Kirim Wa"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "status_centerview",
+			"sqlExpression": "status_centerview",
+			"index": 6,
+			"strField": "status_centerview",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Status Centerview"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "respon",
+			"sqlExpression": "respon",
+			"index": 7,
+			"strField": "respon",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Respon"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "encounter_id",
+			"sqlExpression": "encounter_id",
+			"index": 8,
+			"strField": "encounter_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Encounter Id"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "condition_id",
+			"sqlExpression": "condition_id",
+			"index": 9,
+			"strField": "condition_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Condition Id"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "cek_encounter",
+			"sqlExpression": "cek_encounter",
+			"index": 10,
+			"strField": "cek_encounter",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Cek Encounter"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "is_cek",
+			"sqlExpression": "is_cek",
+			"index": 11,
+			"strField": "is_cek",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Cek"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "input_oleh",
+			"sqlExpression": "input_oleh",
+			"index": 12,
+			"strField": "input_oleh",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Input Oleh"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "update_oleh",
+			"sqlExpression": "update_oleh",
+			"index": 13,
+			"strField": "update_oleh",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Update Oleh"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "wkt_input",
+			"sqlExpression": "wkt_input",
+			"index": 14,
+			"strField": "wkt_input",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"Indonesian": "Wkt Input"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "wkt_update",
+			"sqlExpression": "wkt_update",
+			"index": 15,
+			"strField": "wkt_update",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"Indonesian": "Wkt Update"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "dx_pcare",
+			"sqlExpression": "dx_pcare",
+			"index": 16,
+			"strField": "dx_pcare",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly"
+				}
+			],
+			"label": {
+				"Indonesian": "Dx Pcare"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "dx_primer",
+			"sqlExpression": "dx_primer",
+			"index": 17,
+			"strField": "dx_primer",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"lookupTable": "public.o_yatidak",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "kode",
+					"lookupDisplayField": "ket",
+					"lookupOrderBy": "ket",
+					"lookupControlType": 4,
+					"lookupHorizontal": true
+				}
+			],
+			"label": {
+				"Indonesian": "Dx Primer"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "is_deleted",
+			"sqlExpression": "is_deleted",
+			"index": 18,
+			"strField": "is_deleted",
+			"type": 11,
+			"viewFormats": [
+				{
+					"format": "Checkbox"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Checkbox"
+				}
+			],
+			"label": {
+				"Indonesian": "Is Deleted"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "deleted_at",
+			"sqlExpression": "deleted_at",
+			"index": 19,
+			"strField": "deleted_at",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"Indonesian": "Deleted At"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "deleted_by",
+			"sqlExpression": "deleted_by",
+			"index": 20,
+			"strField": "deleted_by",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Deleted By"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "created_by",
+			"sqlExpression": "created_by",
+			"index": 21,
+			"strField": "created_by",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Created By"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "updated_by",
+			"sqlExpression": "updated_by",
+			"index": 22,
+			"strField": "updated_by",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Updated By"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "pelayanan_id",
+			"sqlExpression": "pelayanan_id",
+			"index": 3,
+			"strField": "pelayanan_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Pelayanan Id"
+			},
+			"tableName": "public.diagnosa"
+		},
+		{
+			"name": "loket_id",
+			"sqlExpression": "loket_id",
+			"index": 23,
+			"strField": "loket_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Loket Id"
+			},
+			"tableName": "public.diagnosa"
+		}
+	],
+	"afterEditAction": 0,
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_BEFOREADD",
+			"pageType": "add",
+			"code": "// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n$values[\"penyakit_id\"]=genid();\nreturn true;"
+		}
+	],
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "penyakit_id",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "bl",
+				"typeName": "character",
+				"size": 1,
+				"scale": null,
+				"type": 13,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "pelayanan_id",
+				"typeName": "character varying",
+				"size": 150,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "diagnosa_id",
+				"typeName": "character varying",
+				"size": 150,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "kirim_wa",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "status_centerview",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "'0'::smallint",
+				"defaultValue": "'0'::smallint",
+				"nullable": true
+			},
+			{
+				"name": "respon",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "encounter_id",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "condition_id",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "cek_encounter",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "is_cek",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "input_oleh",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "update_oleh",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "wkt_input",
+				"typeName": "timestamp without time zone",
+				"size": null,
+				"scale": null,
+				"type": 135,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "wkt_update",
+				"typeName": "timestamp without time zone",
+				"size": null,
+				"scale": null,
+				"type": 135,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "dx_pcare",
+				"typeName": "character varying",
+				"size": 10,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "dx_primer",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_deleted",
+				"typeName": "boolean",
+				"size": null,
+				"scale": null,
+				"type": 11,
+				"autoinc": false,
+				"defaultValueSQL": "false",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "deleted_at",
+				"typeName": "timestamp without time zone",
+				"size": null,
+				"scale": null,
+				"type": 135,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "deleted_by",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "created_by",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "updated_by",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "loket_id",
+				"typeName": "character varying",
+				"size": 200,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			}
+		],
+		"primaryKeys": [],
+		"uniqueFields": [],
+		"name": "diagnosa",
+		"schema": "public"
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field3"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field1"
+							]
+						},
+						"c1": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field16"
+							]
+						},
+						"c2": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field15"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field1": {
+					"field": "bl",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "diagnosa_id",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "diagnosa_id",
+						"table": "public.diagnosa",
+						"type": 3
+					}
+				},
+				"integrated_edit_field15": {
+					"field": "dx_pcare",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "dx_primer",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field1",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6",
+								"export_field7",
+								"export_field8",
+								"export_field9",
+								"export_field10",
+								"export_field11",
+								"export_field12",
+								"export_field13",
+								"export_field14",
+								"export_field15",
+								"export_field16",
+								"export_field17",
+								"export_field18",
+								"export_field19",
+								"export_field20",
+								"export_field21",
+								"export_field2",
+								"export_field22"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "penyakit_id",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "bl",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "diagnosa_id",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "kirim_wa",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "status_centerview",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "respon",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "encounter_id",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "condition_id",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "cek_encounter",
+					"type": "export_field"
+				},
+				"export_field10": {
+					"field": "is_cek",
+					"type": "export_field"
+				},
+				"export_field11": {
+					"field": "input_oleh",
+					"type": "export_field"
+				},
+				"export_field12": {
+					"field": "update_oleh",
+					"type": "export_field"
+				},
+				"export_field13": {
+					"field": "wkt_input",
+					"type": "export_field"
+				},
+				"export_field14": {
+					"field": "wkt_update",
+					"type": "export_field"
+				},
+				"export_field15": {
+					"field": "dx_pcare",
+					"type": "export_field"
+				},
+				"export_field16": {
+					"field": "dx_primer",
+					"type": "export_field"
+				},
+				"export_field17": {
+					"field": "is_deleted",
+					"type": "export_field"
+				},
+				"export_field18": {
+					"field": "deleted_at",
+					"type": "export_field"
+				},
+				"export_field19": {
+					"field": "deleted_by",
+					"type": "export_field"
+				},
+				"export_field20": {
+					"field": "created_by",
+					"type": "export_field"
+				},
+				"export_field21": {
+					"field": "updated_by",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "pelayanan_id",
+					"type": "export_field"
+				},
+				"export_field22": {
+					"field": "loket_id",
+					"type": "export_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": true,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field1",
+								"import_field3",
+								"import_field4",
+								"import_field5",
+								"import_field6",
+								"import_field7",
+								"import_field8",
+								"import_field9",
+								"import_field10",
+								"import_field11",
+								"import_field12",
+								"import_field13",
+								"import_field14",
+								"import_field15",
+								"import_field16",
+								"import_field17",
+								"import_field18",
+								"import_field19",
+								"import_field20",
+								"import_field21",
+								"import_field2"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "penyakit_id",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "bl",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "diagnosa_id",
+					"type": "import_field"
+				},
+				"import_field4": {
+					"field": "kirim_wa",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "status_centerview",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "respon",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "encounter_id",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "condition_id",
+					"type": "import_field"
+				},
+				"import_field9": {
+					"field": "cek_encounter",
+					"type": "import_field"
+				},
+				"import_field10": {
+					"field": "is_cek",
+					"type": "import_field"
+				},
+				"import_field11": {
+					"field": "input_oleh",
+					"type": "import_field"
+				},
+				"import_field12": {
+					"field": "update_oleh",
+					"type": "import_field"
+				},
+				"import_field13": {
+					"field": "wkt_input",
+					"type": "import_field"
+				},
+				"import_field14": {
+					"field": "wkt_update",
+					"type": "import_field"
+				},
+				"import_field15": {
+					"field": "dx_pcare",
+					"type": "import_field"
+				},
+				"import_field16": {
+					"field": "dx_primer",
+					"type": "import_field"
+				},
+				"import_field17": {
+					"field": "is_deleted",
+					"type": "import_field"
+				},
+				"import_field18": {
+					"field": "deleted_at",
+					"type": "import_field"
+				},
+				"import_field19": {
+					"field": "deleted_by",
+					"type": "import_field"
+				},
+				"import_field20": {
+					"field": "created_by",
+					"type": "import_field"
+				},
+				"import_field21": {
+					"field": "updated_by",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "pelayanan_id",
+					"type": "import_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "leftbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size",
+								"print_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu",
+								"search_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-sidebar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"master_info"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_icons"
+								},
+								{
+									"cell": "headcell_checkbox"
+								},
+								{
+									"cell": "headcell_field"
+								},
+								{
+									"cell": "headcell_field1"
+								},
+								{
+									"cell": "headcell_field2"
+								},
+								{
+									"cell": "headcell_field3"
+								},
+								{
+									"cell": "headcell_field4"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_icons"
+								},
+								{
+									"cell": "cell_checkbox"
+								},
+								{
+									"cell": "cell_field"
+								},
+								{
+									"cell": "cell_field1"
+								},
+								{
+									"cell": "cell_field2"
+								},
+								{
+									"cell": "cell_field3"
+								},
+								{
+									"cell": "cell_field4"
+								}
+							]
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_icons"
+								},
+								{
+									"cell": "footcell_checkbox"
+								},
+								{
+									"cell": "footcell_field"
+								},
+								{
+									"cell": "footcell_field1"
+								},
+								{
+									"cell": "footcell_field2"
+								},
+								{
+									"cell": "footcell_field3"
+								},
+								{
+									"cell": "footcell_field4"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field"
+							],
+							"field": "diagnosa_id"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field3"
+							],
+							"field": "diagnosa_id"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "diagnosa_id"
+						},
+						"headcell_field1": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field2"
+							],
+							"field": "bl"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field1"
+							],
+							"field": "bl"
+						},
+						"footcell_field1": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "bl"
+						},
+						"headcell_field2": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field17"
+							],
+							"field": "dx_primer"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field16"
+							],
+							"field": "dx_primer"
+						},
+						"footcell_field2": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "dx_primer"
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field18"
+							],
+							"field": "dx_pcare"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field15"
+							],
+							"field": "dx_pcare"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "dx_pcare"
+						},
+						"headcell_checkbox": {
+							"model": "headcell_checkbox",
+							"items": [
+								"grid_checkbox_head"
+							]
+						},
+						"cell_checkbox": {
+							"model": "cell_checkbox",
+							"items": [
+								"grid_checkbox"
+							]
+						},
+						"footcell_checkbox": {
+							"model": "footcell_checkbox",
+							"items": []
+						},
+						"headcell_icons": {
+							"model": "headcell_icons",
+							"items": []
+						},
+						"cell_icons": {
+							"model": "cell_icons",
+							"items": [
+								"grid_edit"
+							]
+						},
+						"footcell_icons": {
+							"model": "footcell_icons",
+							"items": []
+						},
+						"headcell_field4": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"field": "loket_id"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [
+								"grid_field"
+							],
+							"field": "loket_id"
+						},
+						"footcell_field4": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "loket_id"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field",
+						"search_panel_field22",
+						"search_panel_field2",
+						"search_panel_field21",
+						"search_panel_field20",
+						"search_panel_field19",
+						"search_panel_field18",
+						"search_panel_field17",
+						"search_panel_field16",
+						"search_panel_field15",
+						"search_panel_field14",
+						"search_panel_field13",
+						"search_panel_field12",
+						"search_panel_field11",
+						"search_panel_field10",
+						"search_panel_field9",
+						"search_panel_field8",
+						"search_panel_field7",
+						"search_panel_field6",
+						"search_panel_field5",
+						"search_panel_field4",
+						"search_panel_field3",
+						"search_panel_field1"
+					],
+					"_flexiblePanel": true
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"show_search_panel",
+						"hide_search_panel",
+						"-",
+						"export"
+					]
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"search_panel_field": {
+					"field": "penyakit_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field1": {
+					"field": "bl",
+					"type": "search_panel_field"
+				},
+				"search_panel_field3": {
+					"field": "diagnosa_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field4": {
+					"field": "kirim_wa",
+					"type": "search_panel_field"
+				},
+				"search_panel_field5": {
+					"field": "status_centerview",
+					"type": "search_panel_field"
+				},
+				"search_panel_field6": {
+					"field": "respon",
+					"type": "search_panel_field"
+				},
+				"search_panel_field7": {
+					"field": "encounter_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field8": {
+					"field": "condition_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field9": {
+					"field": "cek_encounter",
+					"type": "search_panel_field"
+				},
+				"search_panel_field10": {
+					"field": "is_cek",
+					"type": "search_panel_field"
+				},
+				"search_panel_field11": {
+					"field": "input_oleh",
+					"type": "search_panel_field"
+				},
+				"search_panel_field12": {
+					"field": "update_oleh",
+					"type": "search_panel_field"
+				},
+				"search_panel_field13": {
+					"field": "wkt_input",
+					"type": "search_panel_field"
+				},
+				"search_panel_field14": {
+					"field": "wkt_update",
+					"type": "search_panel_field"
+				},
+				"search_panel_field15": {
+					"field": "dx_pcare",
+					"type": "search_panel_field"
+				},
+				"search_panel_field16": {
+					"field": "dx_primer",
+					"type": "search_panel_field"
+				},
+				"search_panel_field17": {
+					"field": "is_deleted",
+					"type": "search_panel_field"
+				},
+				"search_panel_field18": {
+					"field": "deleted_at",
+					"type": "search_panel_field"
+				},
+				"search_panel_field19": {
+					"field": "deleted_by",
+					"type": "search_panel_field"
+				},
+				"search_panel_field20": {
+					"field": "created_by",
+					"type": "search_panel_field"
+				},
+				"search_panel_field21": {
+					"field": "updated_by",
+					"type": "search_panel_field"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"add": {
+					"type": "add",
+					"icon": {
+						"glyph": "plus",
+						"style": 0
+					},
+					"buttonStyle": "primary",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  color: red;\n}\n}\ndiv.modal-dialog.ui-draggable, div.modal-body, div.modal-content.ui-resizable {\nwidth: 100% !important;\n}"
+				},
+				"export": {
+					"type": "export"
+				},
+				"-": {
+					"type": "-"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"print_panel": {
+					"type": "print_panel",
+					"items": [
+						"print_scope",
+						"print_records",
+						"print_button"
+					]
+				},
+				"print_scope": {
+					"type": "print_scope"
+				},
+				"print_button": {
+					"type": "print_button"
+				},
+				"print_records": {
+					"type": "print_records"
+				},
+				"search_panel_field2": {
+					"field": "pelayanan_id",
+					"type": "search_panel_field"
+				},
+				"master_info": {
+					"type": "master_info",
+					"tables": {
+						"320884046": "true",
+						"1202178045": "true"
+					}
+				},
+				"simple_grid_field3": {
+					"field": "diagnosa_id",
+					"type": "grid_field"
+				},
+				"simple_grid_field": {
+					"type": "grid_field_label",
+					"field": "diagnosa_id"
+				},
+				"simple_grid_field1": {
+					"field": "bl",
+					"type": "grid_field"
+				},
+				"simple_grid_field2": {
+					"type": "grid_field_label",
+					"field": "bl"
+				},
+				"simple_grid_field16": {
+					"field": "dx_primer",
+					"type": "grid_field"
+				},
+				"simple_grid_field17": {
+					"type": "grid_field_label",
+					"field": "dx_primer"
+				},
+				"simple_grid_field15": {
+					"field": "dx_pcare",
+					"type": "grid_field"
+				},
+				"simple_grid_field18": {
+					"type": "grid_field_label",
+					"field": "dx_pcare"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"grid_edit": {
+					"type": "grid_edit",
+					"icon": {
+						"glyph": "pencil",
+						"style": 0
+					},
+					"popup": true,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  color: red;\n}\n}\ndiv.modal-dialog.ui-draggable, div.modal-body, div.modal-content.ui-resizable {\nwidth: 100% !important;\n}",
+					"label": {
+						"type": 0,
+						"text": " Edit"
+					},
+					"buttonStyle": "primary",
+					"buttonSize": "small"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": true
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				},
+				"grid_field": {
+					"field": "loket_id",
+					"type": "grid_field"
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "loket_id"
+				},
+				"search_panel_field22": {
+					"field": "loket_id",
+					"type": "search_panel_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {
+				"Indonesian": "Diagnosa"
+			},
+			"cardStyle": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						},
+						"c4": {
+							"model": "c4",
+							"items": [
+								"master_info"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12",
+								"simple_grid_field13",
+								"simple_grid_field14",
+								"simple_grid_field15",
+								"simple_grid_field16",
+								"simple_grid_field17",
+								"simple_grid_field18",
+								"simple_grid_field19",
+								"simple_grid_field20",
+								"simple_grid_field21",
+								"simple_grid_field2",
+								"simple_grid_field22"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "penyakit_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "bl",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "diagnosa_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "kirim_wa",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "status_centerview",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "respon",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "encounter_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "condition_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "cek_encounter",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "is_cek",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "input_oleh",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "update_oleh",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "wkt_input",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field14": {
+					"field": "wkt_update",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "dx_pcare",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field16": {
+					"field": "dx_primer",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field17": {
+					"field": "is_deleted",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field18": {
+					"field": "deleted_at",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field19": {
+					"field": "deleted_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field20": {
+					"field": "created_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field21": {
+					"field": "updated_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "pelayanan_id",
+					"type": "simple_grid_field"
+				},
+				"master_info": {
+					"type": "master_info",
+					"tables": {
+						"320884046": "true",
+						"1202178045": "true"
+					}
+				},
+				"simple_grid_field22": {
+					"field": "loket_id",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field3"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field1"
+							]
+						},
+						"c1": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field16"
+							]
+						},
+						"c2": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field15"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save": {
+					"type": "edit_save"
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"integrated_edit_field3": {
+					"field": "diagnosa_id",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "diagnosa_id",
+						"table": "public.diagnosa",
+						"type": 3
+					}
+				},
+				"integrated_edit_field1": {
+					"field": "bl",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "dx_primer",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field15": {
+					"field": "dx_pcare",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"Indonesian": "Diagnosa View"
+	}
+}

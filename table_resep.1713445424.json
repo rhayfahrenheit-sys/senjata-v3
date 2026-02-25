@@ -1,0 +1,3676 @@
+{
+	"sql": "SELECT\r\n\tidne,\r\n\tpelayanan_id,\r\n\tjumlah,\r\n\tsebelum_sesudah_makan,\r\n\taturan_minum,\r\n\tjml_obat_diberikan,\r\n\tis_diberikan,\r\n\tharga,\r\n\ttotal,\r\n\tsat,\r\n\tid_obat,\r\n\ttgl_ed,\r\n\tno_batch,\r\n\tsbr_dana,\r\n\tid_display,\r\n\tsubtotal,\r\n\tmedication_id,\r\n\tis_cekmedication,\r\n\tmedicationrequest_id,\r\n\tis_cekmedicationrequest,\r\n\tmedication_dispense_id,\r\n\tis_cekmedication_dispense,\r\n\tis_racikan,\r\n\tresepke,\r\n\tjml_bungkus,\r\n\tinput_oleh,\r\n\tupdate_oleh,\r\n\twkt_input,\r\n\twkt_update,\r\n\tis_cekmedstatement,\r\n\tmed_statement_id,\r\n\tstatement_text,\r\n\tis_deleted,\r\n\tdeleted_at,\r\n\tdeleted_by,\r\n\tcreated_by,\r\n\tupdated_by,\r\n\tloket_id,\r\n\tjml_obat_diresepkan\r\nFROM\r\n\t\"public\".resep",
+	"connId": "conn",
+	"originalTable": "public.resep",
+	"name": "public.resep",
+	"shortTableName": "resep",
+	"dbType": 4,
+	"keyFields": [
+		"idne"
+	],
+	"masterTables": [
+		{
+			"table": 1202178045,
+			"masterKeys": [
+				"pelayanan_id"
+			],
+			"detailsKeys": [
+				"pelayanan_id"
+			]
+		},
+		{
+			"table": 320884046,
+			"masterKeys": [
+				"loket_id",
+				"pelayanan_id"
+			],
+			"detailsKeys": [
+				"loket_id",
+				"pelayanan_id"
+			]
+		}
+	],
+	"detailsBadgeColor": "4682b4",
+	"fields": [
+		{
+			"name": "idne",
+			"sqlExpression": "idne",
+			"index": 1,
+			"strField": "idne",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Idne"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "jumlah",
+			"sqlExpression": "jumlah",
+			"index": 3,
+			"strField": "jumlah",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{
+					"required": true
+				}
+			],
+			"label": {
+				"Indonesian": "Jumlah"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "sebelum_sesudah_makan",
+			"sqlExpression": "sebelum_sesudah_makan",
+			"index": 4,
+			"strField": "sebelum_sesudah_makan",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"lookupType": 0,
+					"lookupValues": [
+						"Setelah Makan",
+						"Sebelum Makan",
+						"Saat Makan",
+						"Obat Luar"
+					],
+					"lookupControlType": 4
+				}
+			],
+			"label": {
+				"Indonesian": "Sebelum Sesudah Makan"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "aturan_minum",
+			"sqlExpression": "aturan_minum",
+			"index": 5,
+			"strField": "aturan_minum",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"required": true
+				}
+			],
+			"label": {
+				"Indonesian": "Aturan Minum"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "jml_obat_diberikan",
+			"sqlExpression": "jml_obat_diberikan",
+			"index": 6,
+			"strField": "jml_obat_diberikan",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Jml Obat Diberikan"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "is_diberikan",
+			"sqlExpression": "is_diberikan",
+			"index": 7,
+			"strField": "is_diberikan",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Diberikan"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "harga",
+			"sqlExpression": "harga",
+			"index": 8,
+			"strField": "harga",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Harga"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "total",
+			"sqlExpression": "total",
+			"index": 9,
+			"strField": "total",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Total"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "sat",
+			"sqlExpression": "sat",
+			"index": 10,
+			"strField": "sat",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"required": true
+				}
+			],
+			"label": {
+				"Indonesian": "Sat"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "id_obat",
+			"sqlExpression": "id_obat",
+			"index": 11,
+			"strField": "id_obat",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"lookupType": 2,
+					"lookupTable": "public.obat",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "idne",
+					"lookupDisplayField": "nama",
+					"lookupOrderBy": "nama",
+					"lookupControlType": 1,
+					"lookupWhere": "idne > 10000",
+					"lookupAutofillFields": [
+						{
+							"masterField": "sat",
+							"lookupField": "sat"
+						}
+					]
+				}
+			],
+			"label": {
+				"Indonesian": "Obat Diresepkan"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "tgl_ed",
+			"sqlExpression": "tgl_ed",
+			"index": 12,
+			"strField": "tgl_ed",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"Indonesian": "Tgl Ed"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "no_batch",
+			"sqlExpression": "no_batch",
+			"index": 13,
+			"strField": "no_batch",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "No Batch"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "sbr_dana",
+			"sqlExpression": "sbr_dana",
+			"index": 14,
+			"strField": "sbr_dana",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Sbr Dana"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "id_display",
+			"sqlExpression": "id_display",
+			"index": 15,
+			"strField": "id_display",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Id Display"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "subtotal",
+			"sqlExpression": "subtotal",
+			"index": 16,
+			"strField": "subtotal",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Subtotal"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "medication_id",
+			"sqlExpression": "medication_id",
+			"index": 17,
+			"strField": "medication_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Medication Id"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "is_cekmedication",
+			"sqlExpression": "is_cekmedication",
+			"index": 18,
+			"strField": "is_cekmedication",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Cekmedication"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "medicationrequest_id",
+			"sqlExpression": "medicationrequest_id",
+			"index": 19,
+			"strField": "medicationrequest_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Medicationrequest Id"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "is_cekmedicationrequest",
+			"sqlExpression": "is_cekmedicationrequest",
+			"index": 20,
+			"strField": "is_cekmedicationrequest",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Cekmedicationrequest"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "medication_dispense_id",
+			"sqlExpression": "medication_dispense_id",
+			"index": 21,
+			"strField": "medication_dispense_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Medication Dispense Id"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "is_cekmedication_dispense",
+			"sqlExpression": "is_cekmedication_dispense",
+			"index": 22,
+			"strField": "is_cekmedication_dispense",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Cekmedication Dispense"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "is_racikan",
+			"sqlExpression": "is_racikan",
+			"index": 23,
+			"strField": "is_racikan",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"defaultValue": "\"Tidak\"",
+					"lookupType": 0,
+					"lookupValues": [
+						"Tidak",
+						"Ya"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fieldEvents": [
+						{
+							"event": "change",
+							"handlerId": 970834727
+						}
+					]
+				}
+			],
+			"label": {
+				"Indonesian": "Is Racikan"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "resepke",
+			"sqlExpression": "resepke",
+			"index": 24,
+			"strField": "resepke",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxMaxLenth": 2
+				}
+			],
+			"label": {
+				"Indonesian": "Resepke"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "jml_bungkus",
+			"sqlExpression": "jml_bungkus",
+			"index": 25,
+			"strField": "jml_bungkus",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxMaxLenth": 2
+				}
+			],
+			"label": {
+				"Indonesian": "Jml Bungkus"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "input_oleh",
+			"sqlExpression": "input_oleh",
+			"index": 26,
+			"strField": "input_oleh",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Input Oleh"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "update_oleh",
+			"sqlExpression": "update_oleh",
+			"index": 27,
+			"strField": "update_oleh",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Update Oleh"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "wkt_input",
+			"sqlExpression": "wkt_input",
+			"index": 28,
+			"strField": "wkt_input",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"Indonesian": "Wkt Input"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "wkt_update",
+			"sqlExpression": "wkt_update",
+			"index": 29,
+			"strField": "wkt_update",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"Indonesian": "Wkt Update"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "is_cekmedstatement",
+			"sqlExpression": "is_cekmedstatement",
+			"index": 30,
+			"strField": "is_cekmedstatement",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Cekmedstatement"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "med_statement_id",
+			"sqlExpression": "med_statement_id",
+			"index": 31,
+			"strField": "med_statement_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Med Statement Id"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "statement_text",
+			"sqlExpression": "statement_text",
+			"index": 32,
+			"strField": "statement_text",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Statement Text"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "is_deleted",
+			"sqlExpression": "is_deleted",
+			"index": 33,
+			"strField": "is_deleted",
+			"type": 11,
+			"viewFormats": [
+				{
+					"format": "Checkbox"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Checkbox"
+				}
+			],
+			"label": {
+				"Indonesian": "Is Deleted"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "deleted_at",
+			"sqlExpression": "deleted_at",
+			"index": 34,
+			"strField": "deleted_at",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"Indonesian": "Deleted At"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "deleted_by",
+			"sqlExpression": "deleted_by",
+			"index": 35,
+			"strField": "deleted_by",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Deleted By"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "created_by",
+			"sqlExpression": "created_by",
+			"index": 36,
+			"strField": "created_by",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Created By"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "updated_by",
+			"sqlExpression": "updated_by",
+			"index": 37,
+			"strField": "updated_by",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Updated By"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "pelayanan_id",
+			"sqlExpression": "pelayanan_id",
+			"index": 2,
+			"strField": "pelayanan_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Pelayanan Id"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "loket_id",
+			"sqlExpression": "loket_id",
+			"index": 38,
+			"strField": "loket_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Loket Id"
+			},
+			"tableName": "public.resep"
+		},
+		{
+			"name": "jml_obat_diresepkan",
+			"sqlExpression": "jml_obat_diresepkan",
+			"index": 39,
+			"strField": "jml_obat_diresepkan",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Jml Obat Diresepkan"
+			},
+			"tableName": "public.resep"
+		}
+	],
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_BEFOREADD",
+			"pageType": "add",
+			"code": "// Validasi semua field - Field kosong TIDAK ERROR\n$result = msy_validate_all_fields($values);\n\n// Jika ada error validasi (hanya untuk field yang berisi)\nif (!$result['valid']) {\n    $errorMessages = [];\n    \n    foreach ($result['errors'] as $field => $message) {\n        $errorMessages[] = \"• Field '{$field}': {$message}\";\n    }\n    \n    $message = \"❌ VALIDASI GAGAL!\\n\\n\" . implode(\"\\n\", $errorMessages);\n    $inline = true;\n    \n    // Log security event\n    msy_log_security(\"VALIDATION_FAILED: \" . json_encode($result['errors']));\n    \n    return;\n}\n\n// Update values dengan yang sudah di-sanitize\n$values = $result['sanitized'];\n\n//\nif($_SESSION[\"is_resep_diberikan_sama\"] = true)\n{\n    $values[\"jml_obat_diberikan\"] =  $values[\"jml_obat_diresepkan\"];\n}\n//\n\n\n$values[\"idne\"]=genid();\n$values[\"loket_id\"] = $_SESSION[\"loket_id\"];\nreturn true;"
+		},
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "add",
+			"code": "// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n\npageObj.toggleItem(\"integrated_edit_field24\", false );\npageObj.toggleItem(\"integrated_edit_field23\", false );"
+		},
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "edit",
+			"code": "// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n\npageObj.toggleItem(\"integrated_edit_field24\", false );\npageObj.toggleItem(\"integrated_edit_field23\", false );"
+		},
+		{
+			"eventId": "EVENT_BEFOREEDIT",
+			"pageType": "edit",
+			"code": "// Validasi semua field - Field kosong TIDAK ERROR\n$result = msy_validate_all_fields($values);\n\n// Jika ada error validasi (hanya untuk field yang berisi)\nif (!$result['valid']) {\n    $errorMessages = [];\n    \n    foreach ($result['errors'] as $field => $message) {\n        $errorMessages[] = \"• Field '{$field}': {$message}\";\n    }\n    \n    $message = \"❌ VALIDASI GAGAL!\\n\\n\" . implode(\"\\n\", $errorMessages);\n    $inline = true;\n    \n    // Log security event\n    msy_log_security(\"VALIDATION_FAILED: \" . json_encode($result['errors']));\n    \n    return;\n}\n\n// Update values dengan yang sudah di-sanitize\n$values = $result['sanitized'];\n\n//\nif($_SESSION[\"is_resep_diberikan_sama\"] = true)\n{\n    $values[\"jml_obat_diberikan\"] =  $values[\"jml_obat_diresepkan\"];\n}\n//\n\nreturn true;"
+		},
+		{
+			"eventId": "EVENT_INIT_TABLE",
+			"code": "// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n"
+		}
+	],
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "idne",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "pelayanan_id",
+				"typeName": "character varying",
+				"size": 150,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "jumlah",
+				"typeName": "numeric",
+				"size": 255,
+				"scale": 0,
+				"type": 14,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "sebelum_sesudah_makan",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "aturan_minum",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "jml_obat_diberikan",
+				"typeName": "numeric",
+				"size": 255,
+				"scale": 0,
+				"type": 14,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_diberikan",
+				"typeName": "character varying",
+				"size": 10,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "harga",
+				"typeName": "numeric",
+				"size": 255,
+				"scale": 2,
+				"type": 14,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "total",
+				"typeName": "numeric",
+				"size": 255,
+				"scale": 0,
+				"type": 14,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "sat",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "id_obat",
+				"typeName": "bigint",
+				"size": 64,
+				"scale": 0,
+				"type": 20,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "tgl_ed",
+				"typeName": "date",
+				"size": null,
+				"scale": null,
+				"type": 7,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "no_batch",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "sbr_dana",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "id_display",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "subtotal",
+				"typeName": "numeric",
+				"size": 255,
+				"scale": 0,
+				"type": 14,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "medication_id",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_cekmedication",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "medicationrequest_id",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_cekmedicationrequest",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "medication_dispense_id",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_cekmedication_dispense",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "is_racikan",
+				"typeName": "character varying",
+				"size": 10,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "resepke",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "jml_bungkus",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "input_oleh",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "update_oleh",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "wkt_input",
+				"typeName": "timestamp without time zone",
+				"size": null,
+				"scale": null,
+				"type": 135,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "wkt_update",
+				"typeName": "timestamp without time zone",
+				"size": null,
+				"scale": null,
+				"type": 135,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_cekmedstatement",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "med_statement_id",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "statement_text",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_deleted",
+				"typeName": "boolean",
+				"size": null,
+				"scale": null,
+				"type": 11,
+				"autoinc": false,
+				"defaultValueSQL": "false",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "deleted_at",
+				"typeName": "timestamp without time zone",
+				"size": null,
+				"scale": null,
+				"type": 135,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "deleted_by",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "created_by",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "updated_by",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "loket_id",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "jml_obat_diresepkan",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			}
+		],
+		"primaryKeys": [],
+		"uniqueFields": [],
+		"name": "resep",
+		"schema": "public"
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c6",
+									"colspan": 2
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c4",
+									"rowspan": 1
+								},
+								{
+									"cell": "c7",
+									"rowspan": 1
+								},
+								{
+									"cell": "c8",
+									"colspan": 1,
+									"rowspan": 1
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field10"
+							]
+						},
+						"c2": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field3"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field1"
+							]
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field"
+							]
+						},
+						"c6": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field4"
+							]
+						},
+						"c7": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field24"
+							]
+						},
+						"c8": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field23"
+							]
+						},
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field5"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field3": {
+					"field": "sebelum_sesudah_makan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "aturan_minum",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "id_obat",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "id_obat",
+						"table": "public.resep",
+						"type": 3
+					}
+				},
+				"integrated_edit_field23": {
+					"field": "resepke",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field24": {
+					"field": "jml_bungkus",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field": {
+					"field": "is_racikan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "sat",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "jml_obat_diresepkan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6",
+								"export_field7",
+								"export_field8",
+								"export_field9",
+								"export_field10",
+								"export_field11",
+								"export_field12",
+								"export_field13",
+								"export_field14",
+								"export_field15",
+								"export_field16",
+								"export_field17",
+								"export_field18",
+								"export_field19",
+								"export_field20",
+								"export_field21",
+								"export_field22",
+								"export_field23",
+								"export_field24",
+								"export_field25",
+								"export_field26",
+								"export_field27",
+								"export_field28",
+								"export_field29",
+								"export_field30",
+								"export_field31",
+								"export_field32",
+								"export_field33",
+								"export_field34",
+								"export_field35",
+								"export_field36",
+								"export_field1",
+								"export_field37",
+								"export_field38"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "idne",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "jumlah",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "sebelum_sesudah_makan",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "aturan_minum",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "jml_obat_diberikan",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "is_diberikan",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "harga",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "total",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "sat",
+					"type": "export_field"
+				},
+				"export_field10": {
+					"field": "id_obat",
+					"type": "export_field"
+				},
+				"export_field11": {
+					"field": "tgl_ed",
+					"type": "export_field"
+				},
+				"export_field12": {
+					"field": "no_batch",
+					"type": "export_field"
+				},
+				"export_field13": {
+					"field": "sbr_dana",
+					"type": "export_field"
+				},
+				"export_field14": {
+					"field": "id_display",
+					"type": "export_field"
+				},
+				"export_field15": {
+					"field": "subtotal",
+					"type": "export_field"
+				},
+				"export_field16": {
+					"field": "medication_id",
+					"type": "export_field"
+				},
+				"export_field17": {
+					"field": "is_cekmedication",
+					"type": "export_field"
+				},
+				"export_field18": {
+					"field": "medicationrequest_id",
+					"type": "export_field"
+				},
+				"export_field19": {
+					"field": "is_cekmedicationrequest",
+					"type": "export_field"
+				},
+				"export_field20": {
+					"field": "medication_dispense_id",
+					"type": "export_field"
+				},
+				"export_field21": {
+					"field": "is_cekmedication_dispense",
+					"type": "export_field"
+				},
+				"export_field22": {
+					"field": "is_racikan",
+					"type": "export_field"
+				},
+				"export_field23": {
+					"field": "resepke",
+					"type": "export_field"
+				},
+				"export_field24": {
+					"field": "jml_bungkus",
+					"type": "export_field"
+				},
+				"export_field25": {
+					"field": "input_oleh",
+					"type": "export_field"
+				},
+				"export_field26": {
+					"field": "update_oleh",
+					"type": "export_field"
+				},
+				"export_field27": {
+					"field": "wkt_input",
+					"type": "export_field"
+				},
+				"export_field28": {
+					"field": "wkt_update",
+					"type": "export_field"
+				},
+				"export_field29": {
+					"field": "is_cekmedstatement",
+					"type": "export_field"
+				},
+				"export_field30": {
+					"field": "med_statement_id",
+					"type": "export_field"
+				},
+				"export_field31": {
+					"field": "statement_text",
+					"type": "export_field"
+				},
+				"export_field32": {
+					"field": "is_deleted",
+					"type": "export_field"
+				},
+				"export_field33": {
+					"field": "deleted_at",
+					"type": "export_field"
+				},
+				"export_field34": {
+					"field": "deleted_by",
+					"type": "export_field"
+				},
+				"export_field35": {
+					"field": "created_by",
+					"type": "export_field"
+				},
+				"export_field36": {
+					"field": "updated_by",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "pelayanan_id",
+					"type": "export_field"
+				},
+				"export_field37": {
+					"field": "loket_id",
+					"type": "export_field"
+				},
+				"export_field38": {
+					"field": "jml_obat_diresepkan",
+					"type": "export_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": true,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field2",
+								"import_field3",
+								"import_field4",
+								"import_field5",
+								"import_field6",
+								"import_field7",
+								"import_field8",
+								"import_field9",
+								"import_field10",
+								"import_field11",
+								"import_field12",
+								"import_field13",
+								"import_field14",
+								"import_field15",
+								"import_field16",
+								"import_field17",
+								"import_field18",
+								"import_field19",
+								"import_field20",
+								"import_field21",
+								"import_field22",
+								"import_field23",
+								"import_field24",
+								"import_field25",
+								"import_field26",
+								"import_field27",
+								"import_field28",
+								"import_field29",
+								"import_field30",
+								"import_field31",
+								"import_field32",
+								"import_field33",
+								"import_field34",
+								"import_field35",
+								"import_field36",
+								"import_field1"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "idne",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "jumlah",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "sebelum_sesudah_makan",
+					"type": "import_field"
+				},
+				"import_field4": {
+					"field": "aturan_minum",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "jml_obat_diberikan",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "is_diberikan",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "harga",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "total",
+					"type": "import_field"
+				},
+				"import_field9": {
+					"field": "sat",
+					"type": "import_field"
+				},
+				"import_field10": {
+					"field": "id_obat",
+					"type": "import_field"
+				},
+				"import_field11": {
+					"field": "tgl_ed",
+					"type": "import_field"
+				},
+				"import_field12": {
+					"field": "no_batch",
+					"type": "import_field"
+				},
+				"import_field13": {
+					"field": "sbr_dana",
+					"type": "import_field"
+				},
+				"import_field14": {
+					"field": "id_display",
+					"type": "import_field"
+				},
+				"import_field15": {
+					"field": "subtotal",
+					"type": "import_field"
+				},
+				"import_field16": {
+					"field": "medication_id",
+					"type": "import_field"
+				},
+				"import_field17": {
+					"field": "is_cekmedication",
+					"type": "import_field"
+				},
+				"import_field18": {
+					"field": "medicationrequest_id",
+					"type": "import_field"
+				},
+				"import_field19": {
+					"field": "is_cekmedicationrequest",
+					"type": "import_field"
+				},
+				"import_field20": {
+					"field": "medication_dispense_id",
+					"type": "import_field"
+				},
+				"import_field21": {
+					"field": "is_cekmedication_dispense",
+					"type": "import_field"
+				},
+				"import_field22": {
+					"field": "is_racikan",
+					"type": "import_field"
+				},
+				"import_field23": {
+					"field": "resepke",
+					"type": "import_field"
+				},
+				"import_field24": {
+					"field": "jml_bungkus",
+					"type": "import_field"
+				},
+				"import_field25": {
+					"field": "input_oleh",
+					"type": "import_field"
+				},
+				"import_field26": {
+					"field": "update_oleh",
+					"type": "import_field"
+				},
+				"import_field27": {
+					"field": "wkt_input",
+					"type": "import_field"
+				},
+				"import_field28": {
+					"field": "wkt_update",
+					"type": "import_field"
+				},
+				"import_field29": {
+					"field": "is_cekmedstatement",
+					"type": "import_field"
+				},
+				"import_field30": {
+					"field": "med_statement_id",
+					"type": "import_field"
+				},
+				"import_field31": {
+					"field": "statement_text",
+					"type": "import_field"
+				},
+				"import_field32": {
+					"field": "is_deleted",
+					"type": "import_field"
+				},
+				"import_field33": {
+					"field": "deleted_at",
+					"type": "import_field"
+				},
+				"import_field34": {
+					"field": "deleted_by",
+					"type": "import_field"
+				},
+				"import_field35": {
+					"field": "created_by",
+					"type": "import_field"
+				},
+				"import_field36": {
+					"field": "updated_by",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "pelayanan_id",
+					"type": "import_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "leftbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size",
+								"print_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu",
+								"search_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-sidebar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"master_info"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_icons"
+								},
+								{
+									"cell": "headcell_checkbox"
+								},
+								{
+									"cell": "headcell_field"
+								},
+								{
+									"cell": "headcell_field1"
+								},
+								{
+									"cell": "headcell_field2"
+								},
+								{
+									"cell": "headcell_field3"
+								},
+								{
+									"cell": "headcell_field4"
+								},
+								{
+									"cell": "headcell_field5"
+								},
+								{
+									"cell": "headcell_field6"
+								},
+								{
+									"cell": "headcell_field7"
+								},
+								{
+									"cell": "headcell_field8"
+								},
+								{
+									"cell": "headcell_field9"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_icons"
+								},
+								{
+									"cell": "cell_checkbox"
+								},
+								{
+									"cell": "cell_field"
+								},
+								{
+									"cell": "cell_field1"
+								},
+								{
+									"cell": "cell_field2"
+								},
+								{
+									"cell": "cell_field3"
+								},
+								{
+									"cell": "cell_field4"
+								},
+								{
+									"cell": "cell_field5"
+								},
+								{
+									"cell": "cell_field6"
+								},
+								{
+									"cell": "cell_field7"
+								},
+								{
+									"cell": "cell_field8"
+								},
+								{
+									"cell": "cell_field9"
+								}
+							]
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_icons"
+								},
+								{
+									"cell": "footcell_checkbox"
+								},
+								{
+									"cell": "footcell_field"
+								},
+								{
+									"cell": "footcell_field1"
+								},
+								{
+									"cell": "footcell_field2"
+								},
+								{
+									"cell": "footcell_field3"
+								},
+								{
+									"cell": "footcell_field4"
+								},
+								{
+									"cell": "footcell_field5"
+								},
+								{
+									"cell": "footcell_field6"
+								},
+								{
+									"cell": "footcell_field7"
+								},
+								{
+									"cell": "footcell_field8"
+								},
+								{
+									"cell": "footcell_field9"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field"
+							],
+							"field": "id_obat"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field10"
+							],
+							"field": "id_obat"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "id_obat"
+						},
+						"headcell_field1": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field11"
+							],
+							"field": "sat"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field9"
+							],
+							"field": "sat"
+						},
+						"footcell_field1": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "sat"
+						},
+						"headcell_field2": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field5"
+							],
+							"field": "jumlah"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field2"
+							],
+							"field": "jumlah"
+						},
+						"footcell_field2": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "jumlah"
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field6"
+							],
+							"field": "sebelum_sesudah_makan"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field3"
+							],
+							"field": "sebelum_sesudah_makan"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "sebelum_sesudah_makan"
+						},
+						"headcell_field4": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field7"
+							],
+							"field": "aturan_minum"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field4"
+							],
+							"field": "aturan_minum"
+						},
+						"footcell_field4": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "aturan_minum"
+						},
+						"headcell_field5": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field25"
+							],
+							"field": "is_racikan"
+						},
+						"cell_field5": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field22"
+							],
+							"field": "is_racikan"
+						},
+						"footcell_field5": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "is_racikan"
+						},
+						"headcell_field6": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field26"
+							],
+							"field": "jml_bungkus"
+						},
+						"cell_field6": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field24"
+							],
+							"field": "jml_bungkus"
+						},
+						"footcell_field6": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "jml_bungkus"
+						},
+						"headcell_field7": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field27"
+							],
+							"field": "resepke"
+						},
+						"cell_field7": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field23"
+							],
+							"field": "resepke"
+						},
+						"footcell_field7": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "resepke"
+						},
+						"headcell_checkbox": {
+							"model": "headcell_checkbox",
+							"items": [
+								"grid_checkbox_head"
+							]
+						},
+						"cell_checkbox": {
+							"model": "cell_checkbox",
+							"items": [
+								"grid_checkbox"
+							]
+						},
+						"footcell_checkbox": {
+							"model": "footcell_checkbox",
+							"items": []
+						},
+						"headcell_icons": {
+							"model": "headcell_icons",
+							"items": []
+						},
+						"cell_icons": {
+							"model": "cell_icons",
+							"items": [
+								"grid_edit"
+							]
+						},
+						"footcell_icons": {
+							"model": "footcell_icons",
+							"items": []
+						},
+						"headcell_field8": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"field": "loket_id"
+						},
+						"cell_field8": {
+							"model": "cell_field",
+							"items": [
+								"grid_field"
+							],
+							"field": "loket_id"
+						},
+						"footcell_field8": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "loket_id"
+						},
+						"headcell_field9": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label1"
+							],
+							"field": "jml_obat_diresepkan"
+						},
+						"cell_field9": {
+							"model": "cell_field",
+							"items": [
+								"grid_field1"
+							],
+							"field": "jml_obat_diresepkan"
+						},
+						"footcell_field9": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "jml_obat_diresepkan"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field",
+						"search_panel_field38",
+						"search_panel_field37",
+						"search_panel_field1",
+						"search_panel_field36",
+						"search_panel_field35",
+						"search_panel_field34",
+						"search_panel_field33",
+						"search_panel_field32",
+						"search_panel_field31",
+						"search_panel_field30",
+						"search_panel_field29",
+						"search_panel_field28",
+						"search_panel_field27",
+						"search_panel_field26",
+						"search_panel_field25",
+						"search_panel_field24",
+						"search_panel_field23",
+						"search_panel_field22",
+						"search_panel_field21",
+						"search_panel_field20",
+						"search_panel_field19",
+						"search_panel_field18",
+						"search_panel_field17",
+						"search_panel_field16",
+						"search_panel_field15",
+						"search_panel_field14",
+						"search_panel_field13",
+						"search_panel_field12",
+						"search_panel_field11",
+						"search_panel_field10",
+						"search_panel_field9",
+						"search_panel_field8",
+						"search_panel_field7",
+						"search_panel_field6",
+						"search_panel_field5",
+						"search_panel_field4",
+						"search_panel_field3",
+						"search_panel_field2"
+					],
+					"_flexiblePanel": true
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"show_search_panel",
+						"hide_search_panel",
+						"-",
+						"export"
+					]
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"search_panel_field": {
+					"field": "idne",
+					"type": "search_panel_field"
+				},
+				"search_panel_field2": {
+					"field": "jumlah",
+					"type": "search_panel_field"
+				},
+				"search_panel_field3": {
+					"field": "sebelum_sesudah_makan",
+					"type": "search_panel_field"
+				},
+				"search_panel_field4": {
+					"field": "aturan_minum",
+					"type": "search_panel_field"
+				},
+				"search_panel_field5": {
+					"field": "jml_obat_diberikan",
+					"type": "search_panel_field"
+				},
+				"search_panel_field6": {
+					"field": "is_diberikan",
+					"type": "search_panel_field"
+				},
+				"search_panel_field7": {
+					"field": "harga",
+					"type": "search_panel_field"
+				},
+				"search_panel_field8": {
+					"field": "total",
+					"type": "search_panel_field"
+				},
+				"search_panel_field9": {
+					"field": "sat",
+					"type": "search_panel_field"
+				},
+				"search_panel_field10": {
+					"field": "id_obat",
+					"type": "search_panel_field"
+				},
+				"search_panel_field11": {
+					"field": "tgl_ed",
+					"type": "search_panel_field"
+				},
+				"search_panel_field12": {
+					"field": "no_batch",
+					"type": "search_panel_field"
+				},
+				"search_panel_field13": {
+					"field": "sbr_dana",
+					"type": "search_panel_field"
+				},
+				"search_panel_field14": {
+					"field": "id_display",
+					"type": "search_panel_field"
+				},
+				"search_panel_field15": {
+					"field": "subtotal",
+					"type": "search_panel_field"
+				},
+				"search_panel_field16": {
+					"field": "medication_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field17": {
+					"field": "is_cekmedication",
+					"type": "search_panel_field"
+				},
+				"search_panel_field18": {
+					"field": "medicationrequest_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field19": {
+					"field": "is_cekmedicationrequest",
+					"type": "search_panel_field"
+				},
+				"search_panel_field20": {
+					"field": "medication_dispense_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field21": {
+					"field": "is_cekmedication_dispense",
+					"type": "search_panel_field"
+				},
+				"search_panel_field22": {
+					"field": "is_racikan",
+					"type": "search_panel_field"
+				},
+				"search_panel_field23": {
+					"field": "resepke",
+					"type": "search_panel_field"
+				},
+				"search_panel_field24": {
+					"field": "jml_bungkus",
+					"type": "search_panel_field"
+				},
+				"search_panel_field25": {
+					"field": "input_oleh",
+					"type": "search_panel_field"
+				},
+				"search_panel_field26": {
+					"field": "update_oleh",
+					"type": "search_panel_field"
+				},
+				"search_panel_field27": {
+					"field": "wkt_input",
+					"type": "search_panel_field"
+				},
+				"search_panel_field28": {
+					"field": "wkt_update",
+					"type": "search_panel_field"
+				},
+				"search_panel_field29": {
+					"field": "is_cekmedstatement",
+					"type": "search_panel_field"
+				},
+				"search_panel_field30": {
+					"field": "med_statement_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field31": {
+					"field": "statement_text",
+					"type": "search_panel_field"
+				},
+				"search_panel_field32": {
+					"field": "is_deleted",
+					"type": "search_panel_field"
+				},
+				"search_panel_field33": {
+					"field": "deleted_at",
+					"type": "search_panel_field"
+				},
+				"search_panel_field34": {
+					"field": "deleted_by",
+					"type": "search_panel_field"
+				},
+				"search_panel_field35": {
+					"field": "created_by",
+					"type": "search_panel_field"
+				},
+				"search_panel_field36": {
+					"field": "updated_by",
+					"type": "search_panel_field"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"add": {
+					"type": "add",
+					"icon": {
+						"glyph": "plus",
+						"style": 0
+					},
+					"buttonStyle": "primary",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  color: red;\n}\n}\ndiv.modal-dialog.ui-draggable, div.modal-body, div.modal-content.ui-resizable {\nwidth: 100% !important;\n}"
+				},
+				"export": {
+					"type": "export"
+				},
+				"-": {
+					"type": "-"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"print_panel": {
+					"type": "print_panel",
+					"items": [
+						"print_scope",
+						"print_records",
+						"print_button"
+					]
+				},
+				"print_scope": {
+					"type": "print_scope"
+				},
+				"print_button": {
+					"type": "print_button"
+				},
+				"print_records": {
+					"type": "print_records"
+				},
+				"search_panel_field1": {
+					"field": "pelayanan_id",
+					"type": "search_panel_field"
+				},
+				"master_info": {
+					"type": "master_info",
+					"tables": {
+						"320884046": "true",
+						"1202178045": "true"
+					}
+				},
+				"simple_grid_field10": {
+					"field": "id_obat",
+					"type": "grid_field"
+				},
+				"simple_grid_field": {
+					"type": "grid_field_label",
+					"field": "id_obat"
+				},
+				"simple_grid_field9": {
+					"field": "sat",
+					"type": "grid_field"
+				},
+				"simple_grid_field11": {
+					"type": "grid_field_label",
+					"field": "sat"
+				},
+				"simple_grid_field2": {
+					"field": "jumlah",
+					"type": "grid_field"
+				},
+				"simple_grid_field5": {
+					"type": "grid_field_label",
+					"field": "jumlah"
+				},
+				"simple_grid_field3": {
+					"field": "sebelum_sesudah_makan",
+					"type": "grid_field"
+				},
+				"simple_grid_field6": {
+					"type": "grid_field_label",
+					"field": "sebelum_sesudah_makan"
+				},
+				"simple_grid_field4": {
+					"field": "aturan_minum",
+					"type": "grid_field"
+				},
+				"simple_grid_field7": {
+					"type": "grid_field_label",
+					"field": "aturan_minum"
+				},
+				"simple_grid_field22": {
+					"field": "is_racikan",
+					"type": "grid_field"
+				},
+				"simple_grid_field25": {
+					"type": "grid_field_label",
+					"field": "is_racikan"
+				},
+				"simple_grid_field24": {
+					"field": "jml_bungkus",
+					"type": "grid_field"
+				},
+				"simple_grid_field26": {
+					"type": "grid_field_label",
+					"field": "jml_bungkus"
+				},
+				"simple_grid_field23": {
+					"field": "resepke",
+					"type": "grid_field"
+				},
+				"simple_grid_field27": {
+					"type": "grid_field_label",
+					"field": "resepke"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"grid_edit": {
+					"type": "grid_edit",
+					"icon": {
+						"glyph": "pencil",
+						"style": 0
+					},
+					"popup": true,
+					"label": {
+						"type": 0,
+						"text": " Edit"
+					},
+					"buttonStyle": "primary",
+					"buttonSize": "small",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  color: red;\n}\n}\ndiv.modal-dialog.ui-draggable, div.modal-body, div.modal-content.ui-resizable {\nwidth: 100% !important;\n}"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": true
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				},
+				"grid_field": {
+					"field": "loket_id",
+					"type": "grid_field"
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "loket_id"
+				},
+				"search_panel_field37": {
+					"field": "loket_id",
+					"type": "search_panel_field"
+				},
+				"grid_field1": {
+					"field": "jml_obat_diresepkan",
+					"type": "grid_field"
+				},
+				"grid_field_label1": {
+					"type": "grid_field_label",
+					"field": "jml_obat_diresepkan"
+				},
+				"search_panel_field38": {
+					"field": "jml_obat_diresepkan",
+					"type": "search_panel_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {
+				"Indonesian": "Obat"
+			},
+			"cardStyle": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						},
+						"c4": {
+							"model": "c4",
+							"items": [
+								"master_info"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12",
+								"simple_grid_field13",
+								"simple_grid_field14",
+								"simple_grid_field15",
+								"simple_grid_field16",
+								"simple_grid_field17",
+								"simple_grid_field18",
+								"simple_grid_field19",
+								"simple_grid_field20",
+								"simple_grid_field21",
+								"simple_grid_field22",
+								"simple_grid_field23",
+								"simple_grid_field24",
+								"simple_grid_field25",
+								"simple_grid_field26",
+								"simple_grid_field27",
+								"simple_grid_field28",
+								"simple_grid_field29",
+								"simple_grid_field30",
+								"simple_grid_field31",
+								"simple_grid_field32",
+								"simple_grid_field33",
+								"simple_grid_field34",
+								"simple_grid_field35",
+								"simple_grid_field36",
+								"simple_grid_field1",
+								"simple_grid_field37",
+								"simple_grid_field38"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "idne",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "jumlah",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "sebelum_sesudah_makan",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "aturan_minum",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "jml_obat_diberikan",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "is_diberikan",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "harga",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "total",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "sat",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "id_obat",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "tgl_ed",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "no_batch",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "sbr_dana",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field14": {
+					"field": "id_display",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "subtotal",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field16": {
+					"field": "medication_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field17": {
+					"field": "is_cekmedication",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field18": {
+					"field": "medicationrequest_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field19": {
+					"field": "is_cekmedicationrequest",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field20": {
+					"field": "medication_dispense_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field21": {
+					"field": "is_cekmedication_dispense",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field22": {
+					"field": "is_racikan",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field23": {
+					"field": "resepke",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field24": {
+					"field": "jml_bungkus",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field25": {
+					"field": "input_oleh",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field26": {
+					"field": "update_oleh",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field27": {
+					"field": "wkt_input",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field28": {
+					"field": "wkt_update",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field29": {
+					"field": "is_cekmedstatement",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field30": {
+					"field": "med_statement_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field31": {
+					"field": "statement_text",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field32": {
+					"field": "is_deleted",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field33": {
+					"field": "deleted_at",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field34": {
+					"field": "deleted_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field35": {
+					"field": "created_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field36": {
+					"field": "updated_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "pelayanan_id",
+					"type": "simple_grid_field"
+				},
+				"master_info": {
+					"type": "master_info",
+					"tables": {
+						"320884046": "true",
+						"1202178045": "true"
+					}
+				},
+				"simple_grid_field37": {
+					"field": "loket_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field38": {
+					"field": "jml_obat_diresepkan",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c6",
+									"colspan": 2
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c4",
+									"rowspan": 1
+								},
+								{
+									"cell": "c7",
+									"rowspan": 1
+								},
+								{
+									"cell": "c8",
+									"colspan": 1,
+									"rowspan": 1
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field10"
+							]
+						},
+						"c2": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field3"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field1"
+							]
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field"
+							]
+						},
+						"c6": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field4"
+							]
+						},
+						"c7": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field24"
+							]
+						},
+						"c8": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field23"
+							]
+						},
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field5"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save": {
+					"type": "edit_save"
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"integrated_edit_field10": {
+					"field": "id_obat",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "id_obat",
+						"table": "public.resep",
+						"type": 3
+					}
+				},
+				"integrated_edit_field3": {
+					"field": "sebelum_sesudah_makan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "sat",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field": {
+					"field": "is_racikan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "aturan_minum",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field24": {
+					"field": "jml_bungkus",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field23": {
+					"field": "resepke",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "jml_obat_diresepkan",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"Indonesian": "Resep"
+	}
+}

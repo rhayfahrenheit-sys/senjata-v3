@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Button",
+	"serverCode": "// Put your code here.\n\n$result[\"txt\"] = $params[\"txt\"].\" world!\";\n",
+	"beforeJsCode": "//   Runner.displayPopup(\"pemeriksaan_edit.php\");\n//   return false;\n  \n  var popup = Runner.displayPopup({\n  url: \"pemeriksaan_edit.php\",\n  width: \"100%\",\n  height: \"100%\",\n  header: 'Download Form di atas, isi dan upload kembali di sini'\n});\n\nreturn false;",
+	"afterJsCode": "// Put your code here.\n\nvar message = result[\"txt\"] + \" !!!\";\najax.setMessage(message);\n"
+}

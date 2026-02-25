@@ -1,0 +1,5569 @@
+{
+	"sql": "SELECT\r\n\tpusk_id,\r\n\tno_urut,\r\n\tpusk,\r\n\taktif,\r\n\tuser1,\r\n\tpassword,\r\n\tcons,\r\n\tsecret,\r\n\tkode_provider,\r\n\tno_hp_kapus,\r\n\tno_wa_puskesmas,\r\n\tuser_key,\r\n\taccess_token,\r\n\tdistrict,\r\n\tvillage,\r\n\trw,\r\n\trt,\r\n\tkode_pos,\r\n\talamat_fasyankes,\r\n\tis_bridgingpcare,\r\n\twkt_update_token,\r\n\tkab_kota_pcare,\r\n\tjenis_fasyankes,\r\n\tkode_pusdatin,\r\n\tberlaku_sd,\r\n\tsatset_client_id,\r\n\tsatset_client_secret,\r\n\tsatset_org_id,\r\n\tis_bridgingsatset,\r\n\tkop_gambar,\r\n\tkop_line1,\r\n\tkop_line2,\r\n\tkop_line3,\r\n\tkop_line4,\r\n\twa_setelah_periksa,\r\n\twa_reminder,\r\n\t'' as ktp_cek,\r\n\tis_resep_diberikan_sama\r\nFROM\r\n\t\"public\".puskesmas",
+	"connId": "conn",
+	"originalTable": "public.puskesmas",
+	"name": "public.puskesmas",
+	"shortTableName": "puskesmas",
+	"dbType": 4,
+	"keyFields": [
+		"pusk_id"
+	],
+	"detailsBadgeColor": "cfae83",
+	"fields": [
+		{
+			"name": "pusk_id",
+			"sqlExpression": "pusk_id",
+			"index": 1,
+			"strField": "pusk_id",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Pusk Id"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "no_urut",
+			"sqlExpression": "no_urut",
+			"index": 2,
+			"strField": "no_urut",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "No Urut"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "pusk",
+			"sqlExpression": "pusk",
+			"index": 3,
+			"strField": "pusk",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Pusk"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "aktif",
+			"sqlExpression": "aktif",
+			"index": 4,
+			"strField": "aktif",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"lookupTable": "public.o_yatidak",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "kode",
+					"lookupDisplayField": "ket",
+					"lookupOrderBy": "ket",
+					"lookupControlType": 4,
+					"lookupHorizontal": true
+				}
+			],
+			"label": {
+				"English": "Aktif"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "user1",
+			"sqlExpression": "user1",
+			"index": 5,
+			"strField": "user1",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "User1"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "password",
+			"sqlExpression": "password",
+			"index": 6,
+			"strField": "password",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Password"
+				}
+			],
+			"label": {
+				"English": "Password"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "cons",
+			"sqlExpression": "cons",
+			"index": 7,
+			"strField": "cons",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly"
+				}
+			],
+			"label": {
+				"English": "Cons"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "secret",
+			"sqlExpression": "secret",
+			"index": 8,
+			"strField": "secret",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly"
+				}
+			],
+			"label": {
+				"English": "Secret"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "kode_provider",
+			"sqlExpression": "kode_provider",
+			"index": 9,
+			"strField": "kode_provider",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly"
+				}
+			],
+			"label": {
+				"English": "Kode Provider"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "no_hp_kapus",
+			"sqlExpression": "no_hp_kapus",
+			"index": 10,
+			"strField": "no_hp_kapus",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "No Hp Kapus"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "no_wa_puskesmas",
+			"sqlExpression": "no_wa_puskesmas",
+			"index": 11,
+			"strField": "no_wa_puskesmas",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "No Wa Puskesmas"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "user_key",
+			"sqlExpression": "user_key",
+			"index": 12,
+			"strField": "user_key",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly"
+				}
+			],
+			"label": {
+				"English": "User Key"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "access_token",
+			"sqlExpression": "access_token",
+			"index": 13,
+			"strField": "access_token",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly"
+				}
+			],
+			"label": {
+				"English": "Access Token"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "district",
+			"sqlExpression": "district",
+			"index": 14,
+			"strField": "district",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"lookupTable": "public.m_kecamatan",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "mst_kecamatan_id",
+					"lookupDisplayField": "nama_kecamatan",
+					"lookupOrderBy": "nama_kecamatan",
+					"lookupWhere": "mst_kabupaten_id='3576'"
+				}
+			],
+			"label": {
+				"English": "District"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "village",
+			"sqlExpression": "village",
+			"index": 15,
+			"strField": "village",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"lookupTable": "public.m_kelurahan",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "mst_kelurahan_id",
+					"lookupDisplayField": "nama_kelurahan",
+					"lookupOrderBy": "nama_kelurahan",
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "district",
+							"lookupField": "mst_kecamatan_id"
+						}
+					]
+				}
+			],
+			"label": {
+				"English": "Village"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "rw",
+			"sqlExpression": "rw",
+			"index": 16,
+			"strField": "rw",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Rw"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "rt",
+			"sqlExpression": "rt",
+			"index": 17,
+			"strField": "rt",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Rt"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "kode_pos",
+			"sqlExpression": "kode_pos",
+			"index": 18,
+			"strField": "kode_pos",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Kode Pos"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "alamat_fasyankes",
+			"sqlExpression": "alamat_fasyankes",
+			"index": 19,
+			"strField": "alamat_fasyankes",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Alamat Fasyankes"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "is_bridgingpcare",
+			"sqlExpression": "is_bridgingpcare",
+			"index": 20,
+			"strField": "is_bridgingpcare",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"lookupTable": "public.o_yatidak",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "kode",
+					"lookupDisplayField": "ket",
+					"lookupControlType": 4,
+					"lookupHorizontal": true
+				}
+			],
+			"label": {
+				"English": "Is Bridgingpcare",
+				"Indonesian": "Bridging PCARE ?"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "wkt_update_token",
+			"sqlExpression": "wkt_update_token",
+			"index": 21,
+			"strField": "wkt_update_token",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"English": "Wkt Update Token"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "kab_kota_pcare",
+			"sqlExpression": "kab_kota_pcare",
+			"index": 22,
+			"strField": "kab_kota_pcare",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Kab Kota Pcare"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "jenis_fasyankes",
+			"sqlExpression": "jenis_fasyankes",
+			"index": 23,
+			"strField": "jenis_fasyankes",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Jenis Fasyankes"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "kode_pusdatin",
+			"sqlExpression": "kode_pusdatin",
+			"index": 24,
+			"strField": "kode_pusdatin",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Kode Pusdatin"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "berlaku_sd",
+			"sqlExpression": "berlaku_sd",
+			"index": 25,
+			"strField": "berlaku_sd",
+			"type": 134,
+			"viewFormats": [
+				{
+					"format": "Time"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly"
+				}
+			],
+			"label": {
+				"Indonesian": "Berlaku Sd"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "satset_client_id",
+			"sqlExpression": "satset_client_id",
+			"index": 26,
+			"strField": "satset_client_id",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Password",
+					"required": true
+				}
+			],
+			"label": {
+				"Indonesian": "Client_id"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "satset_client_secret",
+			"sqlExpression": "satset_client_secret",
+			"index": 27,
+			"strField": "satset_client_secret",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Password",
+					"required": true
+				}
+			],
+			"label": {
+				"Indonesian": "Client Secret"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "satset_org_id",
+			"sqlExpression": "satset_org_id",
+			"index": 28,
+			"strField": "satset_org_id",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Organization ID"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "is_bridgingsatset",
+			"sqlExpression": "is_bridgingsatset",
+			"index": 29,
+			"strField": "is_bridgingsatset",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"lookupTable": "public.o_yatidak",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "kode",
+					"lookupDisplayField": "ket",
+					"lookupControlType": 4,
+					"lookupHorizontal": true
+				}
+			],
+			"label": {
+				"Indonesian": "Bridging Satusehat ?"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "kop_gambar",
+			"sqlExpression": "kop_gambar",
+			"index": 30,
+			"strField": "kop_gambar",
+			"googleLikeSearch": false,
+			"type": 128,
+			"viewFormats": [
+				{
+					"format": "Database Image"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Database image",
+					"fileTypes": [
+						"bmp",
+						"jpg",
+						"png",
+						"jpeg"
+					]
+				}
+			],
+			"label": {
+				"Indonesian": "Kop Gambar"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "kop_line1",
+			"sqlExpression": "kop_line1",
+			"index": 31,
+			"strField": "kop_line1",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Kop Line1"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "kop_line2",
+			"sqlExpression": "kop_line2",
+			"index": 32,
+			"strField": "kop_line2",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Kop Line2"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "kop_line3",
+			"sqlExpression": "kop_line3",
+			"index": 33,
+			"strField": "kop_line3",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Kop Line3"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "wa_setelah_periksa",
+			"sqlExpression": "wa_setelah_periksa",
+			"index": 35,
+			"strField": "wa_setelah_periksa",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Text area"
+				}
+			],
+			"label": {
+				"Indonesian": "Wa Setelah Periksa"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "wa_reminder",
+			"sqlExpression": "wa_reminder",
+			"index": 36,
+			"strField": "wa_reminder",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Text area"
+				}
+			],
+			"label": {
+				"Indonesian": "Wa Reminder"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "ktp_cek",
+			"sqlExpression": "''",
+			"index": 37,
+			"strField": "ktp_cek",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxMaxLenth": 16
+				}
+			],
+			"label": {
+				"Indonesian": "Masukkan no KTP dan klik Test pcare"
+			},
+			"tableName": ""
+		},
+		{
+			"name": "kop_line4",
+			"sqlExpression": "kop_line4",
+			"index": 34,
+			"strField": "kop_line4",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Kop Line4"
+			},
+			"tableName": "public.puskesmas"
+		},
+		{
+			"name": "is_resep_diberikan_sama",
+			"sqlExpression": "is_resep_diberikan_sama",
+			"index": 38,
+			"strField": "is_resep_diberikan_sama",
+			"type": 11,
+			"viewFormats": [
+				{
+					"format": "Checkbox"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Checkbox",
+					"lookupType": 0,
+					"lookupValues": [
+						"true"
+					]
+				}
+			],
+			"label": {
+				"Indonesian": "Apakah Obat Yang Diresepkan Juga Obat Yang Diberikan Ke Pasien"
+			},
+			"tableName": "public.puskesmas"
+		}
+	],
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_BEFOREQUERY_EDIT",
+			"pageType": "edit",
+			"code": "// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n\nif($_SESSION[\"role\"] !== 'admin')\n{\n$puskesmas_id = db_addslashes($_SESSION[\"puskesmas\"]);\n\n$strWhereClause = whereAdd($strWhereClause, \"puskesmas.pusk_id = \".$puskesmas_id);\n}"
+		},
+		{
+			"eventId": "EVENT_BEFOREADD",
+			"pageType": "add",
+			"code": "// Place event code here.\n// Use \"Add Action\" button to add code snippets.\nunset ($values[\"ktp_cek\"]);\nreturn true;"
+		}
+	],
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "pusk_id",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "no_urut",
+				"typeName": "character varying",
+				"size": 2,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "pusk",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "aktif",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "'1'::smallint",
+				"defaultValue": "'1'::smallint",
+				"nullable": true
+			},
+			{
+				"name": "user1",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "password",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "cons",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "secret",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "kode_provider",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "no_hp_kapus",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "no_wa_puskesmas",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "user_key",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "access_token",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "district",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "village",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "rw",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "rt",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "kode_pos",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "alamat_fasyankes",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_bridgingpcare",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": false
+			},
+			{
+				"name": "wkt_update_token",
+				"typeName": "timestamp without time zone",
+				"size": null,
+				"scale": null,
+				"type": 135,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "kab_kota_pcare",
+				"typeName": "character varying",
+				"size": 150,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "jenis_fasyankes",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "kode_pusdatin",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "berlaku_sd",
+				"typeName": "time without time zone",
+				"size": null,
+				"scale": null,
+				"type": 134,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "satset_client_id",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "satset_client_secret",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "satset_org_id",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_bridgingsatset",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "kop_gambar",
+				"typeName": "bytea",
+				"size": null,
+				"scale": null,
+				"type": 128,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "kop_line1",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "kop_line2",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "kop_line3",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "wa_setelah_periksa",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "wa_reminder",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "kop_line4",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_resep_diberikan_sama",
+				"typeName": "boolean",
+				"size": null,
+				"scale": null,
+				"type": 11,
+				"autoinc": false,
+				"defaultValueSQL": "true",
+				"defaultValue": "1",
+				"nullable": false
+			}
+		],
+		"primaryKeys": [
+			"pusk_id"
+		],
+		"uniqueFields": [],
+		"name": "puskesmas",
+		"schema": "public"
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3",
+									"colspan": 1,
+									"rowspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c6",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"section4",
+								"section",
+								"section1"
+							]
+						},
+						"c6": {
+							"model": "c3",
+							"items": [
+								"section2",
+								"section3"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"section5"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c11",
+									"rowspan": 1
+								},
+								{
+									"cell": "c10",
+									"rowspan": 1
+								},
+								{
+									"cell": "c9",
+									"colspan": 1,
+									"rowspan": 1
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field3"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field4"
+							]
+						},
+						"c9": {
+							"model": "c1",
+							"items": [
+								"custom_button1"
+							]
+						},
+						"c10": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field20"
+							]
+						},
+						"c11": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field36"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section1": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c6"
+								},
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c7"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field9"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field7"
+							]
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field"
+							]
+						},
+						"c3": {
+							"model": "c1",
+							"items": []
+						},
+						"c4": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field11"
+							]
+						},
+						"c5": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field8"
+							]
+						},
+						"c6": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field17"
+							]
+						},
+						"c7": {
+							"model": "c1",
+							"items": [
+								"custom_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section2": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c5"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c8",
+									"rowspan": 1
+								},
+								{
+									"cell": "c4",
+									"rowspan": 1
+								},
+								{
+									"cell": "c7",
+									"rowspan": 1
+								}
+							]
+						}
+					],
+					"cells": {
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field12"
+							]
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field13"
+							]
+						},
+						"c4": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field14"
+							]
+						},
+						"c5": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field16"
+							]
+						},
+						"c7": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field5"
+							]
+						},
+						"c8": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section4": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 1
+								},
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c3",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 1
+								},
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c6",
+									"colspan": 2
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c7"
+								},
+								{
+									"cell": "c8"
+								},
+								{
+									"cell": "c9"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field1"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field30"
+							]
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field15"
+							]
+						},
+						"c3": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field10"
+							]
+						},
+						"c4": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field2"
+							]
+						},
+						"c5": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field26"
+							]
+						},
+						"c6": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field27"
+							]
+						},
+						"c7": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field31"
+							]
+						},
+						"c8": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field28"
+							]
+						},
+						"c9": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field29"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section3": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field18"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section5": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field6"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field1": {
+					"field": "pusk",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "no_hp_kapus",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "aktif",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field28": {
+					"field": "rw",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field30": {
+					"field": "kode_pos",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field27": {
+					"field": "village",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field26": {
+					"field": "district",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field29": {
+					"field": "rt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field31": {
+					"field": "alamat_fasyankes",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field15": {
+					"field": "no_wa_puskesmas",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "BPJS"
+					},
+					"location": "section",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field3": {
+					"field": "user1",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "password",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"custom_button1": {
+					"type": "custom_button",
+					"eventGid": 9524544,
+					"label": {
+						"text": "Test Pcare",
+						"type": 0
+					},
+					"icon": {
+						"glyph": "ok",
+						"style": 0
+					},
+					"buttonStyle": "primary"
+				},
+				"integrated_edit_field36": {
+					"field": "is_bridgingpcare",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "is_bridgingpcare",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"section1": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Satu sehat"
+					},
+					"location": "section1",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field9": {
+					"field": "satset_org_id",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "satset_org_id",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"integrated_edit_field7": {
+					"field": "satset_client_secret",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "satset_client_secret",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"integrated_edit_field": {
+					"field": "satset_client_id",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "satset_client_id",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"custom_button": {
+					"type": "custom_button",
+					"eventGid": 1776772665,
+					"label": {
+						"text": "Test Satset",
+						"type": 0
+					},
+					"icon": {
+						"fa": "check",
+						"style": 0
+					},
+					"buttonStyle": "primary"
+				},
+				"integrated_edit_field8": {
+					"field": "berlaku_sd",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "access_token",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "is_bridgingsatset",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "is_bridgingsatset",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"section2": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Konfig KOP"
+					},
+					"location": "section2",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field12": {
+					"field": "kop_gambar",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field13": {
+					"field": "kop_line1",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field14": {
+					"field": "kop_line2",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "kop_line3",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"section4": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Identitas"
+					},
+					"location": "section4",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field18": {
+					"field": "wa_setelah_periksa",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field19": {
+					"field": "wa_reminder",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"section3": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Template Pesan WhatsApp yang dikiirm ke pasien"
+					},
+					"location": "section3",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field20": {
+					"field": "ktp_cek",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "ktp_cek",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"integrated_edit_field5": {
+					"field": "kop_line4",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "is_resep_diberikan_sama",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "is_resep_diberikan_sama",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"section5": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Farmasi"
+					},
+					"location": "section5",
+					"bsStyle": "default",
+					"panelType": 3
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": true,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field1",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6",
+								"export_field7",
+								"export_field9",
+								"export_field11",
+								"export_field16",
+								"export_field22",
+								"export_field26",
+								"export_field27",
+								"export_field28",
+								"export_field29",
+								"export_field30",
+								"export_field31",
+								"export_field32",
+								"export_field37",
+								"export_field43",
+								"export_field44",
+								"export_field49",
+								"export_field50"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "pusk_id",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "no_urut",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "pusk",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "aktif",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "user1",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "password",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "cons",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "secret",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "kode_provider",
+					"type": "export_field"
+				},
+				"export_field11": {
+					"field": "no_hp_kapus",
+					"type": "export_field"
+				},
+				"export_field16": {
+					"field": "no_wa_puskesmas",
+					"type": "export_field"
+				},
+				"export_field22": {
+					"field": "user_key",
+					"type": "export_field"
+				},
+				"export_field26": {
+					"field": "access_token",
+					"type": "export_field"
+				},
+				"export_field27": {
+					"field": "district",
+					"type": "export_field"
+				},
+				"export_field28": {
+					"field": "village",
+					"type": "export_field"
+				},
+				"export_field29": {
+					"field": "rw",
+					"type": "export_field"
+				},
+				"export_field30": {
+					"field": "rt",
+					"type": "export_field"
+				},
+				"export_field31": {
+					"field": "kode_pos",
+					"type": "export_field"
+				},
+				"export_field32": {
+					"field": "alamat_fasyankes",
+					"type": "export_field"
+				},
+				"export_field37": {
+					"field": "is_bridgingpcare",
+					"type": "export_field"
+				},
+				"export_field43": {
+					"field": "wkt_update_token",
+					"type": "export_field"
+				},
+				"export_field44": {
+					"field": "kab_kota_pcare",
+					"type": "export_field"
+				},
+				"export_field49": {
+					"field": "jenis_fasyankes",
+					"type": "export_field"
+				},
+				"export_field50": {
+					"field": "kode_pusdatin",
+					"type": "export_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field1",
+								"import_field2",
+								"import_field3",
+								"import_field4",
+								"import_field5",
+								"import_field6",
+								"import_field7",
+								"import_field9",
+								"import_field11",
+								"import_field16",
+								"import_field22",
+								"import_field26",
+								"import_field27",
+								"import_field28",
+								"import_field29",
+								"import_field30",
+								"import_field31",
+								"import_field32",
+								"import_field37",
+								"import_field43",
+								"import_field44",
+								"import_field49",
+								"import_field50",
+								"import_field52",
+								"import_field8",
+								"import_field10",
+								"import_field12",
+								"import_field13",
+								"import_field14",
+								"import_field15",
+								"import_field17",
+								"import_field18",
+								"import_field19",
+								"import_field20",
+								"import_field21"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "pusk_id",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "no_urut",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "pusk",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "aktif",
+					"type": "import_field"
+				},
+				"import_field4": {
+					"field": "user1",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "password",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "cons",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "secret",
+					"type": "import_field"
+				},
+				"import_field9": {
+					"field": "kode_provider",
+					"type": "import_field"
+				},
+				"import_field11": {
+					"field": "no_hp_kapus",
+					"type": "import_field"
+				},
+				"import_field16": {
+					"field": "no_wa_puskesmas",
+					"type": "import_field"
+				},
+				"import_field22": {
+					"field": "user_key",
+					"type": "import_field"
+				},
+				"import_field26": {
+					"field": "access_token",
+					"type": "import_field"
+				},
+				"import_field27": {
+					"field": "district",
+					"type": "import_field"
+				},
+				"import_field28": {
+					"field": "village",
+					"type": "import_field"
+				},
+				"import_field29": {
+					"field": "rw",
+					"type": "import_field"
+				},
+				"import_field30": {
+					"field": "rt",
+					"type": "import_field"
+				},
+				"import_field31": {
+					"field": "kode_pos",
+					"type": "import_field"
+				},
+				"import_field32": {
+					"field": "alamat_fasyankes",
+					"type": "import_field"
+				},
+				"import_field37": {
+					"field": "is_bridgingpcare",
+					"type": "import_field"
+				},
+				"import_field43": {
+					"field": "wkt_update_token",
+					"type": "import_field"
+				},
+				"import_field44": {
+					"field": "kab_kota_pcare",
+					"type": "import_field"
+				},
+				"import_field49": {
+					"field": "jenis_fasyankes",
+					"type": "import_field"
+				},
+				"import_field50": {
+					"field": "kode_pusdatin",
+					"type": "import_field"
+				},
+				"import_field52": {
+					"field": "berlaku_sd",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "satset_client_id",
+					"type": "import_field"
+				},
+				"import_field10": {
+					"field": "satset_client_secret",
+					"type": "import_field"
+				},
+				"import_field12": {
+					"field": "satset_org_id",
+					"type": "import_field"
+				},
+				"import_field13": {
+					"field": "is_bridgingsatset",
+					"type": "import_field"
+				},
+				"import_field14": {
+					"field": "kop_line1",
+					"type": "import_field"
+				},
+				"import_field15": {
+					"field": "kop_line2",
+					"type": "import_field"
+				},
+				"import_field17": {
+					"field": "kop_line3",
+					"type": "import_field"
+				},
+				"import_field18": {
+					"field": "wa_setelah_periksa",
+					"type": "import_field"
+				},
+				"import_field19": {
+					"field": "wa_reminder",
+					"type": "import_field"
+				},
+				"import_field20": {
+					"field": "kop_line4",
+					"type": "import_field"
+				},
+				"import_field21": {
+					"field": "is_resep_diberikan_sama",
+					"type": "import_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3",
+									"colspan": 1,
+									"rowspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c6",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"section4",
+								"section",
+								"section1"
+							]
+						},
+						"c6": {
+							"model": "c3",
+							"items": [
+								"section2",
+								"section3"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"section5"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section4": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 1
+								},
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c3",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 1
+								},
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c6",
+									"colspan": 2
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c7"
+								},
+								{
+									"cell": "c8"
+								},
+								{
+									"cell": "c9"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field1"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field30"
+							]
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field15"
+							]
+						},
+						"c3": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field10"
+							]
+						},
+						"c4": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field2"
+							]
+						},
+						"c5": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field26"
+							]
+						},
+						"c6": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field27"
+							]
+						},
+						"c7": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field31"
+							]
+						},
+						"c8": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field28"
+							]
+						},
+						"c9": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field29"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c11",
+									"rowspan": 1
+								},
+								{
+									"cell": "c10",
+									"rowspan": 1
+								},
+								{
+									"cell": "c9",
+									"colspan": 1,
+									"rowspan": 1
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field3"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field4"
+							]
+						},
+						"c9": {
+							"model": "c1",
+							"items": [
+								"custom_button1"
+							]
+						},
+						"c10": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field20"
+							]
+						},
+						"c11": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field36"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section1": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c6"
+								},
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c7"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field9"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field7"
+							]
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field"
+							]
+						},
+						"c3": {
+							"model": "c1",
+							"items": []
+						},
+						"c4": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field11"
+							]
+						},
+						"c5": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field8"
+							]
+						},
+						"c6": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field17"
+							]
+						},
+						"c7": {
+							"model": "c1",
+							"items": [
+								"custom_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section2": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c5"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c8",
+									"rowspan": 1
+								},
+								{
+									"cell": "c4",
+									"rowspan": 1
+								},
+								{
+									"cell": "c7",
+									"rowspan": 1
+								}
+							]
+						}
+					],
+					"cells": {
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field12"
+							]
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field13"
+							]
+						},
+						"c4": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field14"
+							]
+						},
+						"c5": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field16"
+							]
+						},
+						"c7": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field5"
+							]
+						},
+						"c8": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section3": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field18"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section5": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field6"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header",
+					"title": {
+						"page": "edit",
+						"table": "public.puskesmas",
+						"type": 7
+					}
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save": {
+					"type": "edit_save"
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"section4": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Identitas"
+					},
+					"location": "section4",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field1": {
+					"field": "pusk",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field30": {
+					"field": "kode_pos",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field15": {
+					"field": "no_wa_puskesmas",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "no_hp_kapus",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "aktif",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field26": {
+					"field": "district",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field27": {
+					"field": "village",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field31": {
+					"field": "alamat_fasyankes",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field28": {
+					"field": "rw",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field29": {
+					"field": "rt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "BPJS"
+					},
+					"location": "section",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field3": {
+					"field": "user1",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "password",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"custom_button1": {
+					"type": "custom_button",
+					"eventGid": 9524544,
+					"label": {
+						"text": "Test Pcare",
+						"type": 0
+					},
+					"icon": {
+						"glyph": "ok",
+						"style": 0
+					},
+					"buttonStyle": "primary"
+				},
+				"integrated_edit_field20": {
+					"field": "ktp_cek",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "ktp_cek",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"integrated_edit_field36": {
+					"field": "is_bridgingpcare",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "is_bridgingpcare",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"section1": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Satu sehat"
+					},
+					"location": "section1",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field9": {
+					"field": "satset_org_id",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "satset_org_id",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"integrated_edit_field7": {
+					"field": "satset_client_secret",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "satset_client_secret",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"integrated_edit_field": {
+					"field": "satset_client_id",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "satset_client_id",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"integrated_edit_field11": {
+					"field": "is_bridgingsatset",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "is_bridgingsatset",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				},
+				"integrated_edit_field8": {
+					"field": "berlaku_sd",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "access_token",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"custom_button": {
+					"type": "custom_button",
+					"eventGid": 1776772665,
+					"label": {
+						"text": "Test Satset",
+						"type": 0
+					},
+					"icon": {
+						"fa": "check",
+						"style": 0
+					},
+					"buttonStyle": "primary"
+				},
+				"section2": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Konfig KOP"
+					},
+					"location": "section2",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field12": {
+					"field": "kop_gambar",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field13": {
+					"field": "kop_line1",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field14": {
+					"field": "kop_line2",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "kop_line3",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "kop_line4",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"section3": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Template Pesan WhatsApp yang dikiirm ke pasien"
+					},
+					"location": "section3",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field18": {
+					"field": "wa_setelah_periksa",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field19": {
+					"field": "wa_reminder",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"section5": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Farmasi"
+					},
+					"location": "section5",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field6": {
+					"field": "is_resep_diberikan_sama",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "is_resep_diberikan_sama",
+						"table": "public.puskesmas",
+						"type": 3
+					}
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {
+				"Indonesian": "Puskesmas, Edit [{%pusk}]"
+			},
+			"cardStyle": {}
+		},
+		{
+			"id": "view",
+			"type": "view",
+			"layoutId": "nomenu",
+			"disabled": true,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "view-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "view-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_back_list",
+								"view_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "view-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7",
+								"integrated_edit_field9",
+								"integrated_edit_field11",
+								"integrated_edit_field16",
+								"integrated_edit_field22",
+								"integrated_edit_field26",
+								"integrated_edit_field27",
+								"integrated_edit_field28",
+								"integrated_edit_field29",
+								"integrated_edit_field30",
+								"integrated_edit_field31",
+								"integrated_edit_field32",
+								"integrated_edit_field37",
+								"integrated_edit_field43",
+								"integrated_edit_field44",
+								"integrated_edit_field49",
+								"integrated_edit_field50"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"view_header": {
+					"type": "view_header"
+				},
+				"view_back_list": {
+					"type": "view_back_list"
+				},
+				"view_close": {
+					"type": "view_close"
+				},
+				"integrated_edit_field": {
+					"field": "pusk_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "no_urut",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "pusk",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "aktif",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "user1",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "password",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "cons",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "secret",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "kode_provider",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "no_hp_kapus",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "no_wa_puskesmas",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field22": {
+					"field": "user_key",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field26": {
+					"field": "access_token",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field27": {
+					"field": "district",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field28": {
+					"field": "village",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field29": {
+					"field": "rw",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field30": {
+					"field": "rt",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field31": {
+					"field": "kode_pos",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field32": {
+					"field": "alamat_fasyankes",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field37": {
+					"field": "is_bridgingpcare",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field43": {
+					"field": "wkt_update_token",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field44": {
+					"field": "kab_kota_pcare",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field49": {
+					"field": "jenis_fasyankes",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field50": {
+					"field": "kode_pusdatin",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"view_edit"
+					]
+				},
+				"view_edit": {
+					"type": "view_edit"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "leftbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add",
+								"delete"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size",
+								"print_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu",
+								"search_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-sidebar-top",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_icons"
+								},
+								{
+									"cell": "headcell_checkbox"
+								},
+								{
+									"cell": "headcell_field"
+								},
+								{
+									"cell": "headcell_field1"
+								},
+								{
+									"cell": "headcell_field2"
+								},
+								{
+									"cell": "headcell_field4"
+								},
+								{
+									"cell": "headcell_field6"
+								},
+								{
+									"cell": "headcell_field7"
+								},
+								{
+									"cell": "headcell_field8"
+								},
+								{
+									"cell": "headcell_field9"
+								},
+								{
+									"cell": "headcell_field10"
+								},
+								{
+									"cell": "headcell_field11"
+								},
+								{
+									"cell": "headcell_field12"
+								},
+								{
+									"cell": "headcell_field13"
+								},
+								{
+									"cell": "headcell_field14"
+								},
+								{
+									"cell": "headcell_field3"
+								},
+								{
+									"cell": "headcell_field5"
+								},
+								{
+									"cell": "headcell_field15"
+								},
+								{
+									"cell": "headcell_field16"
+								},
+								{
+									"cell": "headcell_field17"
+								},
+								{
+									"cell": "headcell_field18"
+								},
+								{
+									"cell": "headcell_field19"
+								},
+								{
+									"cell": "headcell_field20"
+								},
+								{
+									"cell": "headcell_field21"
+								},
+								{
+									"cell": "headcell_field22"
+								},
+								{
+									"cell": "headcell_field23"
+								},
+								{
+									"cell": "headcell_field24"
+								},
+								{
+									"cell": "headcell_field25"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_icons"
+								},
+								{
+									"cell": "cell_checkbox"
+								},
+								{
+									"cell": "cell_field"
+								},
+								{
+									"cell": "cell_field1"
+								},
+								{
+									"cell": "cell_field2"
+								},
+								{
+									"cell": "cell_field4"
+								},
+								{
+									"cell": "cell_field6"
+								},
+								{
+									"cell": "cell_field7"
+								},
+								{
+									"cell": "cell_field8"
+								},
+								{
+									"cell": "cell_field9"
+								},
+								{
+									"cell": "cell_field10"
+								},
+								{
+									"cell": "cell_field11"
+								},
+								{
+									"cell": "cell_field12"
+								},
+								{
+									"cell": "cell_field13"
+								},
+								{
+									"cell": "cell_field14"
+								},
+								{
+									"cell": "cell_field3"
+								},
+								{
+									"cell": "cell_field5"
+								},
+								{
+									"cell": "cell_field15"
+								},
+								{
+									"cell": "cell_field16"
+								},
+								{
+									"cell": "cell_field17"
+								},
+								{
+									"cell": "cell_field18"
+								},
+								{
+									"cell": "cell_field19"
+								},
+								{
+									"cell": "cell_field20"
+								},
+								{
+									"cell": "cell_field21"
+								},
+								{
+									"cell": "cell_field22"
+								},
+								{
+									"cell": "cell_field23"
+								},
+								{
+									"cell": "cell_field24"
+								},
+								{
+									"cell": "cell_field25"
+								}
+							]
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_icons"
+								},
+								{
+									"cell": "footcell_checkbox"
+								},
+								{
+									"cell": "footcell_field"
+								},
+								{
+									"cell": "footcell_field1"
+								},
+								{
+									"cell": "footcell_field2"
+								},
+								{
+									"cell": "footcell_field4"
+								},
+								{
+									"cell": "footcell_field6"
+								},
+								{
+									"cell": "footcell_field7"
+								},
+								{
+									"cell": "footcell_field8"
+								},
+								{
+									"cell": "footcell_field9"
+								},
+								{
+									"cell": "footcell_field10"
+								},
+								{
+									"cell": "footcell_field11"
+								},
+								{
+									"cell": "footcell_field12"
+								},
+								{
+									"cell": "footcell_field13"
+								},
+								{
+									"cell": "footcell_field14"
+								},
+								{
+									"cell": "footcell_field3"
+								},
+								{
+									"cell": "footcell_field5"
+								},
+								{
+									"cell": "footcell_field15"
+								},
+								{
+									"cell": "footcell_field16"
+								},
+								{
+									"cell": "footcell_field17"
+								},
+								{
+									"cell": "footcell_field18"
+								},
+								{
+									"cell": "footcell_field19"
+								},
+								{
+									"cell": "footcell_field20"
+								},
+								{
+									"cell": "footcell_field21"
+								},
+								{
+									"cell": "footcell_field22"
+								},
+								{
+									"cell": "footcell_field23"
+								},
+								{
+									"cell": "footcell_field24"
+								},
+								{
+									"cell": "footcell_field25"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field1"
+							],
+							"field": "pusk_id"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field"
+							],
+							"field": "pusk_id"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "pusk_id"
+						},
+						"headcell_field1": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field4"
+							],
+							"field": "pusk"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field2"
+							],
+							"field": "pusk"
+						},
+						"footcell_field1": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "pusk"
+						},
+						"headcell_field2": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field5"
+							],
+							"field": "aktif"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field3"
+							],
+							"field": "aktif"
+						},
+						"footcell_field2": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "aktif"
+						},
+						"headcell_field4": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field12"
+							],
+							"field": "no_hp_kapus"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field11"
+							],
+							"field": "no_hp_kapus"
+						},
+						"footcell_field4": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "no_hp_kapus"
+						},
+						"headcell_field6": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field33"
+							],
+							"field": "access_token"
+						},
+						"cell_field6": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field26"
+							],
+							"field": "access_token"
+						},
+						"footcell_field6": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "access_token"
+						},
+						"headcell_field7": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field34"
+							],
+							"field": "district"
+						},
+						"cell_field7": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field27"
+							],
+							"field": "district"
+						},
+						"footcell_field7": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "district"
+						},
+						"headcell_field8": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field35"
+							],
+							"field": "village"
+						},
+						"cell_field8": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field28"
+							],
+							"field": "village"
+						},
+						"footcell_field8": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "village"
+						},
+						"headcell_field9": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field36"
+							],
+							"field": "rw"
+						},
+						"cell_field9": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field29"
+							],
+							"field": "rw"
+						},
+						"footcell_field9": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "rw"
+						},
+						"headcell_field10": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field38"
+							],
+							"field": "rt"
+						},
+						"cell_field10": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field30"
+							],
+							"field": "rt"
+						},
+						"footcell_field10": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "rt"
+						},
+						"headcell_field11": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field39"
+							],
+							"field": "kode_pos"
+						},
+						"cell_field11": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field31"
+							],
+							"field": "kode_pos"
+						},
+						"footcell_field11": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "kode_pos"
+						},
+						"headcell_field12": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field40"
+							],
+							"field": "alamat_fasyankes"
+						},
+						"cell_field12": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field32"
+							],
+							"field": "alamat_fasyankes"
+						},
+						"footcell_field12": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "alamat_fasyankes"
+						},
+						"headcell_field13": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field41"
+							],
+							"field": "is_bridgingpcare"
+						},
+						"cell_field13": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field37"
+							],
+							"field": "is_bridgingpcare"
+						},
+						"footcell_field13": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "is_bridgingpcare"
+						},
+						"headcell_checkbox": {
+							"model": "headcell_checkbox",
+							"items": [
+								"grid_checkbox_head"
+							]
+						},
+						"cell_checkbox": {
+							"model": "cell_checkbox",
+							"items": [
+								"grid_checkbox"
+							]
+						},
+						"footcell_checkbox": {
+							"model": "footcell_checkbox",
+							"items": []
+						},
+						"headcell_icons": {
+							"model": "headcell_icons",
+							"items": []
+						},
+						"cell_icons": {
+							"model": "cell_icons",
+							"items": [
+								"grid_edit"
+							]
+						},
+						"footcell_icons": {
+							"model": "footcell_icons",
+							"items": []
+						},
+						"headcell_field14": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"field": "berlaku_sd"
+						},
+						"cell_field14": {
+							"model": "cell_field",
+							"items": [
+								"grid_field"
+							],
+							"field": "berlaku_sd"
+						},
+						"footcell_field14": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "berlaku_sd"
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label1"
+							],
+							"field": "satset_client_id"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"grid_field1"
+							],
+							"field": "satset_client_id"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "satset_client_id"
+						},
+						"headcell_field5": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label2"
+							],
+							"field": "satset_client_secret"
+						},
+						"cell_field5": {
+							"model": "cell_field",
+							"items": [
+								"grid_field2"
+							],
+							"field": "satset_client_secret"
+						},
+						"footcell_field5": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "satset_client_secret"
+						},
+						"headcell_field15": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label3"
+							],
+							"field": "satset_org_id"
+						},
+						"cell_field15": {
+							"model": "cell_field",
+							"items": [
+								"grid_field3"
+							],
+							"field": "satset_org_id"
+						},
+						"footcell_field15": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "satset_org_id"
+						},
+						"headcell_field16": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label4"
+							],
+							"field": "is_bridgingsatset"
+						},
+						"cell_field16": {
+							"model": "cell_field",
+							"items": [
+								"grid_field4"
+							],
+							"field": "is_bridgingsatset"
+						},
+						"footcell_field16": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "is_bridgingsatset"
+						},
+						"headcell_field17": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label5"
+							],
+							"field": "kop_gambar"
+						},
+						"cell_field17": {
+							"model": "cell_field",
+							"items": [
+								"grid_field5"
+							],
+							"field": "kop_gambar"
+						},
+						"footcell_field17": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "kop_gambar"
+						},
+						"headcell_field18": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label6"
+							],
+							"field": "kop_line1"
+						},
+						"cell_field18": {
+							"model": "cell_field",
+							"items": [
+								"grid_field6"
+							],
+							"field": "kop_line1"
+						},
+						"footcell_field18": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "kop_line1"
+						},
+						"headcell_field19": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label7"
+							],
+							"field": "kop_line2"
+						},
+						"cell_field19": {
+							"model": "cell_field",
+							"items": [
+								"grid_field7"
+							],
+							"field": "kop_line2"
+						},
+						"footcell_field19": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "kop_line2"
+						},
+						"headcell_field20": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label8"
+							],
+							"field": "kop_line3"
+						},
+						"cell_field20": {
+							"model": "cell_field",
+							"items": [
+								"grid_field8"
+							],
+							"field": "kop_line3"
+						},
+						"footcell_field20": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "kop_line3"
+						},
+						"headcell_field21": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label9"
+							],
+							"field": "wa_setelah_periksa"
+						},
+						"cell_field21": {
+							"model": "cell_field",
+							"items": [
+								"grid_field9"
+							],
+							"field": "wa_setelah_periksa"
+						},
+						"footcell_field21": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "wa_setelah_periksa"
+						},
+						"headcell_field22": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label10"
+							],
+							"field": "wa_reminder"
+						},
+						"cell_field22": {
+							"model": "cell_field",
+							"items": [
+								"grid_field10"
+							],
+							"field": "wa_reminder"
+						},
+						"footcell_field22": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "wa_reminder"
+						},
+						"headcell_field23": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label11"
+							],
+							"field": "ktp_cek"
+						},
+						"cell_field23": {
+							"model": "cell_field",
+							"items": [
+								"grid_field11"
+							],
+							"field": "ktp_cek"
+						},
+						"footcell_field23": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "ktp_cek"
+						},
+						"headcell_field24": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label12"
+							],
+							"field": "kop_line4"
+						},
+						"cell_field24": {
+							"model": "cell_field",
+							"items": [
+								"grid_field12"
+							],
+							"field": "kop_line4"
+						},
+						"footcell_field24": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "kop_line4"
+						},
+						"headcell_field25": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label13"
+							],
+							"field": "is_resep_diberikan_sama"
+						},
+						"cell_field25": {
+							"model": "cell_field",
+							"items": [
+								"grid_field13"
+							],
+							"field": "is_resep_diberikan_sama"
+						},
+						"footcell_field25": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "is_resep_diberikan_sama"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field",
+						"search_panel_field23",
+						"search_panel_field21",
+						"search_panel_field20",
+						"search_panel_field19",
+						"search_panel_field18",
+						"search_panel_field17",
+						"search_panel_field15",
+						"search_panel_field14",
+						"search_panel_field13",
+						"search_panel_field12",
+						"search_panel_field10",
+						"search_panel_field8",
+						"search_panel_field52",
+						"search_panel_field50",
+						"search_panel_field49",
+						"search_panel_field44",
+						"search_panel_field43",
+						"search_panel_field37",
+						"search_panel_field32",
+						"search_panel_field31",
+						"search_panel_field30",
+						"search_panel_field29",
+						"search_panel_field28",
+						"search_panel_field27",
+						"search_panel_field26",
+						"search_panel_field22",
+						"search_panel_field16",
+						"search_panel_field11",
+						"search_panel_field9",
+						"search_panel_field7",
+						"search_panel_field6",
+						"search_panel_field5",
+						"search_panel_field4",
+						"search_panel_field3",
+						"search_panel_field2",
+						"search_panel_field1"
+					],
+					"_flexiblePanel": true
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"delete_selected",
+						"-1",
+						"show_search_panel",
+						"hide_search_panel",
+						"-",
+						"import"
+					]
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"search_panel_field": {
+					"field": "pusk_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field1": {
+					"field": "no_urut",
+					"type": "search_panel_field"
+				},
+				"search_panel_field2": {
+					"field": "pusk",
+					"type": "search_panel_field"
+				},
+				"search_panel_field3": {
+					"field": "aktif",
+					"type": "search_panel_field"
+				},
+				"search_panel_field4": {
+					"field": "user1",
+					"type": "search_panel_field"
+				},
+				"search_panel_field5": {
+					"field": "password",
+					"type": "search_panel_field"
+				},
+				"search_panel_field6": {
+					"field": "cons",
+					"type": "search_panel_field"
+				},
+				"search_panel_field7": {
+					"field": "secret",
+					"type": "search_panel_field"
+				},
+				"search_panel_field9": {
+					"field": "kode_provider",
+					"type": "search_panel_field"
+				},
+				"search_panel_field11": {
+					"field": "no_hp_kapus",
+					"type": "search_panel_field"
+				},
+				"search_panel_field16": {
+					"field": "no_wa_puskesmas",
+					"type": "search_panel_field"
+				},
+				"search_panel_field22": {
+					"field": "user_key",
+					"type": "search_panel_field"
+				},
+				"search_panel_field26": {
+					"field": "access_token",
+					"type": "search_panel_field"
+				},
+				"search_panel_field27": {
+					"field": "district",
+					"type": "search_panel_field"
+				},
+				"search_panel_field28": {
+					"field": "village",
+					"type": "search_panel_field"
+				},
+				"search_panel_field29": {
+					"field": "rw",
+					"type": "search_panel_field"
+				},
+				"search_panel_field30": {
+					"field": "rt",
+					"type": "search_panel_field"
+				},
+				"search_panel_field31": {
+					"field": "kode_pos",
+					"type": "search_panel_field"
+				},
+				"search_panel_field32": {
+					"field": "alamat_fasyankes",
+					"type": "search_panel_field"
+				},
+				"search_panel_field37": {
+					"field": "is_bridgingpcare",
+					"type": "search_panel_field"
+				},
+				"search_panel_field43": {
+					"field": "wkt_update_token",
+					"type": "search_panel_field"
+				},
+				"search_panel_field44": {
+					"field": "kab_kota_pcare",
+					"type": "search_panel_field"
+				},
+				"search_panel_field49": {
+					"field": "jenis_fasyankes",
+					"type": "search_panel_field"
+				},
+				"search_panel_field50": {
+					"field": "kode_pusdatin",
+					"type": "search_panel_field"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"add": {
+					"type": "add",
+					"icon": {
+						"glyph": "plus",
+						"style": 0
+					},
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  color: red;\n}\ndiv.modal-dialog.ui-draggable, div.modal-body, div.modal-content.ui-resizable {\nwidth: 100% !important;\n}",
+					"popup": true
+				},
+				"-": {
+					"type": "-"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"import": {
+					"type": "import"
+				},
+				"-2": {
+					"type": "-"
+				},
+				"print_panel": {
+					"type": "print_panel",
+					"items": [
+						"print_scope",
+						"print_records",
+						"print_button"
+					]
+				},
+				"print_scope": {
+					"type": "print_scope"
+				},
+				"print_button": {
+					"type": "print_button"
+				},
+				"print_records": {
+					"type": "print_records"
+				},
+				"delete": {
+					"type": "delete"
+				},
+				"delete_selected": {
+					"type": "delete_selected"
+				},
+				"simple_grid_field": {
+					"field": "pusk_id",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field1": {
+					"type": "grid_field_label",
+					"field": "pusk_id"
+				},
+				"simple_grid_field2": {
+					"field": "pusk",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field4": {
+					"type": "grid_field_label",
+					"field": "pusk"
+				},
+				"simple_grid_field3": {
+					"field": "aktif",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field5": {
+					"type": "grid_field_label",
+					"field": "aktif"
+				},
+				"simple_grid_field11": {
+					"field": "no_hp_kapus",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field12": {
+					"type": "grid_field_label",
+					"field": "no_hp_kapus"
+				},
+				"simple_grid_field26": {
+					"field": "access_token",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field33": {
+					"type": "grid_field_label",
+					"field": "access_token"
+				},
+				"simple_grid_field27": {
+					"field": "district",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field34": {
+					"type": "grid_field_label",
+					"field": "district"
+				},
+				"simple_grid_field28": {
+					"field": "village",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field35": {
+					"type": "grid_field_label",
+					"field": "village"
+				},
+				"simple_grid_field29": {
+					"field": "rw",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field36": {
+					"type": "grid_field_label",
+					"field": "rw"
+				},
+				"simple_grid_field30": {
+					"field": "rt",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field38": {
+					"type": "grid_field_label",
+					"field": "rt"
+				},
+				"simple_grid_field31": {
+					"field": "kode_pos",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field39": {
+					"type": "grid_field_label",
+					"field": "kode_pos"
+				},
+				"simple_grid_field32": {
+					"field": "alamat_fasyankes",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field40": {
+					"type": "grid_field_label",
+					"field": "alamat_fasyankes"
+				},
+				"simple_grid_field37": {
+					"field": "is_bridgingpcare",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field41": {
+					"type": "grid_field_label",
+					"field": "is_bridgingpcare"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"grid_edit": {
+					"type": "grid_edit",
+					"icon": {
+						"glyph": "pencil",
+						"style": 0
+					},
+					"label": {
+						"type": 0,
+						"text": "Edit"
+					},
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  color: red;\n}\ndiv.modal-dialog.ui-draggable, div.modal-body, div.modal-content.ui-resizable {\nwidth: 100% !important;\n}",
+					"buttonStyle": "success",
+					"popup": true
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": true
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				},
+				"grid_field": {
+					"field": "berlaku_sd",
+					"type": "grid_field"
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "berlaku_sd"
+				},
+				"search_panel_field52": {
+					"field": "berlaku_sd",
+					"type": "search_panel_field"
+				},
+				"grid_field1": {
+					"field": "satset_client_id",
+					"type": "grid_field"
+				},
+				"grid_field_label1": {
+					"type": "grid_field_label",
+					"field": "satset_client_id"
+				},
+				"grid_field2": {
+					"field": "satset_client_secret",
+					"type": "grid_field"
+				},
+				"grid_field_label2": {
+					"type": "grid_field_label",
+					"field": "satset_client_secret"
+				},
+				"grid_field3": {
+					"field": "satset_org_id",
+					"type": "grid_field"
+				},
+				"grid_field_label3": {
+					"type": "grid_field_label",
+					"field": "satset_org_id"
+				},
+				"grid_field4": {
+					"field": "is_bridgingsatset",
+					"type": "grid_field"
+				},
+				"grid_field_label4": {
+					"type": "grid_field_label",
+					"field": "is_bridgingsatset"
+				},
+				"grid_field5": {
+					"field": "kop_gambar",
+					"type": "grid_field"
+				},
+				"grid_field_label5": {
+					"type": "grid_field_label",
+					"field": "kop_gambar"
+				},
+				"grid_field6": {
+					"field": "kop_line1",
+					"type": "grid_field"
+				},
+				"grid_field_label6": {
+					"type": "grid_field_label",
+					"field": "kop_line1"
+				},
+				"grid_field7": {
+					"field": "kop_line2",
+					"type": "grid_field"
+				},
+				"grid_field_label7": {
+					"type": "grid_field_label",
+					"field": "kop_line2"
+				},
+				"grid_field8": {
+					"field": "kop_line3",
+					"type": "grid_field"
+				},
+				"grid_field_label8": {
+					"type": "grid_field_label",
+					"field": "kop_line3"
+				},
+				"search_panel_field8": {
+					"field": "satset_client_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field10": {
+					"field": "satset_client_secret",
+					"type": "search_panel_field"
+				},
+				"search_panel_field12": {
+					"field": "satset_org_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field13": {
+					"field": "is_bridgingsatset",
+					"type": "search_panel_field"
+				},
+				"search_panel_field14": {
+					"field": "kop_line1",
+					"type": "search_panel_field"
+				},
+				"search_panel_field15": {
+					"field": "kop_line2",
+					"type": "search_panel_field"
+				},
+				"search_panel_field17": {
+					"field": "kop_line3",
+					"type": "search_panel_field"
+				},
+				"grid_field9": {
+					"field": "wa_setelah_periksa",
+					"type": "grid_field"
+				},
+				"grid_field_label9": {
+					"type": "grid_field_label",
+					"field": "wa_setelah_periksa"
+				},
+				"grid_field10": {
+					"field": "wa_reminder",
+					"type": "grid_field"
+				},
+				"grid_field_label10": {
+					"type": "grid_field_label",
+					"field": "wa_reminder"
+				},
+				"search_panel_field18": {
+					"field": "wa_setelah_periksa",
+					"type": "search_panel_field"
+				},
+				"search_panel_field19": {
+					"field": "wa_reminder",
+					"type": "search_panel_field"
+				},
+				"grid_field11": {
+					"field": "ktp_cek",
+					"type": "grid_field"
+				},
+				"grid_field_label11": {
+					"type": "grid_field_label",
+					"field": "ktp_cek"
+				},
+				"search_panel_field20": {
+					"field": "ktp_cek",
+					"type": "search_panel_field"
+				},
+				"grid_field12": {
+					"field": "kop_line4",
+					"type": "grid_field"
+				},
+				"grid_field_label12": {
+					"type": "grid_field_label",
+					"field": "kop_line4"
+				},
+				"search_panel_field21": {
+					"field": "kop_line4",
+					"type": "search_panel_field"
+				},
+				"grid_field13": {
+					"field": "is_resep_diberikan_sama",
+					"type": "grid_field"
+				},
+				"grid_field_label13": {
+					"type": "grid_field_label",
+					"field": "is_resep_diberikan_sama"
+				},
+				"search_panel_field23": {
+					"field": "is_resep_diberikan_sama",
+					"type": "search_panel_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field9",
+								"simple_grid_field11",
+								"simple_grid_field16",
+								"simple_grid_field22",
+								"simple_grid_field26",
+								"simple_grid_field27",
+								"simple_grid_field28",
+								"simple_grid_field29",
+								"simple_grid_field30",
+								"simple_grid_field31",
+								"simple_grid_field32",
+								"simple_grid_field37",
+								"simple_grid_field43",
+								"simple_grid_field44",
+								"simple_grid_field49",
+								"simple_grid_field50",
+								"simple_grid_field52",
+								"simple_grid_field8",
+								"simple_grid_field10",
+								"simple_grid_field12",
+								"simple_grid_field13",
+								"simple_grid_field14",
+								"simple_grid_field15",
+								"simple_grid_field17",
+								"simple_grid_field18",
+								"simple_grid_field19",
+								"simple_grid_field20",
+								"simple_grid_field21",
+								"simple_grid_field23",
+								"simple_grid_field24"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "pusk_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "no_urut",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "pusk",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "aktif",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "user1",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "password",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "cons",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "secret",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "kode_provider",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "no_hp_kapus",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field16": {
+					"field": "no_wa_puskesmas",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field22": {
+					"field": "user_key",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field26": {
+					"field": "access_token",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field27": {
+					"field": "district",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field28": {
+					"field": "village",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field29": {
+					"field": "rw",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field30": {
+					"field": "rt",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field31": {
+					"field": "kode_pos",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field32": {
+					"field": "alamat_fasyankes",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field37": {
+					"field": "is_bridgingpcare",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field43": {
+					"field": "wkt_update_token",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field44": {
+					"field": "kab_kota_pcare",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field49": {
+					"field": "jenis_fasyankes",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field50": {
+					"field": "kode_pusdatin",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field52": {
+					"field": "berlaku_sd",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "satset_client_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "satset_client_secret",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "satset_org_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "is_bridgingsatset",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field14": {
+					"field": "kop_gambar",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "kop_line1",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field17": {
+					"field": "kop_line2",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field18": {
+					"field": "kop_line3",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field19": {
+					"field": "wa_setelah_periksa",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field20": {
+					"field": "wa_reminder",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field21": {
+					"field": "ktp_cek",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field23": {
+					"field": "kop_line4",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field24": {
+					"field": "is_resep_diberikan_sama",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"English": "Puskesmas"
+	}
+}

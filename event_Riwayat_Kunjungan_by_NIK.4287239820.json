@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Riwayat Kunjungan by NIK",
+	"serverCode": "// Put your code here.\n\n$_SESSION[\"idne\"] = \"\";\n$_SESSION[\"idne\"] = msy_generate_hmac_hash($params[\"ktp\"]);",
+	"beforeJsCode": " var ctrlKtp = Runner.getControl(pageid, 'ktp');\n //var ktp = ctrlKtp.getValue();\n params['ktp']= ctrlKtp.getValue();\n\n\n\n//return false;",
+	"afterJsCode": "  var popup = Runner.displayPopup({\n  url: \"pendaftaran2_list.php\",\n  width: \"100%\",\n  height: \"100%\",\n  header: 'Daftar Riwayat Kunjungan'\n});"
+}

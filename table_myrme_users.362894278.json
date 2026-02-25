@@ -1,0 +1,492 @@
+{
+	"sql": "SELECT\r\n\t\"ID\",\r\n\tusername,\r\n\tpassword,\r\n\temail,\r\n\tfullname,\r\n\tgroupid,\r\n\tactive,\r\n\text_security_id,\r\n\tuserpic,\r\n\treset_token,\r\n\treset_date,\r\n\tpuskesmas,\r\n\tno_hp,\r\n\ttwo_factor,\r\n\ttotp\r\nFROM\r\n\t\"public\".myrme_users",
+	"connId": "conn",
+	"originalTable": "public.myrme_users",
+	"name": "public.myrme_users",
+	"shortTableName": "myrme_users",
+	"dbType": 4,
+	"tableOwnerIdField": "ID",
+	"usersOwnerIdField": "ID",
+	"keyFields": [
+		"ID"
+	],
+	"detailsBadgeColor": "1e90ff",
+	"fields": [
+		{
+			"name": "ID",
+			"sqlExpression": "\"ID\"",
+			"index": 1,
+			"strField": "ID",
+			"type": 3,
+			"autoinc": true,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "ID"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "username",
+			"sqlExpression": "username",
+			"index": 2,
+			"strField": "username",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"denyDuplicate": true
+				}
+			],
+			"label": {
+				"Indonesian": "Username"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "password",
+			"sqlExpression": "password",
+			"index": 3,
+			"strField": "password",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"required": true
+				}
+			],
+			"label": {
+				"Indonesian": "Password"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "email",
+			"sqlExpression": "email",
+			"index": 4,
+			"strField": "email",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"denyDuplicate": true
+				}
+			],
+			"label": {
+				"Indonesian": "Email (Diutamakan Gmail, uuntuk AKtivasi & Reset Password)"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "fullname",
+			"sqlExpression": "fullname",
+			"index": 5,
+			"strField": "fullname",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"required": true
+				}
+			],
+			"label": {
+				"Indonesian": "Nama Lengkap dan Gelar"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "groupid",
+			"sqlExpression": "groupid",
+			"index": 6,
+			"strField": "groupid",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Groupid"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "active",
+			"sqlExpression": "active",
+			"index": 7,
+			"strField": "active",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Active"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "ext_security_id",
+			"sqlExpression": "ext_security_id",
+			"index": 8,
+			"strField": "ext_security_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Ext Security Id"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "userpic",
+			"sqlExpression": "userpic",
+			"index": 9,
+			"strField": "userpic",
+			"googleLikeSearch": false,
+			"type": 128,
+			"viewFormats": [
+				{
+					"format": "Database Image"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Database image"
+				}
+			],
+			"label": {
+				"Indonesian": "Userpic"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "reset_token",
+			"sqlExpression": "reset_token",
+			"index": 10,
+			"strField": "reset_token",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Reset Token"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "reset_date",
+			"sqlExpression": "reset_date",
+			"index": 11,
+			"strField": "reset_date",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"Indonesian": "Reset Date"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "puskesmas",
+			"sqlExpression": "puskesmas",
+			"index": 12,
+			"strField": "puskesmas",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"lookupType": 2,
+					"lookupTable": "public.puskesmas",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "pusk_id",
+					"lookupDisplayField": "pusk",
+					"lookupOrderBy": "pusk"
+				}
+			],
+			"label": {
+				"Indonesian": "Fasyankes"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "no_hp",
+			"sqlExpression": "no_hp",
+			"index": 13,
+			"strField": "no_hp",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Number",
+					"textboxMaxLenth": 13
+				}
+			],
+			"label": {
+				"Indonesian": "No Hp mendukung WhatsApp"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "two_factor",
+			"sqlExpression": "two_factor",
+			"index": 14,
+			"strField": "two_factor",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Two Factor"
+			},
+			"tableName": "public.myrme_users"
+		},
+		{
+			"name": "totp",
+			"sqlExpression": "totp",
+			"index": 15,
+			"strField": "totp",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Totp"
+			},
+			"tableName": "public.myrme_users"
+		}
+	],
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "ID",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": true,
+				"defaultValueSQL": "nextval('\"myrme_users_ID_seq\"'::regclass)",
+				"defaultValue": "nextval('\"myrme_users_ID_seq\"'::regclass)",
+				"nullable": false
+			},
+			{
+				"name": "username",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "password",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "email",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "fullname",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "groupid",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": "'fasyankes'::character varying",
+				"defaultValue": "fasyankes",
+				"nullable": true
+			},
+			{
+				"name": "active",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "ext_security_id",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "userpic",
+				"typeName": "bytea",
+				"size": null,
+				"scale": null,
+				"type": 128,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "reset_token",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "reset_date",
+				"typeName": "timestamp without time zone",
+				"size": null,
+				"scale": null,
+				"type": 135,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "puskesmas",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "no_hp",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "two_factor",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "totp",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			}
+		],
+		"primaryKeys": [
+			"ID"
+		],
+		"uniqueFields": [],
+		"name": "myrme_users",
+		"schema": "public"
+	},
+	"pages": [],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"Indonesian": "Myrme Users"
+	}
+}

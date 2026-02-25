@@ -1,0 +1,620 @@
+{
+	"type": 4,
+	"name": "db_pelayanan",
+	"shortTableName": "db_pelayanan",
+	"detailsBadgeColor": "3cb371",
+	"dashSearchFields": [
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "pelayanan_id"
+				}
+			],
+			"labels": {
+				"Indonesian": "Pelayanan Id"
+			},
+			"field": "public_pemeriksaan_pelayanan_id",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "no_kunjungan_bpjs"
+				}
+			],
+			"labels": {
+				"Indonesian": "No Kunjungan Bpjs"
+			},
+			"field": "public_pemeriksaan_no_kunjungan_bpjs",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "keluhan"
+				}
+			],
+			"labels": {
+				"Indonesian": "Keluhan"
+			},
+			"field": "public_pemeriksaan_keluhan",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "riwayat_penyakit_sekarang"
+				}
+			],
+			"labels": {
+				"Indonesian": "Riwayat Penyakit Sekarang"
+			},
+			"field": "public_pemeriksaan_riwayat_penyakit_sekarang",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "riwayat_penyakit_dulu"
+				}
+			],
+			"labels": {
+				"Indonesian": "Riwayat Penyakit Dulu"
+			},
+			"field": "public_pemeriksaan_riwayat_penyakit_dulu",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "riwayat_penyakit_keluarga"
+				}
+			],
+			"labels": {
+				"Indonesian": "Riwayat Penyakit Keluarga"
+			},
+			"field": "public_pemeriksaan_riwayat_penyakit_keluarga",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "tgl_periksa"
+				}
+			],
+			"labels": {
+				"Indonesian": "Tgl Periksa"
+			},
+			"field": "public_pemeriksaan_tgl_periksa",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "jam_periksa"
+				}
+			],
+			"labels": {
+				"Indonesian": "Jam Periksa"
+			},
+			"field": "public_pemeriksaan_jam_periksa",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "petugas_periksa"
+				}
+			],
+			"labels": {
+				"Indonesian": "Petugas Periksa"
+			},
+			"field": "public_pemeriksaan_petugas_periksa",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "petugas_diagnosa"
+				}
+			],
+			"labels": {
+				"Indonesian": "Petugas Diagnosa"
+			},
+			"field": "public_pemeriksaan_petugas_diagnosa",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "sistole"
+				}
+			],
+			"labels": {
+				"Indonesian": "Sistole"
+			},
+			"field": "public_pemeriksaan_sistole",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "diastole"
+				}
+			],
+			"labels": {
+				"Indonesian": "Diastole"
+			},
+			"field": "public_pemeriksaan_diastole",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "nadi"
+				}
+			],
+			"labels": {
+				"Indonesian": "Nadi"
+			},
+			"field": "public_pemeriksaan_nadi",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "rr"
+				}
+			],
+			"labels": {
+				"Indonesian": "Rr"
+			},
+			"field": "public_pemeriksaan_rr",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "suhu"
+				}
+			],
+			"labels": {
+				"Indonesian": "Suhu"
+			},
+			"field": "public_pemeriksaan_suhu",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "saturasi"
+				}
+			],
+			"labels": {
+				"Indonesian": "Saturasi"
+			},
+			"field": "public_pemeriksaan_saturasi",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "tbne"
+				}
+			],
+			"labels": {
+				"Indonesian": "Tbne"
+			},
+			"field": "public_pemeriksaan_tbne",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "bbne"
+				}
+			],
+			"labels": {
+				"Indonesian": "Bbne"
+			},
+			"field": "public_pemeriksaan_bbne",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "imt"
+				}
+			],
+			"labels": {
+				"Indonesian": "Imt"
+			},
+			"field": "public_pemeriksaan_imt",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "arti_imt"
+				}
+			],
+			"labels": {
+				"Indonesian": "Arti Imt"
+			},
+			"field": "public_pemeriksaan_arti_imt",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "lingkarperut"
+				}
+			],
+			"labels": {
+				"Indonesian": "Lingkarperut"
+			},
+			"field": "public_pemeriksaan_lingkarperut",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "kdsadar"
+				}
+			],
+			"labels": {
+				"Indonesian": "Kdsadar"
+			},
+			"field": "public_pemeriksaan_kdsadar",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "sudah_dilayani"
+				}
+			],
+			"labels": {
+				"Indonesian": "Sudah Dilayani"
+			},
+			"field": "public_pemeriksaan_sudah_dilayani",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "is_deleted"
+				}
+			],
+			"labels": {
+				"Indonesian": "Is Deleted"
+			},
+			"field": "public_pemeriksaan_is_deleted",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "deleted_at"
+				}
+			],
+			"labels": {
+				"Indonesian": "Deleted At"
+			},
+			"field": "public_pemeriksaan_deleted_at",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "deleted_by"
+				}
+			],
+			"labels": {
+				"Indonesian": "Deleted By"
+			},
+			"field": "public_pemeriksaan_deleted_by",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "created_by"
+				}
+			],
+			"labels": {
+				"Indonesian": "Created By"
+			},
+			"field": "public_pemeriksaan_created_by",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "created_at"
+				}
+			],
+			"labels": {
+				"Indonesian": "Created At"
+			},
+			"field": "public_pemeriksaan_created_at",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "updated_by"
+				}
+			],
+			"labels": {
+				"Indonesian": "Updated By"
+			},
+			"field": "public_pemeriksaan_updated_by",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "public.pemeriksaan",
+					"field": "updated_at"
+				}
+			],
+			"labels": {
+				"Indonesian": "Updated At"
+			},
+			"field": "public_pemeriksaan_updated_at",
+			"allFieldsSearch": true
+		}
+	],
+	"pages": [
+		{
+			"id": "dashboard",
+			"type": "dashboard",
+			"layoutId": "leftbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"grid": {
+					"modelId": "dashboard-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 2
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"dashboard-item"
+							],
+							"width": ""
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1,
+					"dashGap": "16px"
+				},
+				"left": {
+					"modelId": "leftbar-dashboard",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top-dashboard",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "dashboard-top",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"dashboard-item": {
+					"type": "dashboard-item",
+					"table": 1202178045,
+					"dashType": 3,
+					"dashName": "public_pemeriksaan_record",
+					"bsStyle": "primary",
+					"panelType": 1,
+					"icon": {
+						"fa": "headphones",
+						"style": 0
+					},
+					"viewTab": false,
+					"editTab": true,
+					"addTab": false,
+					"initialTab": 1,
+					"hiddenDetails": {},
+					"detailsOptions": [],
+					"mapUpdateGridWhenMoved": true,
+					"headerControls": true,
+					"height": "500px",
+					"width": "400px",
+					"reloadInterval": 0,
+					"editLabel": null,
+					"addLabel": null,
+					"viewLabel": null,
+					"editPageId": "edit1"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"Indonesian": "db_pelayanan"
+	}
+}

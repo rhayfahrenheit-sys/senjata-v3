@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Pelayanan",
+	"serverCode": "$_SESSION[\"loket_id\"]=$params[\"loket_id\"];\n$_SESSION[\"pelayanan_id\"]=$params[\"pelayanan_id\"];\n$_SESSION[\"hp\"]=$params[\"hp\"];\n$_SESSION[\"nama\"]=$params[\"nama\"];\n$_SESSION[\"ktp\"]=$params[\"ktp\"];\n$_SESSION[\"nama\"]=$params[\"nama\"];\n$_SESSION[\"usia\"]=$params[\"usia\"];\n$_SESSION[\"alamat\"]=$params[\"alamat\"];\n$_SESSION[\"noaskes\"]=$params[\"noaskes\"];\n\n\n",
+	"beforeJsCode": "// params[\"txt\"] = row.getFieldValue(\"pelayanan_id\");\n// ajax.setMessage(params[\"txt\"]);\n// return false;\n\n\n//params[\"pelayanan_id\"] = row.getFieldValue(\"pelayanan_id\");\n//var pelayananid = row.getFieldValue(\"pelayanan_id\");\nparams[\"loket_id\"] = row.getFieldValue(\"loket_id\");\nparams[\"pelayanan_id\"] = row.getFieldValue(\"pelayanan_id\");\nparams[\"hp\"] = row.getFieldValue(\"hp\");\nparams[\"ktp\"] = row.getFieldValue(\"ktp\");\nparams[\"nama\"] = row.getFieldValue(\"nama\");\nparams[\"usia\"] = row.getFieldValue(\"usia\");\nparams[\"alamat\"] = row.getFieldValue(\"alamat\");\nparams[\"noaskes\"] = row.getFieldValue(\"noaskes\");\n\n\n\n  var popup = Runner.displayPopup({\n  url: \"pemeriksaan_edit.php?editid1=\" + row.getFieldValue(\"pelayanan_id\"),\n  width: \"100%\",\n  height: \"100%\",\n  header: 'Isi Pemeriksaan Pasien'\n});\n\n//return false;\n\n\n",
+	"afterJsCode": "\n"
+}

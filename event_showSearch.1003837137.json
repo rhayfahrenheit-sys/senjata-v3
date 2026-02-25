@@ -1,0 +1,4 @@
+{
+	"name": "showSearch",
+	"serverCode": "global $strTableName;\r\n$srchObj = SearchClause::getSearchObject($strTableName);\r\n$fields = $srchObj->getSearchFields();\r\nif(count($fields))\r\necho \"Search was completed.\".\"<br>\";\r\nforeach ($fields as $field=>$value ) {\r\necho $field.\": \" .$srchObj->getSearchOption($field);\r\necho \" \".$srchObj->getFieldValue($field);\r\nif ($srchObj->getSearchOption($field)==\"Between\") {\r\n  echo \" AND \".$srchObj->getSecondFieldValue($field);\r\n }\r\necho \"<br>\";\r\n}"
+}

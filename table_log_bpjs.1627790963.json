@@ -1,0 +1,2576 @@
+{
+	"sql": "SELECT\r\n\tlog_bpjs_id,\r\n\tjenis_transaksi,\r\n\taksi,\r\n\trequest_json,\r\n\tresponse_json,\r\n\tstatus_transaksi,\r\n\thttp_status_code,\r\n\terror_code,\r\n\terror_message,\r\n\tendpoint_url,\r\n\tmethod,\r\n\tresponse_time_ms,\r\n\tis_deleted,\r\n\tdeleted_at,\r\n\tdeleted_by,\r\n\tcreated_by,\r\n\tcreated_at,\r\n\tupdated_by,\r\n\tupdated_at,\r\n\tno_bpjs\r\nFROM\r\n\t\"public\".log_bpjs",
+	"connId": "conn",
+	"originalTable": "public.log_bpjs",
+	"name": "public.log_bpjs",
+	"shortTableName": "log_bpjs",
+	"dbType": 4,
+	"keyFields": [
+		"log_bpjs_id"
+	],
+	"detailsBadgeColor": "e07878",
+	"fields": [
+		{
+			"name": "log_bpjs_id",
+			"sqlExpression": "log_bpjs_id",
+			"index": 1,
+			"strField": "log_bpjs_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Log Bpjs Id"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "jenis_transaksi",
+			"sqlExpression": "jenis_transaksi",
+			"index": 2,
+			"strField": "jenis_transaksi",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Jenis Transaksi"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "aksi",
+			"sqlExpression": "aksi",
+			"index": 3,
+			"strField": "aksi",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Aksi"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "request_json",
+			"sqlExpression": "request_json",
+			"index": 4,
+			"strField": "request_json",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Text area"
+				}
+			],
+			"label": {
+				"Indonesian": "Request Json"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "response_json",
+			"sqlExpression": "response_json",
+			"index": 5,
+			"strField": "response_json",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Text area"
+				}
+			],
+			"label": {
+				"Indonesian": "Response Json"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "status_transaksi",
+			"sqlExpression": "status_transaksi",
+			"index": 6,
+			"strField": "status_transaksi",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Status Transaksi"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "http_status_code",
+			"sqlExpression": "http_status_code",
+			"index": 7,
+			"strField": "http_status_code",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Http Status Code"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "error_code",
+			"sqlExpression": "error_code",
+			"index": 8,
+			"strField": "error_code",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Error Code"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "error_message",
+			"sqlExpression": "error_message",
+			"index": 9,
+			"strField": "error_message",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Text area"
+				}
+			],
+			"label": {
+				"Indonesian": "Error Message"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "endpoint_url",
+			"sqlExpression": "endpoint_url",
+			"index": 10,
+			"strField": "endpoint_url",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Endpoint Url"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "method",
+			"sqlExpression": "method",
+			"index": 11,
+			"strField": "method",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Method"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "response_time_ms",
+			"sqlExpression": "response_time_ms",
+			"index": 12,
+			"strField": "response_time_ms",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Response Time Ms"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "is_deleted",
+			"sqlExpression": "is_deleted",
+			"index": 13,
+			"strField": "is_deleted",
+			"type": 11,
+			"viewFormats": [
+				{
+					"format": "Checkbox"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Checkbox"
+				}
+			],
+			"label": {
+				"Indonesian": "Is Deleted"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "deleted_at",
+			"sqlExpression": "deleted_at",
+			"index": 14,
+			"strField": "deleted_at",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"Indonesian": "Deleted At"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "deleted_by",
+			"sqlExpression": "deleted_by",
+			"index": 15,
+			"strField": "deleted_by",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Deleted By"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "created_by",
+			"sqlExpression": "created_by",
+			"index": 16,
+			"strField": "created_by",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Created By"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "created_at",
+			"sqlExpression": "created_at",
+			"index": 17,
+			"strField": "created_at",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"Indonesian": "Created At"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "updated_by",
+			"sqlExpression": "updated_by",
+			"index": 18,
+			"strField": "updated_by",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Updated By"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "updated_at",
+			"sqlExpression": "updated_at",
+			"index": 19,
+			"strField": "updated_at",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date"
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"dateEditType": 11
+				}
+			],
+			"label": {
+				"Indonesian": "Updated At"
+			},
+			"tableName": "public.log_bpjs"
+		},
+		{
+			"name": "no_bpjs",
+			"sqlExpression": "no_bpjs",
+			"index": 20,
+			"strField": "no_bpjs",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Text area"
+				}
+			],
+			"label": {
+				"Indonesian": "No Bpjs"
+			},
+			"tableName": "public.log_bpjs"
+		}
+	],
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "log_bpjs_id",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "jenis_transaksi",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "aksi",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "request_json",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "response_json",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "status_transaksi",
+				"typeName": "character varying",
+				"size": 20,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": "'Pending'::character varying",
+				"defaultValue": "Pending",
+				"nullable": true
+			},
+			{
+				"name": "http_status_code",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "error_code",
+				"typeName": "character varying",
+				"size": 100,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "error_message",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "endpoint_url",
+				"typeName": "character varying",
+				"size": 500,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "method",
+				"typeName": "character varying",
+				"size": 10,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": "'POST'::character varying",
+				"defaultValue": "POST",
+				"nullable": true
+			},
+			{
+				"name": "response_time_ms",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_deleted",
+				"typeName": "boolean",
+				"size": null,
+				"scale": null,
+				"type": 11,
+				"autoinc": false,
+				"defaultValueSQL": "false",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "deleted_at",
+				"typeName": "timestamp without time zone",
+				"size": null,
+				"scale": null,
+				"type": 135,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "deleted_by",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "created_by",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": "1",
+				"defaultValue": "1",
+				"nullable": false
+			},
+			{
+				"name": "created_at",
+				"typeName": "timestamp without time zone",
+				"size": null,
+				"scale": null,
+				"type": 135,
+				"autoinc": false,
+				"defaultValueSQL": "CURRENT_TIMESTAMP",
+				"defaultValue": "CURRENT_TIMESTAMP",
+				"nullable": true
+			},
+			{
+				"name": "updated_by",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "updated_at",
+				"typeName": "timestamp without time zone",
+				"size": null,
+				"scale": null,
+				"type": 135,
+				"autoinc": false,
+				"defaultValueSQL": "CURRENT_TIMESTAMP",
+				"defaultValue": "CURRENT_TIMESTAMP",
+				"nullable": true
+			},
+			{
+				"name": "no_bpjs",
+				"typeName": "text",
+				"size": null,
+				"scale": null,
+				"type": 201,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			}
+		],
+		"primaryKeys": [
+			"log_bpjs_id"
+		],
+		"uniqueFields": [],
+		"name": "log_bpjs",
+		"schema": "public"
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7",
+								"integrated_edit_field8",
+								"integrated_edit_field9",
+								"integrated_edit_field10",
+								"integrated_edit_field11",
+								"integrated_edit_field12",
+								"integrated_edit_field13",
+								"integrated_edit_field14",
+								"integrated_edit_field15",
+								"integrated_edit_field16",
+								"integrated_edit_field17",
+								"integrated_edit_field18",
+								"integrated_edit_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field": {
+					"field": "log_bpjs_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "jenis_transaksi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "aksi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "request_json",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "response_json",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "status_transaksi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "http_status_code",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "error_code",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field8": {
+					"field": "error_message",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "endpoint_url",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "method",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "response_time_ms",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field12": {
+					"field": "is_deleted",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field13": {
+					"field": "deleted_at",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field14": {
+					"field": "deleted_by",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field15": {
+					"field": "created_by",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "created_at",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "updated_by",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field18": {
+					"field": "updated_at",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field19": {
+					"field": "no_bpjs",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field1",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6",
+								"export_field7",
+								"export_field8",
+								"export_field9",
+								"export_field10",
+								"export_field11",
+								"export_field12",
+								"export_field13",
+								"export_field14",
+								"export_field15",
+								"export_field16",
+								"export_field17",
+								"export_field18",
+								"export_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "log_bpjs_id",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "jenis_transaksi",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "aksi",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "request_json",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "response_json",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "status_transaksi",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "http_status_code",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "error_code",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "error_message",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "endpoint_url",
+					"type": "export_field"
+				},
+				"export_field10": {
+					"field": "method",
+					"type": "export_field"
+				},
+				"export_field11": {
+					"field": "response_time_ms",
+					"type": "export_field"
+				},
+				"export_field12": {
+					"field": "is_deleted",
+					"type": "export_field"
+				},
+				"export_field13": {
+					"field": "deleted_at",
+					"type": "export_field"
+				},
+				"export_field14": {
+					"field": "deleted_by",
+					"type": "export_field"
+				},
+				"export_field15": {
+					"field": "created_by",
+					"type": "export_field"
+				},
+				"export_field16": {
+					"field": "created_at",
+					"type": "export_field"
+				},
+				"export_field17": {
+					"field": "updated_by",
+					"type": "export_field"
+				},
+				"export_field18": {
+					"field": "updated_at",
+					"type": "export_field"
+				},
+				"export_field19": {
+					"field": "no_bpjs",
+					"type": "export_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field1",
+								"import_field2",
+								"import_field3",
+								"import_field4",
+								"import_field5",
+								"import_field6",
+								"import_field7",
+								"import_field8",
+								"import_field9",
+								"import_field10",
+								"import_field11",
+								"import_field12",
+								"import_field13",
+								"import_field14",
+								"import_field15",
+								"import_field16",
+								"import_field17",
+								"import_field18",
+								"import_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "log_bpjs_id",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "jenis_transaksi",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "aksi",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "request_json",
+					"type": "import_field"
+				},
+				"import_field4": {
+					"field": "response_json",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "status_transaksi",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "http_status_code",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "error_code",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "error_message",
+					"type": "import_field"
+				},
+				"import_field9": {
+					"field": "endpoint_url",
+					"type": "import_field"
+				},
+				"import_field10": {
+					"field": "method",
+					"type": "import_field"
+				},
+				"import_field11": {
+					"field": "response_time_ms",
+					"type": "import_field"
+				},
+				"import_field12": {
+					"field": "is_deleted",
+					"type": "import_field"
+				},
+				"import_field13": {
+					"field": "deleted_at",
+					"type": "import_field"
+				},
+				"import_field14": {
+					"field": "deleted_by",
+					"type": "import_field"
+				},
+				"import_field15": {
+					"field": "created_by",
+					"type": "import_field"
+				},
+				"import_field16": {
+					"field": "created_at",
+					"type": "import_field"
+				},
+				"import_field17": {
+					"field": "updated_by",
+					"type": "import_field"
+				},
+				"import_field18": {
+					"field": "updated_at",
+					"type": "import_field"
+				},
+				"import_field19": {
+					"field": "no_bpjs",
+					"type": "import_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7",
+								"integrated_edit_field8",
+								"integrated_edit_field9",
+								"integrated_edit_field10",
+								"integrated_edit_field11",
+								"integrated_edit_field12",
+								"integrated_edit_field13",
+								"integrated_edit_field14",
+								"integrated_edit_field15",
+								"integrated_edit_field16",
+								"integrated_edit_field17",
+								"integrated_edit_field18",
+								"integrated_edit_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset",
+						"edit_view"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save": {
+					"type": "edit_save"
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"integrated_edit_field": {
+					"field": "log_bpjs_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "jenis_transaksi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "aksi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "request_json",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "response_json",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "status_transaksi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "http_status_code",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "error_code",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field8": {
+					"field": "error_message",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "endpoint_url",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "method",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "response_time_ms",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field12": {
+					"field": "is_deleted",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field13": {
+					"field": "deleted_at",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field14": {
+					"field": "deleted_by",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field15": {
+					"field": "created_by",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "created_at",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "updated_by",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field18": {
+					"field": "updated_at",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field19": {
+					"field": "no_bpjs",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"edit_view": {
+					"type": "edit_view"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "view",
+			"type": "view",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "view-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "view-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_back_list",
+								"view_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "view-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7",
+								"integrated_edit_field8",
+								"integrated_edit_field9",
+								"integrated_edit_field10",
+								"integrated_edit_field11",
+								"integrated_edit_field12",
+								"integrated_edit_field13",
+								"integrated_edit_field14",
+								"integrated_edit_field15",
+								"integrated_edit_field16",
+								"integrated_edit_field17",
+								"integrated_edit_field18",
+								"integrated_edit_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"view_header": {
+					"type": "view_header"
+				},
+				"view_back_list": {
+					"type": "view_back_list"
+				},
+				"view_close": {
+					"type": "view_close"
+				},
+				"integrated_edit_field": {
+					"field": "log_bpjs_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "jenis_transaksi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "aksi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "request_json",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "response_json",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "status_transaksi",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "http_status_code",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "error_code",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field8": {
+					"field": "error_message",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "endpoint_url",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "method",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "response_time_ms",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field12": {
+					"field": "is_deleted",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field13": {
+					"field": "deleted_at",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field14": {
+					"field": "deleted_by",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field15": {
+					"field": "created_by",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "created_at",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "updated_by",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field18": {
+					"field": "updated_at",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field19": {
+					"field": "no_bpjs",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"view_edit"
+					]
+				},
+				"view_edit": {
+					"type": "view_edit"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "leftbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add",
+								"delete"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size",
+								"print_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu",
+								"search_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12",
+								"simple_grid_field13",
+								"simple_grid_field14",
+								"simple_grid_field15",
+								"simple_grid_field16",
+								"simple_grid_field17",
+								"simple_grid_field18",
+								"simple_grid_field19"
+							]
+						}
+					},
+					"deferredItems": [
+						"grid_checkbox",
+						"grid_checkbox_head",
+						"grid_edit",
+						"grid_view"
+					],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-sidebar-top",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"simple_grid_field": {
+					"field": "log_bpjs_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "jenis_transaksi",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "aksi",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "request_json",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "response_json",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "status_transaksi",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "http_status_code",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "error_code",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "error_message",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "endpoint_url",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "method",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "response_time_ms",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "is_deleted",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "deleted_at",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field14": {
+					"field": "deleted_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "created_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field16": {
+					"field": "created_at",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field17": {
+					"field": "updated_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field18": {
+					"field": "updated_at",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field19": {
+					"field": "no_bpjs",
+					"type": "simple_grid_field"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field",
+						"search_panel_field19",
+						"search_panel_field18",
+						"search_panel_field17",
+						"search_panel_field16",
+						"search_panel_field15",
+						"search_panel_field14",
+						"search_panel_field13",
+						"search_panel_field12",
+						"search_panel_field11",
+						"search_panel_field10",
+						"search_panel_field9",
+						"search_panel_field8",
+						"search_panel_field7",
+						"search_panel_field6",
+						"search_panel_field5",
+						"search_panel_field4",
+						"search_panel_field3",
+						"search_panel_field2",
+						"search_panel_field1"
+					],
+					"_flexiblePanel": true
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"export_selected",
+						"delete_selected",
+						"-1",
+						"show_search_panel",
+						"hide_search_panel",
+						"-",
+						"export",
+						"-2",
+						"import"
+					]
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"search_panel_field": {
+					"field": "log_bpjs_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field1": {
+					"field": "jenis_transaksi",
+					"type": "search_panel_field"
+				},
+				"search_panel_field2": {
+					"field": "aksi",
+					"type": "search_panel_field"
+				},
+				"search_panel_field3": {
+					"field": "request_json",
+					"type": "search_panel_field"
+				},
+				"search_panel_field4": {
+					"field": "response_json",
+					"type": "search_panel_field"
+				},
+				"search_panel_field5": {
+					"field": "status_transaksi",
+					"type": "search_panel_field"
+				},
+				"search_panel_field6": {
+					"field": "http_status_code",
+					"type": "search_panel_field"
+				},
+				"search_panel_field7": {
+					"field": "error_code",
+					"type": "search_panel_field"
+				},
+				"search_panel_field8": {
+					"field": "error_message",
+					"type": "search_panel_field"
+				},
+				"search_panel_field9": {
+					"field": "endpoint_url",
+					"type": "search_panel_field"
+				},
+				"search_panel_field10": {
+					"field": "method",
+					"type": "search_panel_field"
+				},
+				"search_panel_field11": {
+					"field": "response_time_ms",
+					"type": "search_panel_field"
+				},
+				"search_panel_field12": {
+					"field": "is_deleted",
+					"type": "search_panel_field"
+				},
+				"search_panel_field13": {
+					"field": "deleted_at",
+					"type": "search_panel_field"
+				},
+				"search_panel_field14": {
+					"field": "deleted_by",
+					"type": "search_panel_field"
+				},
+				"search_panel_field15": {
+					"field": "created_by",
+					"type": "search_panel_field"
+				},
+				"search_panel_field16": {
+					"field": "created_at",
+					"type": "search_panel_field"
+				},
+				"search_panel_field17": {
+					"field": "updated_by",
+					"type": "search_panel_field"
+				},
+				"search_panel_field18": {
+					"field": "updated_at",
+					"type": "search_panel_field"
+				},
+				"search_panel_field19": {
+					"field": "no_bpjs",
+					"type": "search_panel_field"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"add": {
+					"type": "add"
+				},
+				"export": {
+					"type": "export"
+				},
+				"-": {
+					"type": "-"
+				},
+				"export_selected": {
+					"type": "export_selected"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"import": {
+					"type": "import"
+				},
+				"-2": {
+					"type": "-"
+				},
+				"grid_edit": {
+					"type": "grid_edit"
+				},
+				"grid_view": {
+					"type": "grid_view"
+				},
+				"print_panel": {
+					"type": "print_panel",
+					"items": [
+						"print_scope",
+						"print_records",
+						"print_button"
+					]
+				},
+				"print_scope": {
+					"type": "print_scope"
+				},
+				"print_button": {
+					"type": "print_button"
+				},
+				"print_records": {
+					"type": "print_records"
+				},
+				"delete": {
+					"type": "delete"
+				},
+				"delete_selected": {
+					"type": "delete_selected"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": true
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12",
+								"simple_grid_field13",
+								"simple_grid_field14",
+								"simple_grid_field15",
+								"simple_grid_field16",
+								"simple_grid_field17",
+								"simple_grid_field18",
+								"simple_grid_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "log_bpjs_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "jenis_transaksi",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "aksi",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "request_json",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "response_json",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "status_transaksi",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "http_status_code",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "error_code",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "error_message",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "endpoint_url",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "method",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "response_time_ms",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "is_deleted",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "deleted_at",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field14": {
+					"field": "deleted_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "created_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field16": {
+					"field": "created_at",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field17": {
+					"field": "updated_by",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field18": {
+					"field": "updated_at",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field19": {
+					"field": "no_bpjs",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"Indonesian": "Log Bpjs"
+	}
+}

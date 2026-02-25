@@ -1,0 +1,2069 @@
+{
+	"sql": "SELECT\r\n\tid,\r\n\tlab_utama_id,\r\n\tparameter_id,\r\n\thasil,\r\n\tharga_pemr,\r\n\tharga_jasmed,\r\n\tfee_dokter,\r\n\tharga_total,\r\n\tgrup,\r\n\tsub,\r\n\tservicerequest_id,\r\n\tiscek_servicerequest,\r\n\tobservation_id,\r\n\tiscek_observation,\r\n\tspesimen_id,\r\n\tiscek_spesimen,\r\n\tdiagnosticreport_id,\r\n\tiscek_diagnosticreport,\r\n\tclinimpression_id,\r\n\tis_cek_clinimpression\r\nFROM\r\n\t\"public\".lab_hasil_lab",
+	"connId": "conn",
+	"originalTable": "public.lab_hasil_lab",
+	"name": "public.lab_hasil_lab",
+	"shortTableName": "lab_hasil_lab",
+	"dbType": 4,
+	"masterTables": [
+		{
+			"table": 3823020469,
+			"masterKeys": [
+				"id"
+			],
+			"detailsKeys": [
+				"lab_utama_id"
+			]
+		}
+	],
+	"detailsBadgeColor": "cd5c5c",
+	"fields": [
+		{
+			"name": "id",
+			"sqlExpression": "id",
+			"index": 1,
+			"strField": "id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Id"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "lab_utama_id",
+			"sqlExpression": "lab_utama_id",
+			"index": 2,
+			"strField": "lab_utama_id",
+			"type": 200,
+			"viewFormats": [
+				{
+					"viewLink": true
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"lookupTable": "public.lab_utama",
+					"lookupTableConnection": "conn",
+					"lookupLinkField": "id",
+					"lookupDisplayField": "id"
+				}
+			],
+			"label": {
+				"Indonesian": "Lab Utama Id"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "parameter_id",
+			"sqlExpression": "parameter_id",
+			"index": 3,
+			"strField": "parameter_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Parameter Id"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "hasil",
+			"sqlExpression": "hasil",
+			"index": 4,
+			"strField": "hasil",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Hasil"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "harga_pemr",
+			"sqlExpression": "harga_pemr",
+			"index": 5,
+			"strField": "harga_pemr",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Harga Pemr"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "harga_jasmed",
+			"sqlExpression": "harga_jasmed",
+			"index": 6,
+			"strField": "harga_jasmed",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Harga Jasmed"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "fee_dokter",
+			"sqlExpression": "fee_dokter",
+			"index": 7,
+			"strField": "fee_dokter",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Fee Dokter"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "harga_total",
+			"sqlExpression": "harga_total",
+			"index": 8,
+			"strField": "harga_total",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Number"
+				}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Harga Total"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "grup",
+			"sqlExpression": "grup",
+			"index": 9,
+			"strField": "grup",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Grup"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "sub",
+			"sqlExpression": "sub",
+			"index": 10,
+			"strField": "sub",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Sub"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "servicerequest_id",
+			"sqlExpression": "servicerequest_id",
+			"index": 11,
+			"strField": "servicerequest_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Servicerequest Id"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "iscek_servicerequest",
+			"sqlExpression": "iscek_servicerequest",
+			"index": 12,
+			"strField": "iscek_servicerequest",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Iscek Servicerequest"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "observation_id",
+			"sqlExpression": "observation_id",
+			"index": 13,
+			"strField": "observation_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Observation Id"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "iscek_observation",
+			"sqlExpression": "iscek_observation",
+			"index": 14,
+			"strField": "iscek_observation",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Iscek Observation"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "spesimen_id",
+			"sqlExpression": "spesimen_id",
+			"index": 15,
+			"strField": "spesimen_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Spesimen Id"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "iscek_spesimen",
+			"sqlExpression": "iscek_spesimen",
+			"index": 16,
+			"strField": "iscek_spesimen",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Iscek Spesimen"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "diagnosticreport_id",
+			"sqlExpression": "diagnosticreport_id",
+			"index": 17,
+			"strField": "diagnosticreport_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Diagnosticreport Id"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "iscek_diagnosticreport",
+			"sqlExpression": "iscek_diagnosticreport",
+			"index": 18,
+			"strField": "iscek_diagnosticreport",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Iscek Diagnosticreport"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "clinimpression_id",
+			"sqlExpression": "clinimpression_id",
+			"index": 19,
+			"strField": "clinimpression_id",
+			"type": 200,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Clinimpression Id"
+			},
+			"tableName": "public.lab_hasil_lab"
+		},
+		{
+			"name": "is_cek_clinimpression",
+			"sqlExpression": "is_cek_clinimpression",
+			"index": 20,
+			"strField": "is_cek_clinimpression",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"Indonesian": "Is Cek Clinimpression"
+			},
+			"tableName": "public.lab_hasil_lab"
+		}
+	],
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [
+			{
+				"name": "hasil",
+				"refSchema": "public",
+				"refTable": "lab_utama",
+				"del_rule": 1,
+				"upd_rule": 1,
+				"columns": [
+					{
+						"column": "lab_utama_id",
+						"ref_column": "id"
+					}
+				]
+			}
+		],
+		"fields": [
+			{
+				"name": "id",
+				"typeName": "character varying",
+				"size": 250,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "lab_utama_id",
+				"typeName": "character varying",
+				"size": 250,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "parameter_id",
+				"typeName": "character varying",
+				"size": 250,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": false
+			},
+			{
+				"name": "hasil",
+				"typeName": "character varying",
+				"size": 200,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "harga_pemr",
+				"typeName": "numeric",
+				"size": 10,
+				"scale": 0,
+				"type": 14,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "harga_jasmed",
+				"typeName": "numeric",
+				"size": 10,
+				"scale": 0,
+				"type": 14,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "fee_dokter",
+				"typeName": "numeric",
+				"size": 10,
+				"scale": 0,
+				"type": 14,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "harga_total",
+				"typeName": "numeric",
+				"size": 10,
+				"scale": 0,
+				"type": 14,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "grup",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "sub",
+				"typeName": "integer",
+				"size": 32,
+				"scale": 0,
+				"type": 3,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "servicerequest_id",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "iscek_servicerequest",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "observation_id",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "iscek_observation",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "spesimen_id",
+				"typeName": "character varying",
+				"size": 255,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "iscek_spesimen",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "diagnosticreport_id",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "iscek_diagnosticreport",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			},
+			{
+				"name": "clinimpression_id",
+				"typeName": "character varying",
+				"size": 50,
+				"scale": null,
+				"type": 200,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": "",
+				"nullable": true
+			},
+			{
+				"name": "is_cek_clinimpression",
+				"typeName": "smallint",
+				"size": 16,
+				"scale": 0,
+				"type": 2,
+				"autoinc": false,
+				"defaultValueSQL": "0",
+				"defaultValue": "0",
+				"nullable": true
+			}
+		],
+		"primaryKeys": [],
+		"uniqueFields": [],
+		"name": "lab_hasil_lab",
+		"schema": "public"
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7",
+								"integrated_edit_field8",
+								"integrated_edit_field9",
+								"integrated_edit_field10",
+								"integrated_edit_field11",
+								"integrated_edit_field12",
+								"integrated_edit_field13",
+								"integrated_edit_field14",
+								"integrated_edit_field15",
+								"integrated_edit_field16",
+								"integrated_edit_field17",
+								"integrated_edit_field18",
+								"integrated_edit_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field": {
+					"field": "id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "lab_utama_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "parameter_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "hasil",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "harga_pemr",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "harga_jasmed",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "fee_dokter",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "harga_total",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field8": {
+					"field": "grup",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "sub",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "servicerequest_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "iscek_servicerequest",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field12": {
+					"field": "observation_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field13": {
+					"field": "iscek_observation",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field14": {
+					"field": "spesimen_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field15": {
+					"field": "iscek_spesimen",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "diagnosticreport_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "iscek_diagnosticreport",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field18": {
+					"field": "clinimpression_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field19": {
+					"field": "is_cek_clinimpression",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field1",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6",
+								"export_field7",
+								"export_field8",
+								"export_field9",
+								"export_field10",
+								"export_field11",
+								"export_field12",
+								"export_field13",
+								"export_field14",
+								"export_field15",
+								"export_field16",
+								"export_field17",
+								"export_field18",
+								"export_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "id",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "lab_utama_id",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "parameter_id",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "hasil",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "harga_pemr",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "harga_jasmed",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "fee_dokter",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "harga_total",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "grup",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "sub",
+					"type": "export_field"
+				},
+				"export_field10": {
+					"field": "servicerequest_id",
+					"type": "export_field"
+				},
+				"export_field11": {
+					"field": "iscek_servicerequest",
+					"type": "export_field"
+				},
+				"export_field12": {
+					"field": "observation_id",
+					"type": "export_field"
+				},
+				"export_field13": {
+					"field": "iscek_observation",
+					"type": "export_field"
+				},
+				"export_field14": {
+					"field": "spesimen_id",
+					"type": "export_field"
+				},
+				"export_field15": {
+					"field": "iscek_spesimen",
+					"type": "export_field"
+				},
+				"export_field16": {
+					"field": "diagnosticreport_id",
+					"type": "export_field"
+				},
+				"export_field17": {
+					"field": "iscek_diagnosticreport",
+					"type": "export_field"
+				},
+				"export_field18": {
+					"field": "clinimpression_id",
+					"type": "export_field"
+				},
+				"export_field19": {
+					"field": "is_cek_clinimpression",
+					"type": "export_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field1",
+								"import_field2",
+								"import_field3",
+								"import_field4",
+								"import_field5",
+								"import_field6",
+								"import_field7",
+								"import_field8",
+								"import_field9",
+								"import_field10",
+								"import_field11",
+								"import_field12",
+								"import_field13",
+								"import_field14",
+								"import_field15",
+								"import_field16",
+								"import_field17",
+								"import_field18",
+								"import_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "id",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "lab_utama_id",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "parameter_id",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "hasil",
+					"type": "import_field"
+				},
+				"import_field4": {
+					"field": "harga_pemr",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "harga_jasmed",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "fee_dokter",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "harga_total",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "grup",
+					"type": "import_field"
+				},
+				"import_field9": {
+					"field": "sub",
+					"type": "import_field"
+				},
+				"import_field10": {
+					"field": "servicerequest_id",
+					"type": "import_field"
+				},
+				"import_field11": {
+					"field": "iscek_servicerequest",
+					"type": "import_field"
+				},
+				"import_field12": {
+					"field": "observation_id",
+					"type": "import_field"
+				},
+				"import_field13": {
+					"field": "iscek_observation",
+					"type": "import_field"
+				},
+				"import_field14": {
+					"field": "spesimen_id",
+					"type": "import_field"
+				},
+				"import_field15": {
+					"field": "iscek_spesimen",
+					"type": "import_field"
+				},
+				"import_field16": {
+					"field": "diagnosticreport_id",
+					"type": "import_field"
+				},
+				"import_field17": {
+					"field": "iscek_diagnosticreport",
+					"type": "import_field"
+				},
+				"import_field18": {
+					"field": "clinimpression_id",
+					"type": "import_field"
+				},
+				"import_field19": {
+					"field": "is_cek_clinimpression",
+					"type": "import_field"
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "leftbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size",
+								"print_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu",
+								"search_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12",
+								"simple_grid_field13",
+								"simple_grid_field14",
+								"simple_grid_field15",
+								"simple_grid_field16",
+								"simple_grid_field17",
+								"simple_grid_field18",
+								"simple_grid_field19"
+							]
+						}
+					},
+					"deferredItems": [
+						"grid_checkbox",
+						"grid_checkbox_head"
+					],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-sidebar-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"master_info"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"simple_grid_field": {
+					"field": "id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "lab_utama_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "parameter_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "hasil",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "harga_pemr",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "harga_jasmed",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "fee_dokter",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "harga_total",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "grup",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "sub",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "servicerequest_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "iscek_servicerequest",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "observation_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "iscek_observation",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field14": {
+					"field": "spesimen_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "iscek_spesimen",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field16": {
+					"field": "diagnosticreport_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field17": {
+					"field": "iscek_diagnosticreport",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field18": {
+					"field": "clinimpression_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field19": {
+					"field": "is_cek_clinimpression",
+					"type": "simple_grid_field"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field",
+						"search_panel_field19",
+						"search_panel_field18",
+						"search_panel_field17",
+						"search_panel_field16",
+						"search_panel_field15",
+						"search_panel_field14",
+						"search_panel_field13",
+						"search_panel_field12",
+						"search_panel_field11",
+						"search_panel_field10",
+						"search_panel_field9",
+						"search_panel_field8",
+						"search_panel_field7",
+						"search_panel_field6",
+						"search_panel_field5",
+						"search_panel_field4",
+						"search_panel_field3",
+						"search_panel_field2",
+						"search_panel_field1"
+					],
+					"_flexiblePanel": true
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"show_search_panel",
+						"hide_search_panel",
+						"-",
+						"export",
+						"-1",
+						"import"
+					]
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"search_panel_field": {
+					"field": "id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field1": {
+					"field": "lab_utama_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field2": {
+					"field": "parameter_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field3": {
+					"field": "hasil",
+					"type": "search_panel_field"
+				},
+				"search_panel_field4": {
+					"field": "harga_pemr",
+					"type": "search_panel_field"
+				},
+				"search_panel_field5": {
+					"field": "harga_jasmed",
+					"type": "search_panel_field"
+				},
+				"search_panel_field6": {
+					"field": "fee_dokter",
+					"type": "search_panel_field"
+				},
+				"search_panel_field7": {
+					"field": "harga_total",
+					"type": "search_panel_field"
+				},
+				"search_panel_field8": {
+					"field": "grup",
+					"type": "search_panel_field"
+				},
+				"search_panel_field9": {
+					"field": "sub",
+					"type": "search_panel_field"
+				},
+				"search_panel_field10": {
+					"field": "servicerequest_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field11": {
+					"field": "iscek_servicerequest",
+					"type": "search_panel_field"
+				},
+				"search_panel_field12": {
+					"field": "observation_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field13": {
+					"field": "iscek_observation",
+					"type": "search_panel_field"
+				},
+				"search_panel_field14": {
+					"field": "spesimen_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field15": {
+					"field": "iscek_spesimen",
+					"type": "search_panel_field"
+				},
+				"search_panel_field16": {
+					"field": "diagnosticreport_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field17": {
+					"field": "iscek_diagnosticreport",
+					"type": "search_panel_field"
+				},
+				"search_panel_field18": {
+					"field": "clinimpression_id",
+					"type": "search_panel_field"
+				},
+				"search_panel_field19": {
+					"field": "is_cek_clinimpression",
+					"type": "search_panel_field"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": true
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"add": {
+					"type": "add"
+				},
+				"export": {
+					"type": "export"
+				},
+				"-": {
+					"type": "-"
+				},
+				"import": {
+					"type": "import"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"print_panel": {
+					"type": "print_panel",
+					"items": [
+						"print_scope",
+						"print_records",
+						"print_button"
+					]
+				},
+				"print_scope": {
+					"type": "print_scope"
+				},
+				"print_button": {
+					"type": "print_button"
+				},
+				"print_records": {
+					"type": "print_records"
+				},
+				"master_info": {
+					"type": "master_info",
+					"tables": {
+						"3823020469": "true"
+					}
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						},
+						"c4": {
+							"model": "c4",
+							"items": [
+								"master_info"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12",
+								"simple_grid_field13",
+								"simple_grid_field14",
+								"simple_grid_field15",
+								"simple_grid_field16",
+								"simple_grid_field17",
+								"simple_grid_field18",
+								"simple_grid_field19"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "lab_utama_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "parameter_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "hasil",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "harga_pemr",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "harga_jasmed",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "fee_dokter",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "harga_total",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "grup",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "sub",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "servicerequest_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "iscek_servicerequest",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "observation_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "iscek_observation",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field14": {
+					"field": "spesimen_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "iscek_spesimen",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field16": {
+					"field": "diagnosticreport_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field17": {
+					"field": "iscek_diagnosticreport",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field18": {
+					"field": "clinimpression_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field19": {
+					"field": "is_cek_clinimpression",
+					"type": "simple_grid_field"
+				},
+				"master_info": {
+					"type": "master_info",
+					"tables": {
+						"3823020469": "true"
+					}
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"Indonesian": "Lab Hasil Lab"
+	}
+}

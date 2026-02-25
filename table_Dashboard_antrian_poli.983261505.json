@@ -1,0 +1,432 @@
+{
+	"type": 4,
+	"name": "Dashboard_antrian_poli",
+	"shortTableName": "Dashboard_antrian_poli",
+	"detailsBadgeColor": "7b68ee",
+	"dashSearchFields": [
+		{
+			"refs": [
+				{
+					"table": "daftar_antrian",
+					"field": "no_urut_proses"
+				}
+			],
+			"labels": {
+				"Indonesian": "No Urut Proses"
+			},
+			"field": "daftar_antrian_no_urut_proses",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "daftar_antrian",
+					"field": "no_dilayani"
+				}
+			],
+			"labels": {
+				"Indonesian": "No Dilayani"
+			},
+			"field": "daftar_antrian_no_dilayani",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "daftar_antrian",
+					"field": "puskesmas"
+				}
+			],
+			"labels": {
+				"Indonesian": "Puskesmas"
+			},
+			"field": "daftar_antrian_puskesmas",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "daftar_antrian",
+					"field": "pustu"
+				}
+			],
+			"labels": {
+				"Indonesian": "Pustu"
+			},
+			"field": "daftar_antrian_pustu",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "daftar_antrian",
+					"field": "sift"
+				}
+			],
+			"labels": {
+				"Indonesian": "Sift"
+			},
+			"field": "daftar_antrian_sift",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "daftar_antrian",
+					"field": "dokter"
+				}
+			],
+			"labels": {
+				"Indonesian": "Dokter"
+			},
+			"field": "daftar_antrian_dokter",
+			"allFieldsSearch": true
+		},
+		{
+			"refs": [
+				{
+					"table": "daftar_antrian",
+					"field": "unit"
+				}
+			],
+			"labels": {
+				"Indonesian": "Unit"
+			},
+			"field": "daftar_antrian_unit",
+			"allFieldsSearch": true
+		}
+	],
+	"pages": [
+		{
+			"id": "dashboard",
+			"type": "dashboard",
+			"layoutId": "leftbar",
+			"disabled": false,
+			"default": 0,
+			"forms": {
+				"grid": {
+					"modelId": "dashboard-grid",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c",
+									"rowspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c": {
+							"model": "c1",
+							"items": [
+								"dashboard-item1"
+							],
+							"width": "",
+							"align": "center"
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"dashboard-item"
+							],
+							"width": "",
+							"align": "center"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1,
+					"dashGap": "16px"
+				},
+				"left": {
+					"modelId": "leftbar-dashboard",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"menu"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top-dashboard",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c3"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button",
+								"breadcrumb"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"username_button"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": []
+						},
+						"c3": {
+							"model": "c2",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "dashboard-top",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"widget": {
+					"modelId": "dash-widget",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"icon",
+								"text"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"text1"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  color: red;\n}\n\ndiv.modal-dialog.ui-draggable, div.modal-body, div.modal-content.ui-resizable {\nwidth: 100% !important;\n}"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link",
+						"changepassword_link"
+					]
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"icon": {
+					"type": "icon",
+					"icon": {
+						"fa": "bell"
+					}
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "Your header here",
+						"type": 0
+					}
+				},
+				"text1": {
+					"type": "text",
+					"label": {
+						"text": "Your text here",
+						"type": 0
+					}
+				},
+				"dashboard-item": {
+					"type": "dashboard-item",
+					"table": 838604469,
+					"dashType": 0,
+					"dashName": "daftar_antrian_grid",
+					"bsStyle": "primary",
+					"panelType": 1,
+					"icon": {
+						"glyph": "briefcase",
+						"style": 0
+					},
+					"viewTab": true,
+					"editTab": true,
+					"addTab": true,
+					"initialTab": 0,
+					"hiddenDetails": {},
+					"detailsOptions": [],
+					"mapUpdateGridWhenMoved": true,
+					"headerControls": false,
+					"height": "100vh",
+					"width": "400px",
+					"reloadInterval": "30",
+					"detailsFilterByMaster": false,
+					"detailsMasterTable": "",
+					"pageId": "list",
+					"customLabel": true,
+					"dashLabel": {
+						"type": 0,
+						"text": "Daftar Antrian"
+					}
+				},
+				"dashboard-item1": {
+					"type": "dashboard-item",
+					"table": 838604469,
+					"dashType": 4,
+					"dashName": "daftar_antrian_search",
+					"bsStyle": "primary",
+					"panelType": 1,
+					"icon": {
+						"glyph": "shopping-cart",
+						"style": 0
+					},
+					"viewTab": true,
+					"editTab": true,
+					"addTab": true,
+					"initialTab": 0,
+					"hiddenDetails": {},
+					"detailsOptions": [],
+					"mapUpdateGridWhenMoved": true,
+					"headerControls": true,
+					"height": "250px",
+					"width": "400px",
+					"reloadInterval": 0,
+					"pageId": "search",
+					"collapseToggler": true,
+					"customLabel": true,
+					"dashLabel": {
+						"type": 0,
+						"text": "Filter"
+					},
+					"tabLeaveSpace": true
+				}
+			},
+			"version": 13,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "transparent",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"cardStyle": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"Indonesian": "Dashboard_antrian_poli"
+	}
+}

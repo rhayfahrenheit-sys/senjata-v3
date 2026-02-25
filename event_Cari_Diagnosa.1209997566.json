@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Cari Diagnosa",
+	"serverCode": "// Put your code here.\n\n$result[\"txt\"] = $params[\"txt\"].\" world!\";\n",
+	"beforeJsCode": "\n  var popup = Runner.displayPopup({\n  url: \"ref_diagnosa_list.php\",\n  width: \"100%\",\n  height: \"100%\",\n  header: 'Daftar Diagnosa ICD X'\n});\n\nreturn false;\n",
+	"afterJsCode": "// Put your code here.\n\nvar message = result[\"txt\"] + \" !!!\";\najax.setMessage(message);\n"
+}

@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Laborat",
+	"serverCode": "// Put your code here.\n\n$result[\"txt\"] = $params[\"txt\"].\" world!\";\n",
+	"beforeJsCode": "  var popup = Runner.displayPopup({\r\n  url: \"lab_utama_add.php?editid1=\" + row.getFieldValue(\"pelayanan_id\"),\r\n  width: \"100%\",\r\n  height: \"100%\",\r\n  header: 'Isi Pemeriksaan Pasien'\r\n});\r\n\r\nreturn false;",
+	"afterJsCode": "// Put your code here.\n\nvar message = result[\"txt\"] + \" !!!\";\najax.setMessage(message);\n"
+}

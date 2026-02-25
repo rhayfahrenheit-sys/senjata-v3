@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_FIELD",
+	"name": "validasi_tanggal",
+	"serverCode": "// Inisialisasi hasil\r\n$result[\"tanda\"] = '0'; // default: lolos validasi\r\n$result[\"pesan\"] = '';\r\n\r\n\r\n// 2. Ambil nilai dan pastikan string\r\n$tglInput = (string)$params[\"tgl\"];\r\n\r\n// 4. Bandingkan dengan tanggal hari ini (format sama → aman!)\r\n$today = date(\"Y-m-d\");\r\nif ($tglInput > $today) {\r\n    $result[\"pesan\"] = \"Tanggal tidak boleh lewat dari hari ini!\";\r\n    $result[\"tanda\"] = '1';\r\n}\r\n\r\necho $params[\"tgl\"];\r\necho $today;",
+	"beforeJsCode": "// Client Before — BIARKAN KOSONG atau hanya:\r\n//params[\"tgl\"] = this.getValue(); // cukup ini saja\r\nvar tgl1 = this.getValue();\r\najax.setMessage(\"test\");\r\n\r\nreturn false;",
+	"afterJsCode": "if (result[\"tanda\"] == \"1\") {\r\n    var ctrlTgl = Runner.getControl(pageid, \"tgl\");\r\n    ctrlTgl.setValue(\"\"); // kosongkan jika ingin\r\n    ctrlTgl.focus();\r\n    ajax.setMessage(result[\"pesan\"]);\r\n    return false;\r\n}"
+}

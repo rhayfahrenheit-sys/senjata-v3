@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Konfig Fasyankes",
+	"serverCode": "// Put your code here.\n\n$result[\"url\"] = $_SESSION[\"puskesmas\"];\n",
+	"beforeJsCode": "// params[\"txt\"] = row.getFieldValue(\"pelayanan_id\");\n// ajax.setMessage(params[\"txt\"]);\n// return false;\n\n\n//params[\"pelayanan_id\"] = row.getFieldValue(\"pelayanan_id\");\n//var pelayananid = row.getFieldValue(\"pelayanan_id\");\n\n//   var popup = Runner.displayPopup({\n//   url: \"puskesmas_edit.php?editid1=\" + row.getFieldValue(\"pelayanan_id\"),\n//   width: \"100%\",\n//   height: \"100%\",\n//   header: 'Isi Pemeriksaan Pasien'\n// });\n\n// return false;",
+	"afterJsCode": "  var popup = Runner.displayPopup({\n  url: \"puskesmas_edit.php?editid1=\" + result[\"url\"],\n  width: \"100%\",\n  height: \"100%\",\n  header: 'Konfig Fasyankes'\n});"
+}

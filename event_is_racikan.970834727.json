@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_FIELD",
+	"name": "is_racikan",
+	"serverCode": "\n// Sample:\n$result[\"upper\"] = strtoupper( $params[\"value\"] );\n",
+	"beforeJsCode": "var cYatidak = Runner.getControl(pageid, 'is_racikan');\nvar cresepke = Runner.getControl(pageid, 'resepke');\nvar cjml_bungkus = Runner.getControl(pageid, 'jml_bungkus');\nvar yatidak = cYatidak.getValue();\n\nif(yatidak == \"Ya\")\n{\npageObj.toggleItem(\"integrated_edit_field24\", true );\npageObj.toggleItem(\"integrated_edit_field23\", true );\n}\n\nelse\n{\npageObj.toggleItem(\"integrated_edit_field24\", false );\npageObj.toggleItem(\"integrated_edit_field23\", false );   \ncresepke.setValue('');\ncjml_bungkus.setValue('');\n    \n}\n\n\nreturn false;",
+	"afterJsCode": "\n\n// Sample:\nctrl.setValue( result[\"upper\"] );\n"
+}
