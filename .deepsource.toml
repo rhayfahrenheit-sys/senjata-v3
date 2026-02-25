@@ -4,9 +4,6 @@ version = 1
 name = "php"
 enabled = true
 
-  [analyzers.meta]
-  runtime_version = "8.1"
-
 [[analyzers]]
 name = "javascript"
 enabled = true
